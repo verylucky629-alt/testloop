@@ -343,7 +343,7 @@ function homeHTML() {
     <button class="chip ${ui.filterYear === 'all' ? 'on' : ''}" data-act="year" data-year="all">전체 ${exams.length}</button>
     ${years.map((y) => `<button class="chip ${ui.filterYear === String(y) ? 'on' : ''}" data-act="year" data-year="${y}">${y}년 ${exams.filter((e) => e.year === y).length}</button>`).join('')}
   </div>
-  ${cards || '<div class="emptystate">조건에 맞는 시험이 없어요.</div>'}
+  <div id="examList">${cards || '<div class="emptystate">조건에 맞는 시험이 없어요.</div>'}</div>
   <div class="home-foot">
     <b>정답 데이터</b>는 원본 PDF에 없어서, 시험마다 [정답 입력]에 한 번 넣어 주면 채점·오답 기록이 쌓입니다.<br>
     <b>기기 간 이어 풀기</b>는 상단 동기화 버튼에서 GitHub Gist를 연결하면 아이폰·아이패드·맥에서 같은 기록으로 이어집니다.
@@ -1376,12 +1376,11 @@ document.addEventListener('click', async (e) => {
         ui.examId = ui.result.examId;
         render();
       } else {
-        if (ui.session && !ui.isMini) { commitElapsed(ui.session); ui.session.updatedAt = now(); saveStore(true); }
-        ui.view = 'home'; ui.session = null; ui.isMini = false; ui.result = null; render();
+        goHome();
       }
       break;
     }
-    case 'back-result': ui.view = 'home'; ui.result = null; render(); break;
+    case 'back-result': goHome(); break;
     case 'mini-back':
       if (ui.result?.cameFromMini) {
         ui.result = ui.result.cameFromMini;
@@ -1481,21 +1480,29 @@ document.addEventListener('change', (e) => {
 document.addEventListener('input', (e) => {
   if (e.target.id === 'searchInput') {
     ui.q = e.target.value;
-    renderHomeList();
+    if (e.isComposing) return;
+    renderExamList();
+  }
+});
+document.addEventListener('compositionend', (e) => {
+  if (e.target.id === 'searchInput') {
+    ui.q = e.target.value;
+    renderExamList();
   }
 });
 
-function renderHomeList() {
-  const screen = $('#screen');
-  if (!screen || ui.view !== 'home') return;
-  const scroll = window.scrollY;
-  const focused = document.activeElement?.id === 'searchInput';
-  screen.innerHTML = homeHTML();
-  window.scrollTo(0, scroll);
-  if (focused) {
-    const inp = $('#searchInput');
-    if (inp) { inp.focus(); inp.setSelectionRange(inp.value.length, inp.value.length); }
-  }
+function renderExamList() {
+  const box = $('#examList');
+  if (!box || ui.view !== 'home') return;
+  const exams = INDEX?.exams || [];
+  const q = ui.q.trim().toLowerCase();
+  let list = exams.filter((e) => {
+    if (ui.filterYear !== 'all' && String(e.year) !== ui.filterYear) return false;
+    if (!q) return true;
+    return `${e.title} ${e.year} ${e.course}교시 ${e.exam_id}`.toLowerCase().includes(q);
+  });
+  list = list.slice().sort((a, b) => b.year - a.year || a.course - b.course);
+  box.innerHTML = list.length ? list.map((e) => examCardHTML(e)).join('') : '<div class="emptystate">조건에 맞는 시험이 없어요.</div>';
 }
 
 // 그림 확대
@@ -1539,6 +1546,23 @@ document.addEventListener('visibilitychange', () => {
 window.addEventListener('pagehide', () => {
   if (ui.session && !ui.isMini) { commitElapsed(ui.session); ui.session.updatedAt = now(); saveStore(true); }
 });
+window.addEventListener('popstate', () => {
+  if (ui.view !== 'home') goHome();
+});
+
+function goHome() {
+  if (ui.session && !ui.isMini) {
+    commitElapsed(ui.session);
+    ui.session.updatedAt = now();
+    saveStore(true);
+  }
+  ui.view = 'home';
+  ui.session = null;
+  ui.result = null;
+  ui.isMini = false;
+  ui.cameFromResult = null;
+  render();
+}
 
 /* ---------------- 시험 열기 / 결과 열기 ---------------- */
 async function openExam(examId, opts = {}) {
@@ -1567,6 +1591,7 @@ async function openExam(examId, opts = {}) {
   ui.limitMs = EXAM_LIMIT_MS;
   ui.omrFilter = 'all';
   ui.view = 'exam';
+  try { history.pushState({ ml: 1 }, ''); } catch (e) {}
   saveStore(true);
   render();
   if (!hasAnyKey()) setTimeout(() => toast('정답이 아직 없어요. [정답 입력]에 넣으면 채점과 오답 기록이 쌓여요.', 3600), 500);
@@ -1582,6 +1607,7 @@ async function openResult(examId) {
   ui.result = { examId, order: exam.questions.map((q) => q.number), session: s, isMini: false, limitMs: EXAM_LIMIT_MS };
   ui.resultFilter = 'all';
   ui.view = 'result';
+  try { history.pushState({ ml: 1 }, ''); } catch (e) {}
   render();
   window.scrollTo(0, 0);
 }
