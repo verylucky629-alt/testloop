@@ -139,7 +139,9 @@ a{color:var(--brand); text-decoration:none}
 
 /* ---------- 시험 화면 ---------- */
 .exam-head{
-  position:sticky; top:0; z-index:30; background:color-mix(in srgb, var(--bg) 88%, transparent);
+  position:sticky; top:0; z-index:30;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter:saturate(180%) blur(14px); -webkit-backdrop-filter:saturate(180%) blur(14px);
   border-bottom:1px solid var(--line); padding-top:var(--safe-t);
 }
@@ -211,6 +213,7 @@ a{color:var(--brand); text-decoration:none}
 /* 하단 진행도 + OMR */
 .bottom{
   position:fixed; left:0; right:0; bottom:0; z-index:40;
+  background:var(--card);
   background:color-mix(in srgb, var(--card) 94%, transparent);
   backdrop-filter:saturate(180%) blur(14px); -webkit-backdrop-filter:saturate(180%) blur(14px);
   border-top:1px solid var(--line); padding-bottom:var(--safe-b);
