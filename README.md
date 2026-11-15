@@ -1,5 +1,7 @@
 # 문제루프 (munjeloop)
 
+**웹앱:** https://verylucky629-alt.github.io/testloop/
+
 자체 2차 임종평 문제은행 웹앱. 2023학년도 · 2025학년도 각 4교시, 총 8회 640문항.
 
 - 문항: `data/exam{연도}_{교시}.json` (지문·선지·그림 경로·원문 쪽)
