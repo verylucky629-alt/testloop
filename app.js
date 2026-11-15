@@ -515,6 +515,13 @@ function updateProgress() {
   renderOMR();
 }
 
+function closeOmr() {
+  ui.omrOpen = false;
+  $('#omrSheet')?.classList.remove('open');
+  $('#scrim')?.classList.remove('show');
+  $('#omrBtn')?.classList.remove('open');
+}
+
 function renderOMR() {
   const grid = $('#omrGrid');
   if (!grid) return;
@@ -1397,11 +1404,11 @@ document.addEventListener('click', async (e) => {
 
     case 'prev': goTo(ui.idx - 1); break;
     case 'next': goTo(ui.idx + 1); break;
-    case 'jump': goTo(ui.order.indexOf(Number(el.dataset.no))); break;
+    case 'jump': goTo(ui.order.indexOf(Number(el.dataset.no))); closeOmr(); break;
     case 'pause': togglePause(); break;
     case 'submit': await submitExam(); break;
     case 'omr': ui.omrOpen = !ui.omrOpen; $('#omrSheet')?.classList.toggle('open', ui.omrOpen); el.classList.toggle('open', ui.omrOpen); $('#scrim')?.classList.toggle('show', ui.omrOpen); renderOMR(); break;
-    case 'omr-close': ui.omrOpen = false; $('#omrSheet')?.classList.remove('open'); $('#scrim')?.classList.remove('show'); $('#omrBtn')?.classList.remove('open'); break;
+    case 'omr-close': closeOmr(); break;
     case 'omr-filter': ui.omrFilter = el.dataset.f; $$('.omr-tab').forEach((t) => t.classList.toggle('on', t.dataset.f === ui.omrFilter)); renderOMR(); break;
 
     case 'rfilter': ui.resultFilter = el.dataset.f; render(); break;
@@ -1550,6 +1557,7 @@ async function openExam(examId, opts = {}) {
       if (gap > 15 * 60 * 1000) s.lastTs = now();
       s.lastTs = now();
     }
+    if (!s.submitted) { s.running = true; s.lastTs = now(); }
   }
   s.updatedAt = now();
   ui.session = s;
