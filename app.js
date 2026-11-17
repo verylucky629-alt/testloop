@@ -95,7 +95,7 @@ async function copyText(text) {
 
 /* ---------------- store ---------------- */
 function emptyStore() {
-  return { v: 1, updatedAt: 0, answers: {}, answerRev: {}, sessions: {}, stats: {}, edits: {}, settings: {} };
+  return { v: 1, updatedAt: 0, answers: {}, answerRev: {}, sessions: {}, stats: {}, edits: {}, topicEdits: {}, analyses: [], settings: {} };
 }
 let store = emptyStore();
 
@@ -165,6 +165,21 @@ function mergeStores(local, remote) {
       if (!a || (b?.updatedAt || 0) > (a?.updatedAt || 0)) out.edits[ex][q] = b;
     }
   }
+  out.topicEdits = Object.assign({}, local.topicEdits);
+  for (const ex of Object.keys(remote.topicEdits || {})) {
+    out.topicEdits[ex] = Object.assign({}, out.topicEdits[ex] || {});
+    for (const q of Object.keys(remote.topicEdits[ex])) {
+      const a = out.topicEdits[ex][q], b = remote.topicEdits[ex][q];
+      if (!a || (b?.updatedAt || 0) > (a?.updatedAt || 0)) out.topicEdits[ex][q] = b;
+    }
+  }
+  const analyses = new Map();
+  for (const a of [...(local.analyses || []), ...(remote.analyses || [])]) {
+    if (!a || !a.id) continue;
+    const prev = analyses.get(a.id);
+    if (!prev || (a.savedAt || 0) >= (prev.savedAt || 0)) analyses.set(a.id, a);
+  }
+  out.analyses = Array.from(analyses.values()).sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0)).slice(0, 6);
   return out;
 }
 
@@ -210,12 +225,26 @@ const ui = {
   lastSave: 0,
   expanded: {},
   calc: null,
+  analysisTab: 'mine',
+  analysisScope: 'all',
+  analysisLevel: 'subject',
+  analysisOpen: {},
+  pasteText: '',
+  pasteName: '',
+  pasteRows: null,
+  pasteSkipped: 0,
+  pasteSavedId: null,
+  topicEditExam: null,
+  topicEditNo: 1,
+  cameFromAnalysis: false,
+  qStart: 0,
+  qStartNo: null,
 };
 
 function newSession() {
   const t = now();
   return {
-    answers: {}, excluded: {}, flags: [], notes: {},
+    answers: {}, excluded: {}, flags: [], notes: {}, times: {},
     elapsedMs: 0, running: true, lastTs: t, startedAt: t,
     submitted: false, submittedAt: null, updatedAt: t,
   };
@@ -296,6 +325,12 @@ function render() {
   } else if (ui.view === 'result') {
     screen.className = 'screen no-bottom';
     screen.innerHTML = resultHTML();
+  } else if (ui.view === 'etc') {
+    screen.className = 'screen';
+    screen.innerHTML = etcHTML();
+  } else if (ui.view === 'analysis') {
+    screen.className = 'screen';
+    screen.innerHTML = analysisHTML();
   } else {
     screen.className = 'screen no-bottom';
     screen.innerHTML = homeHTML();
@@ -347,7 +382,8 @@ function homeHTML() {
   <div class="home-foot">
     <b>정답 데이터</b>는 원본 PDF에 없어서, 시험마다 [정답 입력]에 한 번 넣어 주면 채점·오답 기록이 쌓입니다.<br>
     <b>기기 간 이어 풀기</b>는 상단 동기화 버튼에서 GitHub Gist를 연결하면 아이폰·아이패드·맥에서 같은 기록으로 이어집니다.
-  </div>`;
+  </div>
+  ${tabbarHTML('home')}`;
 }
 
 function examCardHTML(e) {
@@ -409,7 +445,7 @@ function examCardHTML(e) {
 
 /* ---------------- 시험 화면 ---------------- */
 function examHTML() {
-  const title = ui.isMini ? `틀린 문제 미니 퀴즈 · ${ui.exam.title}` : ui.exam.title;
+  const title = ui.isMini ? `${ui.quizLabel ? ui.quizLabel + ' 복습' : '틀린 문제 미니 퀴즈'} · ${ui.exam.title}` : ui.exam.title;
   return `
   <header class="exam-head">
     <div class="exam-head-row">
@@ -451,6 +487,21 @@ function examHTML() {
     </div>
     <div class="omr-grid" id="omrGrid"></div>
   </div>`;
+}
+
+function resetQClock() {
+  ui.qStart = now();
+  ui.qStartNo = ui.order?.[ui.idx] ?? null;
+}
+function flushQTime() {
+  const s = ui.session;
+  if (!s || !ui.qStart || ui.qStartNo == null) return;
+  const dt = clamp(now() - ui.qStart, 0, 10 * 60 * 1000);
+  if (dt > 400) {
+    s.times = s.times || {};
+    s.times[ui.qStartNo] = (s.times[ui.qStartNo] || 0) + dt;
+  }
+  ui.qStart = now();
 }
 
 function renderQuestionCard() {
@@ -501,6 +552,7 @@ function renderQuestionCard() {
   $('#headSub').textContent = `${ui.isMini ? '미니 퀴즈 ' : '문제 '}${ui.idx + 1} / ${ui.order.length}${ui.isMini ? ` · ${no}번` : ''}`;
   updateProgress();
   updateTimerUI();
+  resetQClock();
 }
 
 function updateProgress() {
@@ -598,6 +650,7 @@ function toggleFlag() {
 }
 
 function goTo(i) {
+  flushQTime();
   ui.idx = clamp(i, 0, ui.order.length - 1);
   renderQuestionCard();
   const head = $('.exam-head');
@@ -652,6 +705,7 @@ function togglePause() {
   const s = ui.session;
   if (!s) return;
   if (s.running) {
+    flushQTime();
     commitElapsed(s);
     s.running = false;
     s.updatedAt = now();
@@ -660,6 +714,7 @@ function togglePause() {
   } else {
     s.lastTs = now();
     s.running = true;
+    ui.qStart = now();
     s.updatedAt = now();
     saveStore(true);
     toast('타이머를 다시 시작했어요');
@@ -704,6 +759,7 @@ async function submitExam() {
 function doSubmit(auto) {
   const s = ui.session;
   if (!s) return;
+  flushQTime();
   commitElapsed(s);
   s.submitted = true;
   s.submittedAt = now();
@@ -1337,6 +1393,669 @@ function importJSON(file) {
   reader.readAsText(file);
 }
 
+/* ============================================================
+   기타 · 토픽·약점 분석
+   ============================================================ */
+let TOPICS = null;
+async function getTopics() {
+  if (TOPICS) return TOPICS;
+  try { TOPICS = await fetchJSON('data/topics.json'); } catch (e) { TOPICS = { map: {} }; }
+  return TOPICS;
+}
+function baseTopic(eid, no) {
+  const t = TOPICS?.map?.[eid]?.[String(no)];
+  return t ? { s: t.s, t: t.t } : { s: '미분류', t: '미분류' };
+}
+function topicOf(eid, no) {
+  const e = store.topicEdits?.[eid]?.[no];
+  return e ? { s: e.s, t: e.t } : baseTopic(eid, no);
+}
+function examShort(eid) {
+  const m = examMeta(eid);
+  return m ? `${m.year} ${m.course}교시` : eid;
+}
+function keyOfExam(eid, no) {
+  const e = store.edits?.[eid]?.[no];
+  if (e && e.answer) return Number(e.answer);
+  const a = store.answers?.[eid]?.[no];
+  return a ? Number(a) : null;
+}
+function rateClass(rate) { return rate >= 80 ? 'good' : rate >= 60 ? 'mid' : 'low'; }
+
+/* ----- 내 기록 집계 ----- */
+function analyzeMine(scope) {
+  const exams = (INDEX?.exams || []).filter((e) => scope === 'all' || e.exam_id === scope);
+  const items = [];
+  const examRows = [];
+  const noKey = [];
+  for (const meta of exams) {
+    const eid = meta.exam_id;
+    const exam = EXAM_CACHE[eid];
+    const s = store.sessions?.[eid];
+    if (!exam || !s || !s.submitted) continue;
+    let keyed = 0, correct = 0;
+    for (const q of exam.questions) {
+      const k = keyOfExam(eid, q.number);
+      if (!k) continue;
+      keyed++;
+      const a = s.answers?.[q.number] || null;
+      const ok = !!a && a === k;
+      if (ok) correct++;
+      const tt = topicOf(eid, q.number);
+      items.push({
+        eid, no: q.number, key: k, ans: a, ok,
+        wrong: !!a && a !== k, skip: !a,
+        flag: (s.flags || []).includes(q.number),
+        time: (s.times && s.times[q.number]) || 0,
+        s: tt.s, t: tt.t,
+      });
+    }
+    if (keyed) examRows.push({ eid, keyed, correct });
+    else noKey.push(eid);
+  }
+  return { items, examRows, noKey };
+}
+
+function aggItems(items, level) {
+  const map = new Map();
+  for (const it of items) {
+    const name = level === 'subject' ? it.s : it.t;
+    const key = level === 'subject' ? it.s : `${it.s}|${it.t}`;
+    let g = map.get(key);
+    if (!g) { g = { key, name, subject: it.s, n: 0, correct: 0, wrong: 0, skip: 0, flag: 0, qs: [] }; map.set(key, g); }
+    g.n++;
+    if (it.ok) g.correct++;
+    if (it.wrong) g.wrong++;
+    if (it.skip) g.skip++;
+    if (it.flag) g.flag++;
+    if (it.wrong || it.skip || it.flag) g.qs.push(it);
+  }
+  const rows = Array.from(map.values());
+  rows.forEach((r) => { r.rate = r.n ? Math.round((r.correct / r.n) * 100) : 0; });
+  return rows.sort((a, b) => a.rate - b.rate || b.n - a.n);
+}
+
+function weakHighlights(items) {
+  const out = [];
+  const missed = items.filter((i) => i.wrong || i.skip);
+  if (!missed.length) {
+    const flagged = items.filter((i) => i.flag).length;
+    out.push(flagged ? `오답·미응답은 없어요. 마킹한 <b>${flagged}문항</b>만 다시 보면 충분해요` : '이번 범위는 오답·미응답·마킹이 모두 없어요');
+    return out;
+  }
+  const subs = aggItems(items, 'subject').filter((r) => r.n >= 5 && (r.wrong > 0 || r.skip > 0));
+  if (subs.length) {
+    const w = subs[0];
+    out.push(`<b>${esc(w.name)}</b>가 가장 약해요. ${w.n}문항 중 ${w.correct}개 정답 (${w.rate}%)`);
+  }
+  const tops = aggItems(items, 'topic').filter((r) => r.n >= 3);
+  const conc = tops.slice().sort((a, b) => (b.wrong + b.flag) - (a.wrong + a.flag))[0];
+  if (conc && conc.wrong + conc.flag >= 2) {
+    out.push(`<b>${esc(conc.subject)} · ${esc(conc.name)}</b>에 오답 ${conc.wrong} · 마킹 ${conc.flag}이 몰렸어요`);
+  }
+  const skipped = items.filter((i) => i.skip).length;
+  if (skipped) out.push(`미응답 <b>${skipped}문항</b>. 시간 배분만 잡아도 바로 오를 구간이에요`);
+  const timed = items.filter((i) => i.time > 0);
+  if (timed.length >= 5) {
+    const avg = timed.reduce((s, i) => s + i.time, 0) / timed.length;
+    const long = timed.filter((i) => i.time >= Math.max(90000, avg * 2)).length;
+    const rush = timed.filter((i) => i.wrong && i.time <= 15000).length;
+    const parts = [];
+    if (long) parts.push(`평균 ${Math.round(avg / 1000)}초보다 2배 넘게 걸린 문항 ${long}개`);
+    if (rush) parts.push(`15초 안에 틀린 문항 ${rush}개(성급한 오답)`);
+    if (parts.length) out.push(parts.join(' · '));
+  } else if (items.length) {
+    out.push('문항별 소요 시간은 다음 응시부터 함께 쌓여요');
+  }
+  return out;
+}
+
+function reviewQs(items) {
+  const byExam = new Map();
+  for (const it of items) {
+    if (!(it.wrong || it.skip || it.flag)) continue;
+    if (!byExam.has(it.eid)) byExam.set(it.eid, []);
+    byExam.get(it.eid).push(it.no);
+  }
+  return byExam;
+}
+
+/* ----- 공통 조각 ----- */
+function tabbarHTML(active) {
+  return `<nav class="tabbar"><div class="tabbar-inner">
+    <button class="tab ${active === 'home' ? 'on' : ''}" data-act="nav-home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M4 5.5h7v6H4zM13 5.5h7v6h-7zM4 13.5h7v5H4zM13 13.5h7v5h-7z"/></svg>
+      <span>문제은행</span></button>
+    <button class="tab ${active === 'etc' ? 'on' : ''}" data-act="nav-etc">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/></svg>
+      <span>기타</span></button>
+  </div></nav>`;
+}
+
+function etcHTML() {
+  const stats = (INDEX?.exams || []).length;
+  const submitted = (INDEX?.exams || []).filter((e) => store.sessions?.[e.exam_id]?.submitted).length;
+  return `
+  <div class="etc-head">
+    <div class="home-title">기타</div>
+    <div class="home-sub">분석 도구와 기록 관리</div>
+  </div>
+  <div class="section-label">분석</div>
+  <button class="etc-row primary" data-act="open-analysis">
+    <span class="ic brand">${ICON.grid}</span>
+    <span class="tx"><b>토픽·약점 분석</b><small>내 풀이 기록과 다른 시험의 문항별 분석표로 약한 과목·단원 찾기</small></span>
+    <span class="ar">${ICON.chevronRight}</span>
+  </button>
+  <div class="section-label">기록</div>
+  <button class="etc-row" data-act="open-sync">
+    <span class="ic">${ICON.sync}</span>
+    <span class="tx"><b>기기 간 동기화</b><small>Gist 연결 · JSON 백업/가져오기</small></span>
+    <span class="ar">${ICON.chevronRight}</span>
+  </button>
+  <div class="etc-row static">
+    <span class="ic">${ICON.page}</span>
+    <span class="tx"><b>문제은행</b><small>자체 2차 임종평 ${stats}회 · 640문항 · 제출 ${submitted}회</small></span>
+  </div>
+  <div class="etc-foot">
+    문항의 과목·단원은 지문 키워드로 자동 분류한 값이에요. 분석 화면에서 문항별로 고칠 수 있고, 고친 값은 이 기기(동기화하면 다른 기기)에 저장됩니다.
+  </div>
+  ${tabbarHTML('etc')}`;
+}
+
+/* ----- 분석 화면 ----- */
+function analysisHTML() {
+  const tab = ui.analysisTab;
+  return `
+  <div class="an-head">
+    <button class="back-btn" data-act="etc-back" aria-label="뒤로">${ICON.back}</button>
+    <div><div class="an-title">토픽·약점 분석</div><div class="an-sub">내 기록과 외부 분석표</div></div>
+  </div>
+  <div class="seg">
+    <button class="seg-b ${tab === 'mine' ? 'on' : ''}" data-act="an-tab" data-t="mine">내 기록</button>
+    <button class="seg-b ${tab === 'paste' ? 'on' : ''}" data-act="an-tab" data-t="paste">분석표 붙여넣기</button>
+  </div>
+  ${tab === 'mine' ? analysisMineHTML() : analysisPasteHTML()}
+  ${tabbarHTML('etc')}`;
+}
+
+function analysisMineHTML() {
+  const scope = ui.analysisScope;
+  const { items, examRows, noKey } = analyzeMine(scope);
+  const chips = (INDEX?.exams || []).map((e) => {
+    const s = store.sessions?.[e.exam_id];
+    const done = !!s?.submitted;
+    const hasKey = Object.keys(store.answers?.[e.exam_id] || {}).length > 0 || Object.keys(store.edits?.[e.exam_id] || {}).some((k) => store.edits[e.exam_id][k]?.answer);
+    return `<button class="chip ${scope === e.exam_id ? 'on' : ''} ${done ? '' : 'dim'}" data-act="an-scope" data-scope="${e.exam_id}">${e.year} ${e.course}교시${done ? '' : ' · 미응시'}${done && !hasKey ? ' · 정답없음' : ''}</button>`;
+  }).join('');
+  const head = `
+  <div class="chips" style="padding-left:14px; padding-right:14px">
+    <button class="chip ${scope === 'all' ? 'on' : ''}" data-act="an-scope" data-scope="all">전체</button>
+    ${chips}
+  </div>`;
+
+  if (!items.length) {
+    return `${head}
+    <div class="an-card">
+      <div class="emptystate" style="padding:22px 8px">
+        ${examRows.length ? '아직 분석할 기록이 없어요.' : '제출한 시험이 없어요.'}<br>
+        <small style="font-size:12.5px">시험을 풀고 제출하면 과목·단원별 정답률이 여기에 쌓입니다.<br>정답을 입력한 시험만 채점 대상에 들어가요.</small>
+      </div>
+      <button class="btn btn-soft btn-block" data-act="an-tab" data-t="paste">다른 시험 분석표 붙여넣기</button>
+    </div>`;
+  }
+
+  const correct = items.filter((i) => i.ok).length;
+  const wrong = items.filter((i) => i.wrong).length;
+  const skip = items.filter((i) => i.skip).length;
+  const flag = items.filter((i) => i.flag).length;
+  const rate = Math.round((correct / items.length) * 100);
+  const rows = aggItems(items, ui.analysisLevel);
+  const hl = weakHighlights(items);
+
+  const summary = `
+  <div class="an-card">
+    <div class="an-sum-top"><span>채점 ${items.length}문항</span><span class="an-rate ${rateClass(rate)}">${rate}%</span></div>
+    <div class="anbar big"><i class="${rateClass(rate)}" style="width:${rate}%"></i></div>
+    <div class="an-stats">
+      <div><b>${correct}</b><span>정답</span></div>
+      <div><b class="bad">${wrong}</b><span>오답</span></div>
+      <div><b class="star">${flag}</b><span>마킹</span></div>
+      <div><b class="muted">${skip}</b><span>미응답</span></div>
+    </div>
+    ${noKey.length ? `<div class="an-note">정답이 입력되지 않아 빠진 시험: ${noKey.map((id) => esc(examShort(id))).join(', ')}</div>` : ''}
+  </div>`;
+
+  const hlHTML = hl.length ? `<div class="an-card hl"><div class="hl-title">약점 하이라이트</div><ul>${hl.map((x) => `<li>${x}</li>`).join('')}</ul></div>` : '';
+
+  const seg = `<div class="an-toggle">
+    <button class="${ui.analysisLevel === 'subject' ? 'on' : ''}" data-act="an-level" data-l="subject">과목별</button>
+    <button class="${ui.analysisLevel === 'topic' ? 'on' : ''}" data-act="an-level" data-l="topic">단원별</button>
+    <span class="an-hint">정답률 낮은 순</span>
+  </div>`;
+
+  const rowHTML = rows.map((r) => {
+    const key = `${ui.analysisLevel}:${r.key}`;
+    const open = !!ui.analysisOpen[key];
+    const groups = open ? reviewQs(r.qs) : new Map();
+    const more = open ? `<div class="anrow-more">
+      ${groups.size ? Array.from(groups.entries()).map(([eid, nos]) => `
+        <div class="an-group">
+          <div class="an-group-top"><span>${esc(examShort(eid))}</span>
+            <button class="link-btn" data-act="topic-edit-open" data-exam="${eid}" data-no="${nos[0]}">분류 수정</button>
+            <button class="btn btn-primary btn-sm" data-act="quiz" data-exam="${eid}" data-nos="${nos.join(',')}" data-label="${esc(r.subject)} ${esc(r.name)}">복습 ${nos.length}</button></div>
+          <div class="qchips">${nos.map((n) => `<button class="qchip ${r.qs.find((q) => q.eid === eid && q.no === n)?.wrong ? 'bad' : ''}" data-act="jumpq" data-exam="${eid}" data-no="${n}">${n}</button>`).join('')}</div>
+        </div>`).join('') : '<div class="an-note">복습할 문항이 없어요.</div>'}
+    </div>` : '';
+    return `<div class="anrow">
+      <button class="anrow-main" data-act="an-open" data-key="${esc(key)}">
+        <div class="anrow-top">
+          <span class="anrow-name">${ui.analysisLevel === 'topic' ? `<small>${esc(r.subject)}</small> ` : ''}${esc(r.name)}</span>
+          <span class="an-rate ${rateClass(r.rate)}">${r.rate}%</span>
+        </div>
+        <div class="anbar"><i class="${rateClass(r.rate)}" style="width:${r.rate}%"></i></div>
+        <div class="anrow-meta"><span>${r.n}문항</span><span>정답 ${r.correct}</span><span class="bad">오답 ${r.wrong}</span><span class="star">마킹 ${r.flag}</span>${r.skip ? `<span>미응답 ${r.skip}</span>` : ''}</div>
+      </button>
+      ${more}
+    </div>`;
+  }).join('');
+
+  return `${head}${summary}${hlHTML}${seg}<div class="an-list">${rowHTML}</div>
+  <div class="an-tools">
+    <button class="link-btn" data-act="topic-edit-open">문항 과목·단원 수정</button>
+  </div>`;
+}
+
+/* ----- 외부 문항별 분석표 ----- */
+const SUBJECT_ALIAS = {
+  '의료법규': '의료법규', '법규': '의료법규', '의료법': '의료법규', '보건의약법규': '의료법규',
+  '예방의학': '예방의학', '예방': '예방의학',
+  '내과': '내과', '내과학': '내과',
+  '산부인과': '산부인과', '산과': '산부인과', '부인과': '산부인과',
+  '소아과': '소아과', '소아청소년과': '소아과', '소아': '소아과',
+  '외과': '외과', '일반외과': '외과',
+  '정신과': '정신의학', '정신건강의학과': '정신의학', '정신의학': '정신의학',
+  '신경과': '신경과', '신경외과': '신경외과',
+  '피부과': '피부과', '이비인후과': '이비인후과', '안과': '안과',
+  '비뇨의학과': '비뇨의학과', '비뇨기과': '비뇨의학과',
+  '정형외과': '정형외과', '응급의학과': '응급의학', '응급의학': '응급의학',
+  '마취통증의학과': '마취·중환자', '마취과': '마취·중환자',
+  '가정의학과': '가정의학', '영상의학과': '영상의학', '병리과': '병리·검사',
+};
+
+function toSec(tok) {
+  let m;
+  if ((m = tok.match(/^(\d+):(\d{1,2})$/))) return +m[1] * 60 + +m[2];
+  if ((m = tok.match(/^(\d+)\s*분\s*(\d+)?\s*초?$/))) return +m[1] * 60 + (+m[2] || 0);
+  if ((m = tok.match(/^(\d+)\s*초$/))) return +m[1];
+  if ((m = tok.match(/^(\d+)\s*분$/))) return +m[1] * 60;
+  return null;
+}
+
+function parsePasteLine(toks) {
+  let no = null, ok = null, pct = null, rest = [];
+  const times = [];
+  for (const raw of toks) {
+    const t = String(raw).replace(/,/g, '').trim();
+    if (!t) continue;
+    const noMatch = t.match(/^(\d{1,3})\s*(번|\.|\))?$/);
+    if (no === null && noMatch && +noMatch[1] >= 1 && +noMatch[1] <= 300 && times.length === 0 && pct === null && ok === null) { no = +noMatch[1]; continue; }
+    if (ok === null) {
+      if (['O', '○', '◯', '✓', '✔', 'V', '정답', '맞음', '정'].includes(t.toUpperCase())) { ok = true; continue; }
+      if (['X', '×', '✗', '✘', '오답', '틀림', '틀'].includes(t.toUpperCase())) { ok = false; continue; }
+    }
+    const sec = toSec(t);
+    if (sec !== null && times.length < 2) { times.push(sec); continue; }
+    if (ok !== null && times.length < 2 && rest.length === 0 && /^\d{1,3}$/.test(t) && +t <= 600) { times.push(+t); continue; }
+    if (pct === null && /^\d{1,3}(\.\d+)?%$/.test(t)) { pct = parseFloat(t); continue; }
+    if (pct === null && times.length >= 1 && rest.length === 0 && /^\d{1,3}(\.\d+)?$/.test(t) && +t <= 100) { pct = +t; continue; }
+    rest.push(t);
+  }
+  if (no === null || ok === null) return null;
+  let subject = '기타', topic = '';
+  if (rest.length) {
+    subject = SUBJECT_ALIAS[rest[0]] || rest[0];
+    topic = rest.slice(1).join(' ');
+  }
+  return { no, ok, mySec: times[0] ?? 0, avgSec: times[1] ?? 0, pct: pct == null ? null : pct, subject, topic };
+}
+
+function parsePasteVertical(raw) {
+  const cells = String(raw || '').replace(/\r/g, '').split(/\n|\t/).map((t) => t.trim()).filter(Boolean)
+    .filter((t) => !/^[?★☆✎🔖]+$/.test(t));
+  const rows = [];
+  for (let i = 0; i < cells.length; i++) {
+    if (!/^\d{1,3}$/.test(cells[i])) continue;
+    const r = parsePasteLine(cells.slice(i, i + 7));
+    if (r) rows.push(r);
+  }
+  return rows;
+}
+
+function parsePaste(raw) {
+  const lines = String(raw || '').replace(/\r/g, '').split('\n');
+  let rows = [];
+  let skipped = 0;
+  for (let line of lines) {
+    line = line.trim();
+    if (!line) continue;
+    if (!/^\d/.test(line) && (/번호|결과|정답률|평균\s*시간|과목|단원/.test(line) || /(^|[,\t])\s*(no|ok|pct|avg|subject|topic)\s*([,\t]|$)/i.test(line))) continue;
+    let toks;
+    if (line.includes('\t')) toks = line.split('\t');
+    else if ((line.match(/,/g) || []).length >= 4) toks = line.split(',');
+    else toks = line.split(/\s{2,}|\s+/);
+    toks = toks.map((t) => t.trim()).filter(Boolean).filter((t) => !/^[?★☆✎🔖]+$/.test(t));
+    const row = parsePasteLine(toks);
+    if (row) rows.push(row); else skipped++;
+  }
+  if (!rows.length) {
+    const vertical = parsePasteVertical(raw);
+    if (vertical.length) rows = vertical;
+  }
+  const seen = new Set();
+  const out = [];
+  for (const r of rows) { if (seen.has(r.no)) continue; seen.add(r.no); out.push(r); }
+  out.sort((a, b) => a.no - b.no);
+  return { rows: out, skipped };
+}
+
+function groupPaste(rows, key) {
+  const map = new Map();
+  for (const r of rows) {
+    const k = key === 'subject' ? r.subject : `${r.subject}|${r.topic || '단원 미기재'}`;
+    let g = map.get(k);
+    if (!g) { g = { key: k, name: r.subject, subject: r.subject, topic: r.topic || '단원 미기재', n: 0, correct: 0, wrong: 0, zero: 0, pcts: [], rows: [] }; map.set(k, g); }
+    g.n++;
+    if (r.ok) g.correct++;
+    else { g.wrong++; if (!r.mySec) g.zero++; }
+    if (r.pct != null) g.pcts.push(r.pct);
+    g.rows.push(r);
+  }
+  const out = Array.from(map.values());
+  out.forEach((g) => {
+    g.rate = g.n ? Math.round((g.correct / g.n) * 100) : 0;
+    g.expected = g.pcts.length ? Math.round(g.pcts.reduce((s, v) => s + v, 0) / g.pcts.length) : null;
+    g.gap = g.expected == null ? null : g.rate - g.expected;
+  });
+  return out;
+}
+
+function analysisPasteHTML() {
+  const rows = ui.pasteRows || [];
+  const saved = store.analyses || [];
+  const savedHTML = saved.length ? `<div class="saved-wrap">
+    <div class="an-note" style="margin:0 0 6px">저장된 분석</div>
+    <div class="saved-list">${saved.map((a) => `<span class="saved-chip ${ui.pasteSavedId === a.id ? 'on' : ''}">
+      <button data-act="paste-load" data-id="${a.id}">${esc(a.name || '분석표')} <small>${new Date(a.savedAt).toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}</small></button>
+      <button class="x" data-act="paste-del" data-id="${a.id}" aria-label="삭제">×</button></span>`).join('')}</div>
+  </div>` : '';
+
+  const input = `
+  <div class="an-card">
+    <div class="field" style="margin-bottom:10px"><label>분석표 붙여넣기</label>
+      <textarea id="pasteBox" rows="7" placeholder="번호  결과  내 시간  평균 시간  정답률  과목  단원&#10;1  O  28초  17초  64.2%  의료법규  혈액관리법&#10;2  X  8초  15초  56.2%  의료법규  감염병의 예방 및 관리">${esc(ui.pasteText || '')}</textarea>
+    </div>
+    <div class="field" style="margin-bottom:10px"><label>이름 (선택)</label>
+      <input type="text" id="pasteName" value="${esc(ui.pasteName || '')}" placeholder="예: 9월 전국 모의고사">
+    </div>
+    <button class="btn btn-primary btn-block" data-act="paste-run">분석하기</button>
+    <div class="hint">시험 사이트의 문항별 분석 표를 그대로 복사해 붙여넣으면 됩니다. 탭·쉼표·공백으로 나뉜 줄을 모두 읽고, O/X·내 시간·평균 시간·정답률·과목·단원을 찾아냅니다.</div>
+  </div>`;
+
+  if (!rows.length) {
+    return `<div class="an-card" style="padding:0; background:none; border:0; box-shadow:none">${savedHTML}${input}</div>
+      ${ui.pasteSkipped ? `<div class="an-note" style="padding:0 16px">${ui.pasteSkipped}줄은 형식을 읽지 못했어요. 번호·O/X·시간이 한 줄에 있는지 확인해 주세요.</div>` : ''}`;
+  }
+  return renderPasteResult(rows, savedHTML, input);
+}
+
+function renderPasteResult(rows, savedHTML, input) {
+  const n = rows.length;
+  const correct = rows.filter((r) => r.ok).length;
+  const wrong = n - correct;
+  const zero = rows.filter((r) => !r.ok && !r.mySec).length;
+  const rate = n ? Math.round((correct / n) * 100) : 0;
+  const accExcl = n - zero > 0 ? Math.round((correct / (n - zero)) * 100) : null;
+  const pcts = rows.map((r) => r.pct).filter((v) => v != null);
+  const expected = pcts.length ? Math.round(pcts.reduce((s, v) => s + v, 0) / pcts.length) : null;
+  const avgTime = (() => { const v = rows.map((r) => r.mySec).filter((x) => x > 0); return v.length ? Math.round(v.reduce((s, x) => s + x, 0) / v.length) : 0; })();
+
+  const subs = groupPaste(rows, 'subject').sort((a, b) => a.rate - b.rate || b.n - a.n);
+  const tops = groupPaste(rows, 'topic').filter((g) => g.n >= 3).sort((a, b) => a.rate - b.rate || b.n - a.n);
+  const hardWrong = rows.filter((r) => !r.ok && r.pct != null && r.pct >= 60).sort((a, b) => b.pct - a.pct);
+  const zeroRows = rows.filter((r) => !r.ok && !r.mySec);
+  const rush = rows.filter((r) => !r.ok && r.mySec > 0 && r.avgSec > 0 && r.mySec <= Math.max(5, Math.round(r.avgSec * 0.4)));
+  const slow = rows.filter((r) => r.mySec >= Math.max(60, r.avgSec * 2)).sort((a, b) => b.mySec - a.mySec);
+
+  const hl = [];
+  if (subs.length) {
+    const w = subs[0];
+    hl.push(`<b>${esc(w.name)}</b>가 가장 약해요. ${w.n}문항 중 ${w.correct}개 정답 (${w.rate}%)${w.expected != null ? ` · 기대 ${w.expected}%` : ''}`);
+  }
+  if (zero) hl.push(`0초 문항 <b>${zero}개</b>${accExcl != null ? ` · 0초를 빼면 정답률 ${accExcl}%` : ''}`);
+  if (hardWrong.length) hl.push(`정답률 60% 이상인데 틀린 문항 <b>${hardWrong.length}개</b>. 아깝게 놓친 부분이에요`);
+  if (rush.length) hl.push(`평균보다 훨씬 빨리(5초 이내) 틀린 문항 <b>${rush.length}개</b>. 성급한 오답 패턴이에요`);
+  if (slow.length) hl.push(`평균의 2배 넘게 걸린 문항 <b>${slow.length}개</b>${slow[0] ? ` · 최장 ${slow[0].no}번 ${slow[0].mySec}초` : ''}`);
+
+  const sum = `
+  <div class="an-card">
+    <div class="an-sum-top"><span>${esc(ui.pasteName || '붙여넣은 분석표')} · ${n}문항</span><span class="an-rate ${rateClass(rate)}">${rate}%</span></div>
+    <div class="anbar big"><i class="${rateClass(rate)}" style="width:${rate}%"></i></div>
+    <div class="an-stats">
+      <div><b>${correct}</b><span>정답</span></div>
+      <div><b class="bad">${wrong}</b><span>오답</span></div>
+      <div><b class="muted">${zero}</b><span>0초</span></div>
+      <div><b>${expected != null ? expected + '%' : '-'}</b><span>평균 정답률</span></div>
+    </div>
+    <div class="an-note">내 평균 풀이 ${avgTime}초${expected != null ? ` · 문항 평균 정답률 ${expected}%` : ''}${accExcl != null && zero ? ` · 0초 제외 정답률 ${accExcl}%` : ''}</div>
+  </div>`;
+
+  const barRow = (g) => `<div class="anrow">
+    <div class="anrow-main static">
+      <div class="anrow-top"><span class="anrow-name">${esc(g.name)}${g.topic && g.topic !== '단원 미기재' ? `<small> ${esc(g.topic)}</small>` : ''}</span><span class="an-rate ${rateClass(g.rate)}">${g.rate}%</span></div>
+      <div class="anbar"><i class="${rateClass(g.rate)}" style="width:${g.rate}%"></i></div>
+      <div class="anrow-meta"><span>${g.n}문항</span><span class="bad">오답 ${g.wrong}</span>${g.zero ? `<span>0초 ${g.zero}</span>` : ''}${g.expected != null ? `<span>기대 ${g.expected}%</span>` : ''}${g.gap != null ? `<span class="${g.gap < 0 ? 'bad' : 'ok'}">${g.gap > 0 ? '+' : ''}${g.gap}%p</span>` : ''}</div>
+    </div></div>`;
+
+  const listBlock = (title, list, render) => `<div class="an-card">
+    <div class="an-block-title">${title}<span>${list.length}</span></div>
+    ${list.length ? list.map(render).join('') : '<div class="an-note" style="margin:0">해당 문항이 없어요.</div>'}
+  </div>`;
+  const qline = (r, extra) => `<div class="qline"><b>${r.no}번</b><span>${esc(r.subject)}${r.topic ? ` · ${esc(r.topic)}` : ''}</span>${extra}</div>`;
+
+  const copyText = () => {
+    const lines = hardWrong.length ? hardWrong : rows.filter((r) => !r.ok);
+    return lines.map((r) => `${r.no}. ${r.subject}${r.topic ? ' / ' + r.topic : ''} — 정답률 ${r.pct != null ? r.pct + '%' : '?'}, 내 ${r.mySec}초 / 평균 ${r.avgSec}초`).join('\n');
+  };
+
+  return `${savedHTML}
+  ${sum}
+  <div class="an-card hl"><div class="hl-title">약점 하이라이트</div><ul>${hl.map((x) => `<li>${x}</li>`).join('')}</ul></div>
+  <div class="an-card"><div class="an-block-title">과목별 정답률<span>${subs.length}</span></div>${subs.map(barRow).join('')}</div>
+  ${tops.length ? `<div class="an-card"><div class="an-block-title">약한 단원 TOP ${Math.min(5, tops.length)}<span>3문항 이상</span></div>${tops.slice(0, 5).map(barRow).join('')}</div>` : ''}
+  ${listBlock('정답률 60% 이상인데 틀린 문항', hardWrong, (r) => qline(r, `<span class="qmeta">정답률 <b>${r.pct}%</b> · 내 ${r.mySec}초</span>`))}
+  ${listBlock('0초 문항', zeroRows, (r) => qline(r, `<span class="qmeta">정답률 ${r.pct != null ? r.pct + '%' : '?'} · 평균 ${r.avgSec}초</span>`))}
+  ${listBlock('성급한 오답 (평균보다 훨씬 빠름)', rush, (r) => qline(r, `<span class="qmeta">내 ${r.mySec}초 / 평균 ${r.avgSec}초</span>`))}
+  ${listBlock('시간이 오래 걸린 문항', slow.slice(0, 12), (r) => qline(r, `<span class="qmeta">내 ${r.mySec}초 / 평균 ${r.avgSec}초${r.ok ? '' : ' · 오답'}</span>`))}
+  <div class="an-tools">
+    <button class="link-btn" data-act="paste-copy">틀린 문항 목록 복사</button>
+    <button class="link-btn" data-act="paste-edit">분석표 다시 붙여넣기</button>
+    <button class="link-btn muted" data-act="paste-clear">지우기</button>
+  </div>
+  ${input.replace('분석하기', '다시 분석하기')}`;
+}
+
+/* ----- 미니 퀴즈 진입 ----- */
+async function startQuiz(examId, nos, label) {
+  const list = (nos || []).filter((n) => Number.isFinite(Number(n))).map(Number);
+  if (!list.length) { toast('복습할 문항이 없어요'); return; }
+  const exam = await getExam(examId);
+  if (!exam) return;
+  const prev = ui.session;
+  if (prev && !ui.isMini) { flushQTime(); commitElapsed(prev); prev.updatedAt = now(); saveStore(true); }
+  ui.exam = exam;
+  ui.examId = examId;
+  ui.isMini = true;
+  ui.quizLabel = label || '';
+  ui.cameFromAnalysis = true;
+  ui.session = newSession();
+  ui.order = list;
+  ui.idx = 0;
+  ui.limitMs = Math.max(60 * 1000, Math.round((EXAM_LIMIT_MS * list.length) / (exam.question_count || 80)));
+  ui.omrFilter = 'all';
+  ui.view = 'exam';
+  render();
+  toast(`${label ? label + ' · ' : ''}${list.length}문항 복습을 시작해요`, 2800);
+}
+async function openExamAt(examId, no) {
+  await openExam(examId, { fresh: false });
+  const i = ui.order.indexOf(Number(no));
+  if (i >= 0) goTo(i);
+}
+
+function openTopicEdit() {
+  const exams = INDEX?.exams || [];
+  const eid = ui.topicEditExam || (ui.analysisScope !== 'all' ? ui.analysisScope : (ui.examId || exams[0]?.exam_id));
+  const exam = EXAM_CACHE[eid];
+  const max = exam?.question_count || 80;
+  const no = ui.topicEditNo || 1;
+  const tt = topicOf(eid, no);
+  const body = `
+    <div class="row2">
+      <div class="field"><label>시험</label><select id="teExam">${exams.map((e) => `<option value="${e.exam_id}" ${e.exam_id === eid ? 'selected' : ''}>${e.year} ${e.course}교시</option>`).join('')}</select></div>
+      <div class="field"><label>문항 번호</label><input type="text" id="teNo" value="${no}" inputmode="numeric"></div>
+    </div>
+    <div class="field"><label>과목</label><input type="text" id="teSubject" value="${esc(tt.s)}" placeholder="예: 내과"></div>
+    <div class="field"><label>단원·토픽</label><input type="text" id="teTopic" value="${esc(tt.t)}" placeholder="예: 내분비"></div>
+    <div class="hint">자동 분류가 틀렸을 때 고쳐 주세요. 저장한 값은 이 기기에 남고, 기기 간 동기화에도 함께 실립니다.</div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" data-act="topic-edit-reset">자동 분류로 되돌리기</button>
+      <button class="btn btn-primary" data-act="topic-edit-save">저장</button>
+    </div>`;
+  openModal(modalShell('문항 과목·단원 수정', body));
+  $('#teExam').addEventListener('change', (e) => { ui.topicEditExam = e.target.value; ui.topicEditNo = 1; openTopicEdit(); });
+}
+
+
+/* ----- 기타/분석 진입과 동작 ----- */
+function hasMineData() {
+  return (INDEX?.exams || []).some((e) => {
+    const s = store.sessions?.[e.exam_id];
+    if (!s?.submitted) return false;
+    return Object.keys(store.answers?.[e.exam_id] || {}).length > 0 || Object.keys(store.edits?.[e.exam_id] || {}).some((k) => store.edits[e.exam_id][k]?.answer);
+  });
+}
+function openEtc() {
+  if (ui.session && !ui.isMini) {
+    flushQTime();
+    commitElapsed(ui.session);
+    ui.session.updatedAt = now();
+    saveStore(true);
+  }
+  ui.view = 'etc';
+  ui.session = null;
+  ui.result = null;
+  ui.isMini = false;
+  ui.cameFromAnalysis = false;
+  try { history.pushState({ ml: 1 }, ''); } catch (e) {}
+  render();
+  window.scrollTo(0, 0);
+}
+async function openAnalysis() {
+  if (ui.session && !ui.isMini) {
+    flushQTime();
+    commitElapsed(ui.session);
+    ui.session.updatedAt = now();
+    saveStore(true);
+  }
+  await getTopics();
+  if (ui.analysisTab === 'mine' && !ui.pasteRows && !hasMineData()) ui.analysisTab = 'paste';
+  ui.view = 'analysis';
+  try { history.pushState({ ml: 1 }, ''); } catch (e) {}
+  render();
+  window.scrollTo(0, 0);
+}
+function runPaste() {
+  const text = $('#pasteBox')?.value || '';
+  const name = ($('#pasteName')?.value || '').trim();
+  if (!text.trim()) { toast('분석표를 붙여넣어 주세요'); return; }
+  const { rows, skipped } = parsePaste(text);
+  ui.pasteText = text;
+  ui.pasteName = name;
+  ui.pasteRows = rows;
+  ui.pasteSkipped = skipped;
+  if (!rows.length) {
+    toast('표를 읽지 못했어요. 번호·O/X·시간이 한 줄에 있는지 확인해 주세요.', 4200);
+    render();
+    return;
+  }
+  savePasteAnalysis(name || '분석표', text);
+  toast(`${rows.length}문항을 분석했어요`, 2400);
+  render();
+  window.scrollTo(0, 0);
+}
+function savePasteAnalysis(name, text) {
+  const id = 'a' + now();
+  const list = (store.analyses || []).filter((a) => a.text !== text);
+  list.unshift({ id, name, savedAt: now(), text });
+  store.analyses = list.slice(0, 6);
+  ui.pasteSavedId = id;
+  saveStore(true);
+}
+function loadPaste(id) {
+  const a = (store.analyses || []).find((x) => x.id === id);
+  if (!a) return;
+  ui.pasteText = a.text;
+  ui.pasteName = a.name === '분석표' ? '' : a.name;
+  const { rows, skipped } = parsePaste(a.text);
+  ui.pasteRows = rows;
+  ui.pasteSkipped = skipped;
+  ui.pasteSavedId = id;
+  render();
+  window.scrollTo(0, 0);
+}
+function delPaste(id) {
+  store.analyses = (store.analyses || []).filter((a) => a.id !== id);
+  if (ui.pasteSavedId === id) { ui.pasteSavedId = null; }
+  saveStore(true);
+  render();
+  toast('저장한 분석을 지웠어요');
+}
+async function copyPasteList() {
+  const rows = (ui.pasteRows || []).filter((r) => !r.ok);
+  if (!rows.length) { toast('틀린 문항이 없어요'); return; }
+  const text = rows.map((r) => `${r.no}. ${r.subject}${r.topic ? ' / ' + r.topic : ''} — 정답률 ${r.pct != null ? r.pct + '%' : '?'}, 내 ${r.mySec}초 / 평균 ${r.avgSec}초`).join('\n');
+  const ok = await copyText(text);
+  toast(ok ? '틀린 문항 목록을 복사했어요' : '복사에 실패했어요', 2800);
+}
+function saveTopicEdit() {
+  const eid = $('#teExam')?.value;
+  const no = Number($('#teNo')?.value);
+  const subject = ($('#teSubject')?.value || '').trim();
+  const topic = ($('#teTopic')?.value || '').trim();
+  const max = (INDEX?.exams || []).find((e) => e.exam_id === eid)?.question_count || 80;
+  if (!eid || !(no >= 1 && no <= max)) { toast(`문항 번호는 1~${max} 사이로 넣어 주세요`); return; }
+  if (!subject || !topic) { toast('과목과 단원을 모두 넣어 주세요'); return; }
+  const box = (store.topicEdits[eid] = store.topicEdits[eid] || {});
+  box[no] = { s: subject, t: topic, updatedAt: now() };
+  saveStore(true);
+  closeModal();
+  ui.topicEditExam = eid;
+  ui.topicEditNo = no;
+  if (ui.view === 'analysis') render();
+  toast(`${no}번을 ${subject} · ${topic}(으)로 저장했어요`, 2800);
+}
+function resetTopicEdit() {
+  const eid = $('#teExam')?.value;
+  const no = Number($('#teNo')?.value);
+  if (store.topicEdits?.[eid]) delete store.topicEdits[eid][no];
+  saveStore(true);
+  closeModal();
+  ui.topicEditExam = eid;
+  ui.topicEditNo = no;
+  if (ui.view === 'analysis') render();
+  toast('자동 분류 값으로 되돌렸어요');
+}
+
 /* ---------------- 이벤트 ---------------- */
 document.addEventListener('click', async (e) => {
   const el = e.target.closest('[data-act]');
@@ -1347,6 +2066,25 @@ document.addEventListener('click', async (e) => {
   switch (act) {
     case 'reload': location.reload(); break;
     case 'home': ui.view = 'home'; ui.result = null; ui.session = null; ui.isMini = false; render(); break;
+    case 'nav-home': goHome(); break;
+    case 'nav-etc': openEtc(); break;
+    case 'etc-back': openEtc(); break;
+    case 'open-analysis': await openAnalysis(); break;
+    case 'an-tab': ui.analysisTab = el.dataset.t; render(); break;
+    case 'an-scope': ui.analysisScope = el.dataset.scope; ui.analysisOpen = {}; render(); break;
+    case 'an-level': ui.analysisLevel = el.dataset.l; ui.analysisOpen = {}; render(); break;
+    case 'an-open': { const k = el.dataset.key; ui.analysisOpen[k] = !ui.analysisOpen[k]; render(); break; }
+    case 'quiz': await startQuiz(el.dataset.exam, (el.dataset.nos || '').split(',').map(Number), el.dataset.label); break;
+    case 'jumpq': await openExamAt(el.dataset.exam, Number(el.dataset.no)); break;
+    case 'paste-run': runPaste(); break;
+    case 'paste-load': loadPaste(el.dataset.id); break;
+    case 'paste-del': delPaste(el.dataset.id); break;
+    case 'paste-clear': ui.pasteText = ''; ui.pasteName = ''; ui.pasteRows = null; ui.pasteSkipped = 0; ui.pasteSavedId = null; render(); break;
+    case 'paste-edit': { const b = $('#pasteBox'); if (b) { b.scrollIntoView({ block: 'center' }); b.focus(); } break; }
+    case 'paste-copy': await copyPasteList(); break;
+    case 'topic-edit-open': ui.topicEditExam = el.dataset.exam || null; ui.topicEditNo = Number(el.dataset.no) || 1; openTopicEdit(); break;
+    case 'topic-edit-save': saveTopicEdit(); break;
+    case 'topic-edit-reset': resetTopicEdit(); break;
     case 'year': ui.filterYear = el.dataset.year; render(); break;
 
     case 'start': {
@@ -1363,7 +2101,15 @@ document.addEventListener('click', async (e) => {
     case 'result': await openResult(examId); break;
 
     case 'back': {
-      if (ui.isMini && ui.cameFromResult) {
+      if (ui.isMini && ui.cameFromAnalysis) {
+        flushQTime();
+        ui.session = null;
+        ui.isMini = false;
+        ui.cameFromAnalysis = false;
+        ui.view = 'analysis';
+        render();
+        window.scrollTo(0, 0);
+      } else if (ui.isMini && ui.cameFromResult) {
         // 미니 퀴즈 도중 나가기
         const s = ui.session;
         commitElapsed(s);
@@ -1380,7 +2126,17 @@ document.addEventListener('click', async (e) => {
       }
       break;
     }
-    case 'back-result': goHome(); break;
+    case 'back-result':
+      if (ui.isMini && ui.cameFromAnalysis) {
+        ui.result = null;
+        ui.session = null;
+        ui.isMini = false;
+        ui.cameFromAnalysis = false;
+        ui.view = 'analysis';
+        render();
+        window.scrollTo(0, 0);
+      } else goHome();
+      break;
     case 'mini-back':
       if (ui.result?.cameFromMini) {
         ui.result = ui.result.cameFromMini;
@@ -1535,16 +2291,18 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('visibilitychange', () => {
   if (!ui.session || ui.isMini) return;
   if (document.hidden) {
+    flushQTime();
     if (ui.session.running) { commitElapsed(ui.session); ui.session.running = false; ui.session._wasRunning = true; ui.session.updatedAt = now(); saveStore(true); }
   } else if (ui.session._wasRunning) {
     ui.session.running = true;
     ui.session.lastTs = now();
     ui.session._wasRunning = false;
+    ui.qStart = now();
     updateTimerUI();
   }
 });
 window.addEventListener('pagehide', () => {
-  if (ui.session && !ui.isMini) { commitElapsed(ui.session); ui.session.updatedAt = now(); saveStore(true); }
+  if (ui.session && !ui.isMini) { flushQTime(); commitElapsed(ui.session); ui.session.updatedAt = now(); saveStore(true); }
 });
 window.addEventListener('popstate', () => {
   if (ui.view !== 'home') goHome();
@@ -1552,6 +2310,7 @@ window.addEventListener('popstate', () => {
 
 function goHome() {
   if (ui.session && !ui.isMini) {
+    flushQTime();
     commitElapsed(ui.session);
     ui.session.updatedAt = now();
     saveStore(true);
@@ -1561,16 +2320,20 @@ function goHome() {
   ui.result = null;
   ui.isMini = false;
   ui.cameFromResult = null;
+  ui.quizLabel = '';
   render();
 }
 
 /* ---------------- 시험 열기 / 결과 열기 ---------------- */
 async function openExam(examId, opts = {}) {
+  if (ui.session && !ui.isMini) { flushQTime(); commitElapsed(ui.session); ui.session.updatedAt = now(); }
   const exam = await getExam(examId);
   ui.exam = exam;
   ui.examId = examId;
   ui.isMini = false;
   ui.cameFromResult = null;
+  ui.quizLabel = '';
+  ui.cameFromAnalysis = false;
   let s = store.sessions[examId];
   if (!s || opts.fresh) {
     s = newSession();
@@ -1619,6 +2382,7 @@ async function boot() {
   screen.innerHTML = '<div class="loading-screen"><span class="spinner"></span><span>문제은행을 불러오는 중…</span></div>';
   try {
     await getIndex();
+    await getTopics();
     // 미리 로드: 카드에 점수·진행률 표시용
     await Promise.all((INDEX.exams || []).map((e) => getExam(e.exam_id).catch(() => null)));
   } catch (e) {
