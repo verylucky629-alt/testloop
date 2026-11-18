@@ -14,7 +14,10 @@
 
 - 25/30/50분 선택(기본 30분) · 시작·일시정지·이어서·리셋. 홈과 기타 탭에서 바로 조작.
 - 종료 시 Web Audio 비프음 + 브라우저 알림 + 약점/핵심 1문제 팝업(정답이 입력된 기록이 있으면 오답·미응답·마킹 문항 우선, 없으면 `data/topics.json`의 법규·예방의학·내분비 등 핵심 문항).
-- 설정에서 Push 서버 URL(Cloudflare Worker 등)과 VAPID 공개키를 넣으면 웹 푸시 구독을 준비한다. iOS는 홈 화면에 추가한 뒤(iOS 16.4+) 알림 수신.
+- 설정에서 Push 서버 URL(Cloudflare Worker 등)과 VAPID 공개키를 넣고 [푸시 구독 준비]를 누르면 `PushSubscription`을 만들어 그 URL로 POST한다.
+  - 앱이 보내는 본문: `{ "type": "subscribe", "subscription": { ... }, "tz": "Asia/Seoul" }`
+  - Worker는 구독을 저장해 두었다가 원하는 시각에 같은 구독으로 `{ title, body, url }` JSON을 Web Push로 보내면 `sw.js`의 `push` 리스너가 알림을 띄운다.
+  - iOS는 홈 화면에 추가한 뒤(iOS 16.4+)에만 웹 푸시를 받는다. Worker와 VAPID 키가 없어도 타이머·비프음·퀴즈 팝업은 그대로 동작한다.
 
 풀이 기록은 브라우저 localStorage(`munjeloop:v1`)에 저장되고, GitHub Gist 또는 JSON 파일로 기기 간 동기화한다.
 원본 PDF 파싱 결과는 `munjeloop_app/` 폴더 참고.
