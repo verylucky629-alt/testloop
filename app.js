@@ -2341,7 +2341,7 @@ function spartaFinish(silent) {
       if (d.sound) spartaBeep();
       try { if (navigator.vibrate) navigator.vibrate([120, 90, 160]); } catch (e) {}
       if (d.notify) spartaNotify(`${d.min}분 완료!`, `스파르타 ${d.rounds}교시 끝. 약점 1문제 바로 풀어요.`);
-      openSpartaQuiz();
+      openSpartaQuiz().catch(() => {});
     }
   } finally {
     spartaFinishing = false;
@@ -2489,16 +2489,18 @@ async function spartaPickQuestion() {
 }
 
 async function openSpartaQuiz() {
-  const pick = await spartaPickQuestion();
-  if (!pick) { toast('퀴즈로 낼 문항을 찾지 못했어요'); return; }
-  let exam = EXAM_CACHE[pick.eid];
-  if (!exam) {
-    try { exam = await getExam(pick.eid); } catch (e) { toast('문항을 불러오지 못했어요', 3200); return; }
+  try {
+    const pick = await spartaPickQuestion();
+    if (!pick) { toast('퀴즈로 낼 문항을 찾지 못했어요'); return; }
+    let exam = EXAM_CACHE[pick.eid];
+    if (!exam) exam = await getExam(pick.eid);
+    if (!exam || !exam.questions.some((q) => q.number === pick.no)) { toast('문항을 불러오지 못했어요', 3200); return; }
+    spartaSeen.push(`${pick.eid}:${pick.no}`);
+    spartaQuiz = { eid: pick.eid, no: pick.no, picked: null };
+    openModal(spartaQuizHTML());
+  } catch (e) {
+    toast('퀴즈를 띄우지 못했어요. 잠시 뒤 [퀴즈 미리보기]로 다시 시도해 주세요.', 4000);
   }
-  if (!exam.questions.some((q) => q.number === pick.no)) return;
-  spartaSeen.push(`${pick.eid}:${pick.no}`);
-  spartaQuiz = { eid: pick.eid, no: pick.no, picked: null };
-  openModal(spartaQuizHTML());
 }
 
 function spartaQuizHTML() {
