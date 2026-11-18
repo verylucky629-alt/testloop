@@ -1,6 +1,6 @@
 'use strict';
 /* ============================================================
-   문제루프 — 임종평 문제은행 (정적 웹앱)
+   문제 트레이너 — 임종평 문제은행 + 스파르타 타이머 (정적 웹앱)
    ============================================================ */
 
 const LS_KEY = 'munjeloop:v1';
@@ -31,6 +31,8 @@ const ICON = {
   play: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>',
   grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="6.5" height="6.5" rx="1.4"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.4"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.4"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.4"/></svg>',
   back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>',
+  gear: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.56V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1.1-1.56 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3.04V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.56 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51.91z"/></svg>',
+  timer: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2.5h6"/></svg>',
 };
 
 function fmtClock(ms) {
@@ -336,11 +338,12 @@ function render() {
     screen.innerHTML = homeHTML();
   }
   closeModal();
+  updateSpartaUI();
 }
 
 function homeHTML() {
   if (BOOT_ERROR) {
-    return `<div class="home-head"><div class="logo">${ICON.sync}</div><div><div class="home-title">문제루프</div></div></div>
+    return `<div class="home-head"><div class="logo">${ICON.sync}</div><div><div class="home-title">문제 트레이너</div></div></div>
       <div class="emptystate">문제은행을 불러오지 못했어요.<br><small>${esc(BOOT_ERROR)}</small><br><br><button class="btn btn-ghost btn-sm" data-act="reload">다시 시도</button></div>`;
   }
   const exams = INDEX?.exams || [];
@@ -365,12 +368,13 @@ function homeHTML() {
       </svg>
     </div>
     <div>
-      <div class="home-title">문제루프</div>
+      <div class="home-title">문제 트레이너</div>
       <div class="home-sub">자체 2차 임종평 8회 · 640문항</div>
     </div>
     <div class="head-spacer"></div>
     <button class="icon-btn" data-act="open-sync" aria-label="동기화">${ICON.sync}${syncOn ? '<span class="dot"></span>' : ''}</button>
   </div>
+  ${spartaCardHTML()}
   <div class="search-wrap">
     <div class="search">${ICON.search}<input id="searchInput" type="search" placeholder="시험 이름으로 찾기 (예: 2025 2교시)" value="${esc(ui.q)}" autocomplete="off"></div>
   </div>
@@ -1287,12 +1291,12 @@ async function gistPush(silent) {
     let res;
     if (id) {
       res = await gistAPI('PATCH', `/gists/${id}`, {
-        description: '문제루프 풀이 기록 (자동 생성)',
+        description: '문제 트레이너 풀이 기록 (자동 생성)',
         files: { 'munjeloop.json': { content } },
       }, token);
     } else {
       res = await gistAPI('POST', '/gists', {
-        description: '문제루프 풀이 기록 (자동 생성)',
+        description: '문제 트레이너 풀이 기록 (자동 생성)',
         public: false,
         files: { 'munjeloop.json': { content } },
       }, token);
@@ -1538,8 +1542,10 @@ function etcHTML() {
   return `
   <div class="etc-head">
     <div class="home-title">기타</div>
-    <div class="home-sub">분석 도구와 기록 관리</div>
+    <div class="home-sub">스파르타 타이머와 분석 도구</div>
   </div>
+  <div class="section-label">공부</div>
+  ${spartaCardHTML()}
   <div class="section-label">분석</div>
   <button class="etc-row primary" data-act="open-analysis">
     <span class="ic brand">${ICON.grid}</span>
@@ -2056,6 +2062,497 @@ function resetTopicEdit() {
   toast('자동 분류 값으로 되돌렸어요');
 }
 
+/* ============================================================
+   스파르타 타이머 · 종료 시 약점 1문제
+   ============================================================ */
+const SPARTA_PRESETS = [25, 30, 50];
+const SPARTA_DEFAULT_MIN = 30;
+const SPARTA_CORE = /의료법규|예방의학|내분비|감염|응급|중독|산과/;
+
+let spartaTickTimer = null;
+let spartaAudio = null;
+let spartaFinishing = false;
+let spartaSeen = [];
+let spartaQuiz = null;
+let SW_READY = null;
+
+function todayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+function spartaSet() {
+  if (!store.settings.sparta || typeof store.settings.sparta !== 'object') store.settings.sparta = {};
+  const d = store.settings.sparta;
+  if (!SPARTA_PRESETS.includes(Number(d.min))) d.min = SPARTA_DEFAULT_MIN;
+  d.min = Number(d.min);
+  if (typeof d.running !== 'boolean') d.running = false;
+  if (typeof d.endsAt !== 'number') d.endsAt = 0;
+  if (typeof d.remainMs !== 'number') d.remainMs = d.min * 60000;
+  if (typeof d.rounds !== 'number') d.rounds = 0;
+  if (typeof d.minutesToday !== 'number') d.minutesToday = 0;
+  if (typeof d.sound !== 'boolean') d.sound = true;
+  if (typeof d.notify !== 'boolean') d.notify = true;
+  if (typeof d.pushUrl !== 'string') d.pushUrl = '';
+  if (typeof d.vapid !== 'string') d.vapid = '';
+  if (typeof d.subEndpoint !== 'string') d.subEndpoint = '';
+  if (d.day !== todayKey()) { d.day = todayKey(); d.minutesToday = 0; d.rounds = 0; }
+  return d;
+}
+
+function spartaRemain() {
+  const d = spartaSet();
+  const raw = d.running && d.endsAt ? d.endsAt - now() : (d.remainMs || 0);
+  return Math.max(0, Math.min(raw, d.min * 60000));
+}
+function spartaFull() { return spartaSet().min * 60000; }
+function fmtSparta(ms) {
+  const t = Math.max(0, Math.ceil(ms / 1000));
+  return `${String(Math.floor(t / 60)).padStart(2, '0')}:${String(t % 60).padStart(2, '0')}`;
+}
+function spartaStateText() {
+  const d = spartaSet();
+  const rem = spartaRemain();
+  if (d.running) return '진행 중';
+  if (rem <= 0) return '완료';
+  if (rem < d.min * 60000) return '일시정지';
+  return '대기 중';
+}
+
+/* ----- 카드 UI ----- */
+function spartaCardHTML() {
+  const d = spartaSet();
+  const rem = spartaRemain();
+  return `<div class="sparta-card ${d.running ? 'on' : ''}${!d.running && rem <= 0 ? ' done' : ''}">
+    <div class="sp-top">
+      <span class="sp-tag">스파르타</span>
+      <span class="sp-round" data-sparta-round>${d.rounds + 1}교시</span>
+      <div class="sp-spacer"></div>
+      <button class="sp-gear" data-act="sparta-settings" aria-label="타이머 설정">${ICON.gear}</button>
+    </div>
+    <div class="sp-mid">
+      <div class="sp-time" data-sparta-time>${fmtSparta(rem)}</div>
+      <div class="sp-side">
+        <span class="sp-state" data-sparta-state>${spartaStateText()}</span>
+        <span class="sp-today">오늘 <b data-sparta-today>${d.minutesToday}분</b></span>
+      </div>
+    </div>
+    <div class="sp-presets">
+      ${SPARTA_PRESETS.map((m) => `<button class="sp-preset ${d.min === m ? 'on' : ''}" data-act="sparta-preset" data-min="${m}">${m}분</button>`).join('')}
+    </div>
+    <div class="sp-actions">
+      <button class="btn btn-primary btn-sm" data-act="sparta-toggle" data-sparta-toggle>시작</button>
+      <button class="btn btn-ghost btn-sm" data-act="sparta-reset">리셋</button>
+      <button class="link-btn muted" data-act="sparta-preview">퀴즈 미리보기</button>
+    </div>
+    <div class="sp-foot" data-sparta-foot>${spartaFootText()}</div>
+  </div>`;
+}
+
+function spartaFootText() {
+  const d = spartaSet();
+  const perm = notifyPermission();
+  if (!d.notify || perm === 'granted') return '끝나면 알림음과 약점 1문제가 떠요';
+  if (perm === 'unsupported') return '끝나면 알림음과 약점 1문제가 떠요';
+  return '끝나면 알림음과 약점 1문제가 떠요 · 알림은 ⚙ 설정에서 켜요';
+}
+
+function updateSpartaUI() {
+  const d = spartaSet();
+  const rem = spartaRemain();
+  const full = d.min * 60000;
+  const state = spartaStateText();
+  const toggleLabel = d.running ? '일시정지' : (rem > 0 && rem < full ? '이어서' : rem <= 0 ? '다시 시작' : '시작');
+  const txt = fmtSparta(rem);
+  $$('[data-sparta-time]').forEach((el) => { if (el.textContent !== txt) el.textContent = txt; });
+  $$('[data-sparta-state]').forEach((el) => { if (el.textContent !== state) el.textContent = state; });
+  $$('[data-sparta-round]').forEach((el) => { const t = `${d.rounds + 1}교시`; if (el.textContent !== t) el.textContent = t; });
+  $$('[data-sparta-today]').forEach((el) => { const t = `${d.minutesToday}분`; if (el.textContent !== t) el.textContent = t; });
+  $$('[data-sparta-toggle]').forEach((el) => { if (el.textContent !== toggleLabel) el.textContent = toggleLabel; });
+  $$('[data-act="sparta-preset"]').forEach((el) => el.classList.toggle('on', Number(el.dataset.min) === d.min));
+  $$('.sparta-card').forEach((el) => {
+    el.classList.toggle('on', d.running);
+    el.classList.toggle('done', !d.running && rem <= 0);
+    el.classList.toggle('paused', !d.running && rem > 0 && rem < full);
+  });
+  const foot = spartaFootText();
+  $$('[data-sparta-foot]').forEach((el) => { if (el.textContent !== foot) el.textContent = foot; });
+}
+
+/* ----- 소리 ----- */
+function spartaUnlockAudio() {
+  try {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return null;
+    if (!spartaAudio) spartaAudio = new AC();
+    if (spartaAudio.state === 'suspended') spartaAudio.resume();
+    return spartaAudio;
+  } catch (e) { return null; }
+}
+function spartaBeep() {
+  const ctx = spartaUnlockAudio();
+  if (!ctx) return;
+  try {
+    const t0 = ctx.currentTime + 0.06;
+    [0, 0.32, 0.64, 0.96].forEach((off, i) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = i === 3 ? 'triangle' : 'sine';
+      osc.frequency.value = [659, 784, 988, 1319][i];
+      gain.gain.setValueAtTime(0.0001, t0 + off);
+      gain.gain.exponentialRampToValueAtTime(0.3, t0 + off + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, t0 + off + 0.3);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(t0 + off);
+      osc.stop(t0 + off + 0.34);
+    });
+  } catch (e) {}
+}
+
+/* ----- 알림 / 서비스워커 ----- */
+function notifyPermission() {
+  if (typeof Notification === 'undefined') return 'unsupported';
+  return Notification.permission;
+}
+async function spartaAskNotify() {
+  if (typeof Notification === 'undefined') { toast('이 브라우저는 알림을 지원하지 않아요'); return 'unsupported'; }
+  try {
+    const p = await Notification.requestPermission();
+    if (p === 'granted') { toast('알림을 켰어요'); ensureSW(); }
+    else toast('알림 권한이 꺼져 있어요. 브라우저 설정에서 허용해 주세요.', 3600);
+    updateSpartaUI();
+    return p;
+  } catch (e) {
+    toast('알림 권한을 요청하지 못했어요', 3000);
+    return 'default';
+  }
+}
+async function spartaNotify(title, body) {
+  if (typeof Notification === 'undefined' || Notification.permission !== 'granted') return false;
+  const opts = {
+    body,
+    icon: 'icons/icon-192.png',
+    badge: 'icons/icon-192.png',
+    tag: 'sparta-round',
+    data: { url: location.href.split('#')[0] },
+  };
+  try {
+    const reg = await navigator.serviceWorker?.getRegistration();
+    if (reg && reg.showNotification) { await reg.showNotification(title, opts); return true; }
+  } catch (e) {}
+  try { new Notification(title, opts); return true; } catch (e) { return false; }
+}
+function ensureSW() {
+  if (!('serviceWorker' in navigator)) return Promise.resolve(null);
+  if (SW_READY) return SW_READY;
+  SW_READY = navigator.serviceWorker.register('sw.js', { scope: './' }).catch(() => null);
+  return SW_READY;
+}
+
+/* ----- 시작 / 일시정지 / 리셋 ----- */
+function spartaStart(min) {
+  const d = spartaSet();
+  const m = SPARTA_PRESETS.includes(Number(min)) ? Number(min) : d.min;
+  d.min = m;
+  d.remainMs = m * 60000;
+  d.endsAt = now() + d.remainMs;
+  d.running = true;
+  d.startedAt = now();
+  saveStore(true);
+  spartaUnlockAudio();
+  ensureSW();
+  startSpartaTick();
+  updateSpartaUI();
+  toast(`${m}분 스파르타 타이머 시작. 끝나면 1문제 바로 떠요`, 2600);
+}
+function spartaPause() {
+  const d = spartaSet();
+  if (!d.running) return;
+  d.remainMs = spartaRemain();
+  d.running = false;
+  d.endsAt = 0;
+  stopSpartaTick();
+  saveStore(true);
+  updateSpartaUI();
+  toast('잠깐 멈췄어요');
+}
+function spartaResume() {
+  const d = spartaSet();
+  const rem = d.remainMs || d.min * 60000;
+  d.endsAt = now() + rem;
+  d.running = true;
+  saveStore(true);
+  spartaUnlockAudio();
+  startSpartaTick();
+  updateSpartaUI();
+  toast('이어서 갑니다', 2000);
+}
+function spartaReset() {
+  const d = spartaSet();
+  d.running = false;
+  d.endsAt = 0;
+  d.remainMs = d.min * 60000;
+  stopSpartaTick();
+  saveStore(true);
+  updateSpartaUI();
+  toast('타이머를 리셋했어요', 2000);
+}
+function spartaSetPreset(min) {
+  const d = spartaSet();
+  const m = Number(min);
+  if (!SPARTA_PRESETS.includes(m)) return;
+  d.min = m;
+  if (!d.running) d.remainMs = m * 60000;
+  saveStore();
+  updateSpartaUI();
+}
+
+function startSpartaTick() {
+  stopSpartaTick();
+  spartaTickTimer = setInterval(spartaTick, 500);
+}
+function stopSpartaTick() {
+  if (spartaTickTimer) clearInterval(spartaTickTimer);
+  spartaTickTimer = null;
+}
+function spartaTick() {
+  const d = spartaSet();
+  if (!d.running) { stopSpartaTick(); updateSpartaUI(); return; }
+  if (spartaRemain() <= 0) { spartaFinish(false); return; }
+  updateSpartaUI();
+}
+
+function spartaFinish(silent) {
+  if (spartaFinishing) return;
+  spartaFinishing = true;
+  try {
+    const d = spartaSet();
+    stopSpartaTick();
+    d.running = false;
+    d.endsAt = 0;
+    d.remainMs = 0;
+    d.rounds = (d.rounds || 0) + 1;
+    d.minutesToday = (d.minutesToday || 0) + (d.min || SPARTA_DEFAULT_MIN);
+    d.lastFinishedAt = now();
+    saveStore(true);
+    updateSpartaUI();
+    if (!silent) {
+      if (d.sound) spartaBeep();
+      try { if (navigator.vibrate) navigator.vibrate([120, 90, 160]); } catch (e) {}
+      if (d.notify) spartaNotify(`${d.min}분 완료!`, `스파르타 ${d.rounds}교시 끝. 약점 1문제 바로 풀어요.`);
+      openSpartaQuiz();
+    }
+  } finally {
+    spartaFinishing = false;
+  }
+}
+
+/* ----- 설정 ----- */
+function spartaSettingsHTML() {
+  const d = spartaSet();
+  const perm = notifyPermission();
+  const permText = perm === 'granted' ? '허용됨' : perm === 'denied' ? '차단됨' : perm === 'unsupported' ? '지원 안 함' : '아직 안 물어봄';
+  const swText = !('serviceWorker' in navigator) ? '지원 안 함' : SW_READY ? '등록됨' : '대기';
+  return `
+    <div class="field"><label>기본 시간</label>
+      <div class="sp-presets">
+        ${SPARTA_PRESETS.map((m) => `<button class="sp-preset ${d.min === m ? 'on' : ''}" data-act="sparta-settings-preset" data-min="${m}">${m}분</button>`).join('')}
+      </div>
+    </div>
+    <div class="switch-row">
+      <div class="lbl">종료 알림음<div class="sub">타이머가 끝나면 비프음이 울려요</div></div>
+      <button class="switch ${d.sound ? 'on' : ''}" data-act="sparta-toggle-sound" aria-label="알림음"></button>
+    </div>
+    <div class="switch-row">
+      <div class="lbl">브라우저 알림<div class="sub">잠금 화면에도 알림 (홈 화면에 추가 + iOS 16.4 이상)</div></div>
+      <button class="switch ${d.notify ? 'on' : ''}" data-act="sparta-toggle-notify" aria-label="브라우저 알림"></button>
+    </div>
+    <div class="row2">
+      <button class="btn btn-ghost btn-sm" data-act="sparta-allow">알림 허용 (${permText})</button>
+      <button class="btn btn-ghost btn-sm" data-act="sparta-test">테스트 알림</button>
+    </div>
+    <div class="sep-line"></div>
+    <div class="field"><label>Push 서버 URL (선택)</label>
+      <input type="text" id="spPushUrl" value="${esc(d.pushUrl)}" placeholder="https://sparta-push.내계정.workers.dev/push" autocomplete="off">
+      <div class="hint">Cloudflare Worker 같은 푸시 서버를 붙이면 앱을 닫아 둔 상태에서도 알림이 와요. 비워 두면 이 기기에서만(타이머·비프음·팝업) 동작해요.</div>
+    </div>
+    <div class="field"><label>VAPID 공개키 (선택)</label>
+      <input type="text" id="spVapid" value="${esc(d.vapid)}" placeholder="B로 시작하는 긴 문자열" autocomplete="off">
+    </div>
+    <div class="row2">
+      <button class="btn btn-ghost btn-sm" data-act="sparta-subscribe">푸시 구독 준비</button>
+      <button class="btn btn-ghost btn-sm" data-act="sparta-preview">퀴즈 미리보기</button>
+    </div>
+    <div class="sp-status">알림 권한 <b>${permText}</b> · 서비스워커 ${swText} · 구독 ${d.subEndpoint ? '있음' : '없음'}</div>
+    <div class="hint" style="margin-top:10px"><b>아이폰 홈 화면 추가</b><br>Safari에서 이 페이지를 연 뒤 공유 → 홈 화면에 추가. 홈 화면 아이콘으로 열면 앱처럼 전체 화면으로 뜨고, 그때부터 알림을 받을 수 있어요.</div>
+    <div class="modal-actions">
+      <button class="btn btn-primary" data-act="sparta-save">저장</button>
+    </div>`;
+}
+function openSpartaSettings() {
+  const d = spartaSet();
+  ensureSW();
+  openModal(modalShell('스파르타 타이머 설정', spartaSettingsHTML(), `오늘 ${d.rounds}교시 · ${d.minutesToday}분`));
+}
+function saveSpartaSettings() {
+  const d = spartaSet();
+  const url = ($('#spPushUrl')?.value || '').trim();
+  const vapid = ($('#spVapid')?.value || '').trim();
+  if (url && !/^https?:\/\//i.test(url)) { toast('Push 서버 URL은 https:// 로 시작해야 해요'); return; }
+  d.pushUrl = url;
+  d.vapid = vapid;
+  saveStore(true);
+  closeModal();
+  updateSpartaUI();
+  toast('타이머 설정을 저장했어요');
+}
+function urlBase64ToUint8Array(base64String) {
+  const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
+  const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
+  const raw = atob(base64);
+  const out = new Uint8Array(raw.length);
+  for (let i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
+  return out;
+}
+async function spartaSubscribe() {
+  const d = spartaSet();
+  const url = ($('#spPushUrl')?.value || '').trim();
+  const vapid = ($('#spVapid')?.value || '').trim();
+  d.pushUrl = url;
+  d.vapid = vapid;
+  saveStore(true);
+  if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
+    toast('이 브라우저는 웹 푸시 구독을 지원하지 않아요. 아이폰은 홈 화면에 추가한 뒤 열어 주세요.', 4400);
+    return;
+  }
+  const reg = await ensureSW();
+  if (!reg) { toast('서비스워커를 등록하지 못했어요', 3200); return; }
+  if (notifyPermission() !== 'granted') {
+    const p = await spartaAskNotify();
+    if (p !== 'granted') return;
+  }
+  if (!vapid) { toast('VAPID 공개키를 먼저 넣어 주세요. Worker를 만들면 발급돼요.', 4200); return; }
+  try {
+    let sub = await reg.pushManager.getSubscription();
+    if (!sub) {
+      sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlBase64ToUint8Array(vapid) });
+    }
+    d.subEndpoint = sub.endpoint;
+    saveStore(true);
+    if (url) {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'subscribe', subscription: sub.toJSON(), tz: 'Asia/Seoul' }),
+      });
+      toast(res.ok ? '푸시 서버에 구독을 등록했어요' : `푸시 서버 응답 ${res.status}`, 3600);
+    } else {
+      toast('구독을 만들었어요. Push 서버 URL을 넣으면 서버로 보낼 수 있어요.', 4200);
+    }
+    openSpartaSettings();
+  } catch (e) {
+    toast(`구독 실패: ${e.message || e}`, 4200);
+  }
+}
+
+/* ----- 약점/랜덤 1문제 팝업 ----- */
+async function spartaPickQuestion() {
+  spartaSeen = spartaSeen.slice(-24);
+  const take = (arr) => {
+    const fresh = arr.filter((x) => !spartaSeen.includes(`${x.eid}:${x.no}`));
+    const pool = fresh.length ? fresh : arr;
+    return pool[Math.floor(Math.random() * pool.length)];
+  };
+  const keyed = (x) => !!keyOfExam(x.eid, x.no);
+  const weak = analyzeMine('all').items.filter((i) => i.wrong || i.skip || i.flag).map((i) => ({ eid: i.eid, no: i.no }));
+  const weakKeyed = weak.filter(keyed);
+  if (weakKeyed.length) return take(weakKeyed);
+  const core = [];
+  const any = [];
+  for (const eid of Object.keys(TOPICS?.map || {})) {
+    for (const no of Object.keys(TOPICS.map[eid])) {
+      const t = TOPICS.map[eid][no];
+      const item = { eid, no: Number(no) };
+      any.push(item);
+      if (SPARTA_CORE.test(`${t.s} ${t.t}`)) core.push(item);
+    }
+  }
+  const coreKeyed = core.filter(keyed);
+  if (coreKeyed.length) return take(coreKeyed);
+  const anyKeyed = any.filter(keyed);
+  if (anyKeyed.length) return take(anyKeyed);
+  if (weak.length) return take(weak);
+  if (core.length) return take(core);
+  if (any.length) return take(any);
+  return null;
+}
+
+async function openSpartaQuiz() {
+  const pick = await spartaPickQuestion();
+  if (!pick) { toast('퀴즈로 낼 문항을 찾지 못했어요'); return; }
+  let exam = EXAM_CACHE[pick.eid];
+  if (!exam) {
+    try { exam = await getExam(pick.eid); } catch (e) { toast('문항을 불러오지 못했어요', 3200); return; }
+  }
+  if (!exam.questions.some((q) => q.number === pick.no)) return;
+  spartaSeen.push(`${pick.eid}:${pick.no}`);
+  spartaQuiz = { eid: pick.eid, no: pick.no, picked: null };
+  openModal(spartaQuizHTML());
+}
+
+function spartaQuizHTML() {
+  const { eid, no, picked } = spartaQuiz;
+  const exam = EXAM_CACHE[eid];
+  const q = exam.questions.find((x) => x.number === no);
+  const key = keyOfExam(eid, no);
+  const tt = topicOf(eid, no);
+  const done = picked != null;
+  const opts = q.options.map((o) => {
+    const state = done ? (key && o.no === key ? 'ok' : o.no === picked ? 'bad' : 'dim') : '';
+    return `<button class="qp-opt ${state}" data-act="sparta-answer" data-no="${o.no}" ${done ? 'disabled' : ''}>
+      <span class="mk">${esc(o.marker || MARKERS[o.no - 1])}</span>
+      <span class="ot">${esc(o.text)}</span>
+    </button>`;
+  }).join('');
+  let feedback = '';
+  if (done) {
+    if (key) {
+      const ok = picked === key;
+      feedback = `<div class="qp-fb ${ok ? 'ok' : 'bad'}">${ok ? '정답이에요' : `아쉬워요. 정답은 ${MARKERS[key - 1]}번`}</div>`;
+    } else {
+      feedback = `<div class="qp-fb info">이 시험은 정답이 아직 없어서 채점 없이 문제만 띄웠어요. 정답을 한 번 넣어 두면 다음부터 바로 채점돼요.</div>`;
+    }
+  }
+  const figs = (q.figures || []).map((f) => `<img src="${esc(f.path)}" alt="문항 ${no} 그림" loading="lazy">`).join('');
+  return `<div class="modal qp" role="dialog" aria-modal="true">
+    <div class="qp-head">
+      <div style="flex:1">
+        <div class="qp-kicker">스파르타 복습 퀴즈</div>
+        <div class="qp-sub">${esc(examShort(eid))} ${no}번 · ${esc(tt.s)}${tt.t && tt.t !== '미분류' ? ' · ' + esc(tt.t) : ''}</div>
+      </div>
+      <button class="x-btn" data-act="modal-close" aria-label="닫기">${ICON.close}</button>
+    </div>
+    <div class="qp-stem">${esc(q.stem)}</div>
+    ${figs ? `<div class="qp-figs">${figs}</div>` : ''}
+    <div class="qp-opts">${opts}</div>
+    ${feedback}
+    <div class="qp-actions">
+      ${key ? '<span></span>' : `<button class="link-btn" data-act="sparta-quiz-keys" data-exam="${eid}">이 시험 정답 입력</button>`}
+      <div class="qp-actions-r">
+        <button class="btn btn-ghost btn-sm" data-act="modal-close">닫기</button>
+        <button class="btn btn-primary btn-sm" data-act="sparta-next">한 문제 더</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function spartaAnswer(no) {
+  if (!spartaQuiz || spartaQuiz.picked != null) return;
+  spartaQuiz.picked = Number(no);
+  openModal(spartaQuizHTML());
+}
+
 /* ---------------- 이벤트 ---------------- */
 document.addEventListener('click', async (e) => {
   const el = e.target.closest('[data-act]');
@@ -2086,6 +2583,47 @@ document.addEventListener('click', async (e) => {
     case 'topic-edit-save': saveTopicEdit(); break;
     case 'topic-edit-reset': resetTopicEdit(); break;
     case 'year': ui.filterYear = el.dataset.year; render(); break;
+
+    case 'sparta-toggle': {
+      const sd = spartaSet();
+      if (sd.running) spartaPause();
+      else if (spartaRemain() > 0 && spartaRemain() < sd.min * 60000) spartaResume();
+      else spartaStart(sd.min);
+      break;
+    }
+    case 'sparta-preset': spartaSetPreset(el.dataset.min); break;
+    case 'sparta-reset': spartaReset(); break;
+    case 'sparta-settings': openSpartaSettings(); break;
+    case 'sparta-settings-preset': spartaSetPreset(el.dataset.min); openSpartaSettings(); break;
+    case 'sparta-save': saveSpartaSettings(); break;
+    case 'sparta-toggle-sound': {
+      const sd = spartaSet();
+      sd.sound = !sd.sound;
+      saveStore(true);
+      el.classList.toggle('on', sd.sound);
+      if (sd.sound) spartaBeep();
+      break;
+    }
+    case 'sparta-toggle-notify': {
+      const sd = spartaSet();
+      sd.notify = !sd.notify;
+      saveStore(true);
+      el.classList.toggle('on', sd.notify);
+      if (sd.notify && notifyPermission() === 'default') await spartaAskNotify();
+      break;
+    }
+    case 'sparta-allow': await spartaAskNotify(); if ($('#modal-root')?.children.length) openSpartaSettings(); break;
+    case 'sparta-test': {
+      spartaBeep();
+      const ok = await spartaNotify('문제 트레이너 테스트 알림', '이렇게 알림이 와요. 스파르타 타이머가 끝나면 약점 1문제도 함께 떠요.');
+      toast(ok ? '테스트 알림을 보냈어요' : '알림 권한을 먼저 허용해 주세요', 3200);
+      break;
+    }
+    case 'sparta-subscribe': await spartaSubscribe(); break;
+    case 'sparta-preview': await openSpartaQuiz(); break;
+    case 'sparta-next': await openSpartaQuiz(); break;
+    case 'sparta-answer': spartaAnswer(Number(el.dataset.no)); break;
+    case 'sparta-quiz-keys': openKeys(el.dataset.exam); break;
 
     case 'start': {
       const fresh = el.dataset.fresh === '1';
@@ -2287,6 +2825,14 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'f' || e.key === 'F') toggleFlag();
 });
 
+// 탭 전환 시 스파르타 타이머 확인(백그라운드에서 멈춘 시계 보정)
+document.addEventListener('visibilitychange', () => {
+  const sd = store.settings.sparta;
+  if (!sd || !sd.running) return;
+  if (spartaRemain() <= 0) spartaFinish(false);
+  else updateSpartaUI();
+});
+
 // 탭 전환 시 타이머 정리
 document.addEventListener('visibilitychange', () => {
   if (!ui.session || ui.isMini) return;
@@ -2393,6 +2939,9 @@ async function boot() {
   }
   ui.view = 'home';
   render();
+  if (spartaSet().running && spartaRemain() <= 0) spartaFinish(true);
+  else if (spartaSet().running) startSpartaTick();
+  setTimeout(() => { ensureSW(); }, 1200);
 }
 
 boot();
