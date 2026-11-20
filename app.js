@@ -200,8 +200,24 @@ async function getIndex() {
   return INDEX;
 }
 async function getExam(id) {
-  if (!EXAM_CACHE[id]) EXAM_CACHE[id] = await fetchJSON(`data/${id}.json`);
+  if (!EXAM_CACHE[id]) {
+    EXAM_CACHE[id] = await fetchJSON(`data/${id}.json`);
+    seedAnswerKeys(id, EXAM_CACHE[id]);
+  }
   return EXAM_CACHE[id];
+}
+/* 시험 JSON에 실린 정답을 정답표에 채운다(이미 넣은 값은 그대로 둔다). */
+function seedAnswerKeys(id, exam) {
+  if (!exam || !Array.isArray(exam.questions)) return;
+  const box = store.answers[id] || (store.answers[id] = {});
+  let added = false;
+  for (const q of exam.questions) {
+    if (q.answer && !box[q.number]) {
+      box[q.number] = Number(q.answer);
+      added = true;
+    }
+  }
+  if (added) saveStore(true);
 }
 function examMeta(id) {
   return (INDEX?.exams || []).find((e) => e.exam_id === id);
@@ -291,6 +307,15 @@ function keyOf(no) {
   const a = store.answers[ui.examId]?.[no];
   return a ? Number(a) : null;
 }
+/* 정답이 하나로 정해지지 않는 문항(모두 정답·복수 정답·채점 제외) */
+function keyInfo(no) {
+  const q = (ui.exam?.questions || []).find((x) => x.number === no);
+  if (!q) return null;
+  if (q.excluded) return { kind: 'excluded' };
+  if (q.answerAll) return { kind: 'all' };
+  if (Array.isArray(q.answers) && q.answers.length) return { kind: 'set', set: q.answers.map(Number) };
+  return null;
+}
 function wrongCount(no) {
   return store.stats[ui.examId]?.[no]?.w || 0;
 }
@@ -303,14 +328,23 @@ function answeredCount(list, s) {
   return list.filter((n) => s.answers[n]).length;
 }
 function isWrong(no, s) {
-  const k = keyOf(no);
   const a = (s || ui.session).answers[no];
-  return !!k && !!a && a !== k;
+  if (!a) return false;
+  const ki = keyInfo(no);
+  if (ki?.kind === 'excluded' || ki?.kind === 'all') return false;
+  if (ki?.kind === 'set') return !ki.set.includes(Number(a));
+  const k = keyOf(no);
+  return !!k && a !== k;
 }
 function isCorrect(no, s) {
-  const k = keyOf(no);
   const a = (s || ui.session).answers[no];
-  return !!k && !!a && a === k;
+  if (!a) return false;
+  const ki = keyInfo(no);
+  if (ki?.kind === 'excluded') return false;
+  if (ki?.kind === 'all') return true;
+  if (ki?.kind === 'set') return ki.set.includes(Number(a));
+  const k = keyOf(no);
+  return !!k && a === k;
 }
 
 /* ---------------- 렌더 ---------------- */
@@ -398,15 +432,22 @@ function examCardHTML(e) {
   const total = e.question_count;
   const hasKey = !!(store.answers[e.exam_id] && Object.keys(store.answers[e.exam_id]).length);
   const hasEditKey = Object.keys(store.edits[e.exam_id] || {}).some((k) => store.edits[e.exam_id][k]?.answer);
-  const keyed = hasKey || hasEditKey;
+  const keyed = hasKey || hasEditKey || !!e.has_answers;
   let score = null;
   if (submitted && keyed && s) {
     const qs = (EXAM_CACHE[e.exam_id]?.questions) || [];
     if (qs.length) {
       let c = 0, t = 0;
       for (const q of qs) {
+        if (q.excluded) continue;
         const k = store.answers[e.exam_id]?.[q.number] || store.edits[e.exam_id]?.[q.number]?.answer;
-        if (k) { t++; if (s.answers?.[q.number] === Number(k)) c++; }
+        const set = Array.isArray(q.answers) ? q.answers.map(Number) : null;
+        const all = !!q.answerAll;
+        if (!k && !set && !all) continue;
+        t++;
+        const mine = s.answers?.[q.number];
+        if (!mine) continue;
+        if (all || (set ? set.includes(Number(mine)) : Number(mine) === Number(k))) c++;
       }
       score = { c, t };
     }
@@ -774,11 +815,12 @@ function doSubmit(auto) {
   if (!ui.isMini) {
     const st = (store.stats[ui.examId] = store.stats[ui.examId] || {});
     for (const n of ui.order) {
-      const k = keyOf(n);
+      const ki = keyInfo(n);
       const a = s.answers[n];
-      if (!k || !a) continue;
+      if (!a || ki?.kind === 'excluded') continue;
+      if (!keyOf(n) && !ki) continue;
       const rec = (st[n] = st[n] || { w: 0, c: 0 });
-      if (a === k) rec.c = (rec.c || 0) + 1;
+      if (isCorrect(n, s)) rec.c = (rec.c || 0) + 1;
       else rec.w = (rec.w || 0) + 1;
     }
   }
@@ -809,12 +851,14 @@ function resultStats() {
   const { order, session: s } = ui.result;
   let correct = 0, wrong = 0, skipped = 0, keyed = 0;
   for (const n of order) {
+    const ki = keyInfo(n);
+    if (ki?.kind === 'excluded') continue;
     const k = keyOf(n);
     const a = s.answers[n];
-    if (k) keyed++;
+    if (k || ki) keyed++;
     if (!a) skipped++;
-    else if (k && a === k) correct++;
-    else if (k) wrong++;
+    else if (isCorrect(n, s)) correct++;
+    else if (k || ki) wrong++;
   }
   return { correct, wrong, skipped, keyed, total: order.length, flags: s.flags.filter((n) => order.includes(n)).length };
 }
@@ -884,20 +928,28 @@ function resultHTML() {
 
 function resultCardHTML(no, s) {
   const q = getQ(no);
+  const ki = keyInfo(no);
   const k = keyOf(no);
+  const known = !!(k || ki);
+  const kLabel = ki?.kind === 'all' ? '전부 정답'
+    : ki?.kind === 'set' ? ki.set.map((x) => MARKERS[x - 1]).join('·')
+    : ki?.kind === 'excluded' ? '채점 제외'
+    : k ? esc(MARKERS[k - 1]) : '';
   const a = s.answers[no];
-  const state = !k ? 'nokey' : !a ? 'skip' : a === k ? 'correct' : 'wrong';
+  const state = ki?.kind === 'excluded' ? 'excl'
+    : !known ? 'nokey' : !a ? 'skip' : isCorrect(no, s) ? 'correct' : 'wrong';
   const flagged = s.flags.includes(no);
   const memo = s.notes[no] || '';
   const wc = wrongCount(no);
   const open = !!ui.expanded[no];
   const label = state === 'correct' ? '<span class="badge" style="background:var(--ok-weak); color:var(--ok)">정답</span>'
     : state === 'wrong' ? '<span class="badge" style="background:var(--bad-weak); color:var(--bad)">틀림</span>'
+    : state === 'excl' ? '<span class="badge" style="background:var(--bg); color:var(--muted)">채점 제외</span>'
     : state === 'skip' ? '<span class="badge" style="background:var(--bg); color:var(--muted)">미응답</span>'
     : '<span class="badge" style="background:var(--star-weak); color:#a2710b">정답 미입력</span>';
 
   const opts = q.options.map((o) => {
-    const isKey = k === o.no;
+    const isKey = ki?.kind === 'set' ? ki.set.includes(o.no) : k === o.no;
     const isMineBad = a === o.no && state === 'wrong';
     const cls = ['ropt'];
     if (isKey) cls.push('is-key');
@@ -921,7 +973,7 @@ function resultCardHTML(no, s) {
     <div class="ropts">${opts}</div>
     ${memo ? `<div class="memo-box" style="margin-top:10px">${esc(memo)}</div>` : ''}
     <div class="rfoot">
-      <span style="font-size:12.5px; color:var(--muted)">내 답 <b style="color:var(--text)">${a ? esc(MARKERS[a - 1]) : '없음'}</b> · 정답 <b style="color:${k ? 'var(--ok)' : 'var(--muted)'}">${k ? esc(MARKERS[k - 1]) : '미입력'}</b></span>
+      <span style="font-size:12.5px; color:var(--muted)">내 답 <b style="color:var(--text)">${a ? esc(MARKERS[a - 1]) : '없음'}</b> · 정답 <b style="color:${known ? 'var(--ok)' : 'var(--muted)'}">${known ? (kLabel || '미입력') : '미입력'}</b></span>
       <button class="ai-btn" data-act="ai" data-no="${no}">AI 분석</button>
     </div>
   </div>`;
@@ -1590,7 +1642,7 @@ function analysisMineHTML() {
   const chips = (INDEX?.exams || []).map((e) => {
     const s = store.sessions?.[e.exam_id];
     const done = !!s?.submitted;
-    const hasKey = Object.keys(store.answers?.[e.exam_id] || {}).length > 0 || Object.keys(store.edits?.[e.exam_id] || {}).some((k) => store.edits[e.exam_id][k]?.answer);
+    const hasKey = !!e.has_answers || Object.keys(store.answers?.[e.exam_id] || {}).length > 0 || Object.keys(store.edits?.[e.exam_id] || {}).some((k) => store.edits[e.exam_id][k]?.answer);
     return `<button class="chip ${scope === e.exam_id ? 'on' : ''} ${done ? '' : 'dim'}" data-act="an-scope" data-scope="${e.exam_id}">${e.year} ${e.course}교시${done ? '' : ' · 미응시'}${done && !hasKey ? ' · 정답없음' : ''}</button>`;
   }).join('');
   const head = `

@@ -2,11 +2,12 @@
 
 **웹앱:** https://verylucky629-alt.github.io/testloop/
 
-자체 2차 임종평 문제은행 + 스파르타 공부 타이머 웹앱. 2023학년도 · 2025학년도 각 4교시, 총 8회 640문항.
+자체 2차 임종평 문제은행 + 대경 임상의학종합평가 기출 + 스파르타 공부 타이머 웹앱. 자체 2차 8회(2023·2025학년도 각 4교시) 640문항, 대경 32교시(22‑1·22‑2·23‑1·23‑2·24‑1·25‑1 각 1~4교시, 26‑1 1~4교시, 26‑2 1~4교시) 2,560문항 — 모두 3,200문항.
 
-- 문항: `data/exam{연도}_{교시}.json` (지문·선지·그림 경로·원문 쪽)
-- 그림: `assets/<exam_id>/qNNN_figK.webp` (301장, WebP q90)
-- 원문 쪽: `pages/<exam_id>/pNNN.webp` (문항이 걸친 311쪽, 1.5배 렌더)
+- 문항: `data/exam{연도}_{교시}.json`(자체) · `data/dk{연도}{차}_{교시}.json`(대경). 32교시는 문항마다 `answer`(정답 번호)가 실려 있고, 모두 정답·복수 정답은 `answerAll`·`answers`, 채점 제외 문항은 `excluded`로 표시
+- 그림: `assets/<exam_id>/qNNN_figK.webp` (2,042장, WebP q90)
+- 원문 쪽: `pages/<exam_id>/pNNN.webp` (문항이 걸친 2,372쪽, 1.5배 렌더)
+- 토픽 분류: `data/topics.json` — `tools/build_topics.py`가 문항 지문·선지 키워드로 과목·단원을 매긴다(3,200문항)
 - 앱: `index.html` · `styles.css` · `app.js` (빌드 도구 없는 정적 SPA)
 - PWA: `manifest.json` (홈 화면 추가 · standalone) · `sw.js` (Web Push 수신·알림 클릭 처리)
 
