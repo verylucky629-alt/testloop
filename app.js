@@ -403,7 +403,7 @@ function homeHTML() {
     </div>
     <div>
       <div class="home-title">문제 트레이너</div>
-      <div class="home-sub">자체 2차 임종평 8회 · 640문항</div>
+      <div class="home-sub">자체 2차·대경 임종평 ${exams.length}회 · ${exams.reduce((a, e) => a + (e.question_count || 0), 0).toLocaleString()}문항</div>
     </div>
     <div class="head-spacer"></div>
     <button class="icon-btn" data-act="open-sync" aria-label="동기화">${ICON.sync}${syncOn ? '<span class="dot"></span>' : ''}</button>
@@ -418,7 +418,7 @@ function homeHTML() {
   </div>
   <div id="examList">${cards || '<div class="emptystate">조건에 맞는 시험이 없어요.</div>'}</div>
   <div class="home-foot">
-    <b>정답 데이터</b>는 원본 PDF에 없어서, 시험마다 [정답 입력]에 한 번 넣어 주면 채점·오답 기록이 쌓입니다.<br>
+    <b>정답</b>은 문제에 실린 정답표로 자동으로 채워져요. 정답이 없는 시험은 [정답 입력]에 한 번만 넣으면 채점·오답 기록이 쌓입니다.<br>
     <b>기기 간 이어 풀기</b>는 상단 동기화 버튼에서 GitHub Gist를 연결하면 아이폰·아이패드·맥에서 같은 기록으로 이어집니다.
   </div>
   ${tabbarHTML('home')}`;
@@ -432,7 +432,10 @@ function examCardHTML(e) {
   const total = e.question_count;
   const hasKey = !!(store.answers[e.exam_id] && Object.keys(store.answers[e.exam_id]).length);
   const hasEditKey = Object.keys(store.edits[e.exam_id] || {}).some((k) => store.edits[e.exam_id][k]?.answer);
-  const keyed = hasKey || hasEditKey || !!e.has_answers;
+  const localKeyCount = Object.keys(store.answers[e.exam_id] || {}).filter((n) => store.answers[e.exam_id][n]).length;
+  const editKeyCount = Object.keys(store.edits[e.exam_id] || {}).filter((n) => store.edits[e.exam_id][n]?.answer).length;
+  const keyCount = Math.min(total, Math.max(e.answer_count || 0, localKeyCount, editKeyCount));
+  const keyed = keyCount > 0 || hasKey || hasEditKey;
   let score = null;
   if (submitted && keyed && s) {
     const qs = (EXAM_CACHE[e.exam_id]?.questions) || [];
@@ -455,7 +458,9 @@ function examCardHTML(e) {
   const pct = Math.round((answered / total) * 100);
   const tags = [];
   tags.push(`<span class="tag ${e.year === 2023 ? 'year23' : ''}">${e.year}</span>`);
-  if (!keyed) tags.push('<span class="tag warn">정답 미입력</span>');
+  tags.push(keyCount > 0
+    ? `<span class="tag key-on">정답 ${keyCount}/${total}</span>`
+    : '<span class="tag key-off">정답 없음</span>');
   if (submitted) tags.push(`<span class="tag ok">채점 완료</span>`);
 
   let progress = '';
@@ -1468,7 +1473,7 @@ function topicOf(eid, no) {
 }
 function examShort(eid) {
   const m = examMeta(eid);
-  return m ? `${m.year} ${m.course}교시` : eid;
+  return m ? (m.short || `${m.year} ${m.course}교시`) : eid;
 }
 function keyOfExam(eid, no) {
   const e = store.edits?.[eid]?.[no];
@@ -1642,8 +1647,8 @@ function analysisMineHTML() {
   const chips = (INDEX?.exams || []).map((e) => {
     const s = store.sessions?.[e.exam_id];
     const done = !!s?.submitted;
-    const hasKey = !!e.has_answers || Object.keys(store.answers?.[e.exam_id] || {}).length > 0 || Object.keys(store.edits?.[e.exam_id] || {}).some((k) => store.edits[e.exam_id][k]?.answer);
-    return `<button class="chip ${scope === e.exam_id ? 'on' : ''} ${done ? '' : 'dim'}" data-act="an-scope" data-scope="${e.exam_id}">${e.year} ${e.course}교시${done ? '' : ' · 미응시'}${done && !hasKey ? ' · 정답없음' : ''}</button>`;
+    const hasKey = !!e.has_answers || (e.answer_count || 0) > 0 || Object.keys(store.answers?.[e.exam_id] || {}).length > 0 || Object.keys(store.edits?.[e.exam_id] || {}).some((k) => store.edits[e.exam_id][k]?.answer);
+    return `<button class="chip ${scope === e.exam_id ? 'on' : ''} ${done ? '' : 'dim'}" data-act="an-scope" data-scope="${e.exam_id}">${esc(e.short || `${e.year} ${e.course}교시`)}${done ? '' : ' · 미응시'}${done && !hasKey ? ' · 정답없음' : ''}</button>`;
   }).join('');
   const head = `
   <div class="chips" style="padding-left:14px; padding-right:14px">
@@ -1979,7 +1984,7 @@ function openTopicEdit() {
   const tt = topicOf(eid, no);
   const body = `
     <div class="row2">
-      <div class="field"><label>시험</label><select id="teExam">${exams.map((e) => `<option value="${e.exam_id}" ${e.exam_id === eid ? 'selected' : ''}>${e.year} ${e.course}교시</option>`).join('')}</select></div>
+      <div class="field"><label>시험</label><select id="teExam">${exams.map((e) => `<option value="${e.exam_id}" ${e.exam_id === eid ? 'selected' : ''}>${esc(e.short || `${e.year} ${e.course}교시`)}</option>`).join('')}</select></div>
       <div class="field"><label>문항 번호</label><input type="text" id="teNo" value="${no}" inputmode="numeric"></div>
     </div>
     <div class="field"><label>과목</label><input type="text" id="teSubject" value="${esc(tt.s)}" placeholder="예: 내과"></div>

@@ -109,6 +109,9 @@ a{color:var(--brand); text-decoration:none}
 @media (prefers-color-scheme: dark){ .tag.year23{background:#251d40; color:#b8a6ff} }
 .tag.warn{background:var(--star-weak); color:#a2710b}
 .tag.ok{background:var(--ok-weak); color:var(--ok)}
+.tag.key-on{background:var(--ok-weak); color:var(--ok)}
+.tag.key-off{background:#eceef2; color:#6b7280; border:1px solid #d8dce3}
+@media (prefers-color-scheme: dark){ .tag.key-off{background:#2a2d34; color:#a6adba; border-color:#3a3f48} }
 .exam-title{font-size:16.5px; font-weight:750; letter-spacing:-.2px; line-height:1.35; margin:0}
 .exam-meta{font-size:12.5px; color:var(--muted); margin-top:5px; display:flex; gap:6px; flex-wrap:wrap}
 .exam-meta .sep{opacity:.45}
