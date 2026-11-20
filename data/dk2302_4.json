@@ -67,7 +67,8 @@
      "h": 362
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "호흡곤란의 증상, 청진소견, 가슴 X선에서 심비대, 폐부종, 심전도 상 심방세동, 심초음파에서 좌심부전과 심실의 확장을 보이는 확장심근병증의 진단"
   },
   {
    "number": 2,
@@ -117,7 +118,8 @@
      "h": 150
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "integrate test에서 hCG가 4.95 MOM 으로 증가되어 있고, 초음파 상 double bubble sign이 있어 duodenal atresia로 생각되는 소견으로 다운증후군의 대표적인 피 검사 결과 및 초음파 소견입니다. 따라서 가장 의심되는 진단은 Down syndrome 입니다. 2번입니다"
   },
   {
    "number": 3,
@@ -168,7 +170,8 @@
      "h": 692
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "CXR에서 Cardiomegaly 확인되고, 호흡곤란, 저혈압, 경정맥 팽대, 심음 감소소견은 심장 눌림증을 시사하는 소견이다. 또한 말기암 환자로 암의 심낭 침범으로 심낭삼출이 진행되어 심장 눌림증을 일으킬 수 있다."
   },
   {
    "number": 4,
@@ -206,7 +209,8 @@
     4
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "베체트병에서 콜히친은 관절염의 재발을 예방하고 결절홍반, 성기궤양 등의 피부병변에 일차적으로 추천된다."
   },
   {
    "number": 5,
@@ -270,7 +274,8 @@
      "h": 587
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "담관암은 발생된 위치에 따라 크게 간내 담관암과 간외 담관암으로 나눌 수 있으며, 간외 담도암은 다시 간문부 담관암, 중위부 담관암, 원위부 담관암으로 분류하기도 하지만, 2차 간관 분지부에서부타 1차 간관 합류부, 총간관에 발생하는 간문부 담관암은 다른 간외 담관암과 비교하여 수술 방법이 크게 다르고, 담낭관 합류부에서 담관이 췌장과 만나는 부위의 담관에 발생하는 중위부 담관암은 임상적으로 원위부 담관에 발생하는 담관암의 진단의 방법이나 수술적인 방법이 유사하기 때문에 함께 원위부 담관암으로 분류하기도 한다."
   },
   {
    "number": 6,
@@ -333,7 +338,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "증상, 신체진찰, 영상학적검사를 통하여 항문 통증 환자에게 적절한 진단을 내릴 수 있다."
   },
   {
    "number": 7,
@@ -384,7 +390,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "혐기균은 cover 하는 ampicillin/sulbactam 사용이 권고된다."
   },
   {
    "number": 8,
@@ -435,7 +442,8 @@
      "h": 505
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "ITP치료에 대한 문제이다."
   },
   {
    "number": 9,
@@ -498,7 +506,8 @@
      "h": 480
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "환자의 증상, 경과와 신체검사 결과 염증형 유방암에 타당한 소견입니다. 엽상종양이 피부에 이상이 동반된 경우는 드물며, 유방고름집에서 나타나는 증상이 없습니다."
   },
   {
    "number": 10,
@@ -535,7 +544,8 @@
     10
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "8세 미만의 여아, 9세 미만의 남아에서 2차 성징이 나타나는 경우를 성조숙증이라 한다. 성선자극호르몬-의존성 성조숙증과 성선자극호르몬-비의존성 성조숙증의 구별을 위해 성선자극호르몬 방출호르몬 자극검사를 시행해야 한다."
   },
   {
    "number": 11,
@@ -586,7 +596,8 @@
      "h": 526
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "콩팥에 발생한 종양으로서, 소변 검사에서 잠혈 반응이 있을 수 있음"
   },
   {
    "number": 12,
@@ -637,7 +648,8 @@
      "h": 365
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "고령, 중증의 대동맥판막 협착증."
   },
   {
    "number": 13,
@@ -674,7 +686,8 @@
     12
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "3번, 4번이 편두통 예방약이며 콩팥돌이 있는 경우 토피라메이트(Topiramate)는 사용하지 않는다. 1번, 2번, 그리고 5번은 예방약이 아닌 급성기 치료약이다."
   },
   {
    "number": 14,
@@ -725,7 +738,8 @@
      "h": 434
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "골관절염의 임상 양상을 이해하고 검사 결과와 종합하여 진단을 할 수 있다."
   },
   {
    "number": 15,
@@ -762,7 +776,8 @@
     13
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "조발형 신생아 패혈증의 가장 흔한 원인은 group B streptococcus, Listeria monocytogenes, E.coli 이다. 환자가 미숙아이며 혈액배양검사에서 그람 양성 알균이 확인된 것으로 보아 group B streptococcus가 원인균일 가능성이 크다."
   },
   {
    "number": 16,
@@ -799,7 +814,8 @@
     14
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "약물의 adherence 문제로 반복적 재발을 경험하는 조현병 환자의 치료 전략으로 장기지속형 주사제 항정신병약물을 고려할 수 있다."
   },
   {
    "number": 17,
@@ -849,7 +865,8 @@
      "h": 227
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "분만 진행중으로 NST 소견은 early deceleration으로 경과관찰이다."
   },
   {
    "number": 18,
@@ -887,7 +904,8 @@
     15
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "환자는 범불안장애가 의심됩니다. 환자는 거의 모든 것에 불안을 느끼고 있고 불안의 느낌이 과도하고 광범위하게 다양한 신체증상을 동반하여 지속되고 있습니다. 일상 활동에 있어서 지나치게 불안해하거나 걱정을 하고, 그 기간이 최소한 6개월을 이상으로 그렇지 않은 날보다 그런 날이 더 많아야 한다. 이러한 걱정을 조절하기 어렵다고 느끼며, 불안과 걱정은 다음의 6가지 증상 중 적어도 3가지 이상의 증상과 관련이 있다. - 안절부절 못하거나 낭떠러지 끝에 서 있는 느낌, 수비게 피곤해짐, 집중하기 힘들거나 머릿속이 하얗게 되는 것, 과민성, 근육의 긴장, 수면곤란 등"
   },
   {
    "number": 19,
@@ -924,7 +942,8 @@
     15
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "young adult에서 발열, 전신근육통등의 감기 몸살 증상이 발생한 후 그 증상이 소실되면서 간기능 장애가 나타나는 급성바이러스 간염의 대표적 질환으로 급성A형간염을 생각할 수 있어야 한다."
   },
   {
    "number": 20,
@@ -962,7 +981,8 @@
     16
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "전반적 대뇌피질 위축, 3년 전부터 보이는 단기기억력 저하로 보아 치매를 의심할 수 있다. 치매에 동반된 정신병적 증상, 행동 증상에 대해 소량의 비정형 항정신병 약물을 사용할 수 있다."
   },
   {
    "number": 21,
@@ -1012,7 +1032,8 @@
      "h": 417
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "급성 담관염으로 내원한 환자로 CT상으로 관찰되지 않은 radiolucent CBD stone을 EUS 초음파를 이용하여 진단한 증례입니다."
   },
   {
    "number": 22,
@@ -1062,7 +1083,8 @@
      "h": 302
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "불안정협심증이 동반된 허혈성 심부전환자로 급성관상동맥증훈군에 해당하여 관상동맥조영술을 바로 진행하는 것이 권고됨"
   },
   {
    "number": 23,
@@ -1100,7 +1122,8 @@
     18
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "전자간증 예방을 위해 만성고혈압 등의 위험인자가 있는 산모에게 아스피린 복용을 권고한다."
   },
   {
    "number": 24,
@@ -1137,7 +1160,8 @@
     18
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "갑작스런 호흡곤란, 저혈압을 보이며 산소포화도가 감소하는 양수색전증이 의심되는 상태이다."
   },
   {
    "number": 25,
@@ -1174,7 +1198,8 @@
     18
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "다뇨시 중추성 요붕증 확인과정: Polyuria results from two potential mechanisms: (1) excretion of nonabsorbable solutes (such as glucose) or (2) excretion of water (usually from a defect in AVP production or renal responsiveness). To distinguish a solute diuresis from a water diuresis and to determine whether the diuresis is appropriate for the clinical circumstances, urine osmolality is measured. The average person excretes between 600 and 800 mosmol of solutes per day, primarily as urea and electrolytes. If the urine output is >3 L/d and the urine is dilute (<250 mosmol/L), total osmolar excretion is normal and a water diuresis is present. This circumstance could arise from polydipsia, inadequate secretion of AVP (central diabetes insipidus), or failure of renal tubules to respond to AVP (nephrogenic diabetes insipidus). If the urine volume is >3 L/d and urine osmolality is >300 mosmol/L, a solute diuresis is clearly present and a search for the responsible solute(s) is mandatory. if plasma AVP is low or undetectable, the patient has either pituitary DI or primary polydipsia. In that case, magnetic resonance imaging (MRI) of the brain can be performed to differentiate between these two conditions by determining whether or not the normal posterior pituitary bright spot is visible on T1-weighted midsagittal images"
   },
   {
    "number": 26,
@@ -1238,7 +1263,8 @@
      "h": 626
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "천식, 부비동염 환자가 발열, 피부발진, 신경증상이 발생하였으며 조직검사 상 호산구성 혈관염 소견 보여 Eosinophilic granulomatosis with polyangiitis 진단 가능하며 치료는 전신 스테로이드가 적합하다"
   },
   {
    "number": 27,
@@ -1289,7 +1315,8 @@
      "h": 495
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "발진 (maculopapular rash)와 가피 (eschar)를 확인할 수 있다. 쓰쓰가무시병으로 진단할 수 있고, 임산부에서 1차적 치료제로는 azithromycin다."
   },
   {
    "number": 28,
@@ -1326,7 +1353,8 @@
     21
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "임신성당뇨 선별검사에 대한 문제로 50 g 경구포도당부하검사 결과가 140 mg/dL 이상이므로 100 g 경구포도당부하검사를 시행한다."
   },
   {
    "number": 29,
@@ -1377,7 +1405,8 @@
      "h": 462
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "혈뇨가 좌측에서 나오고 있고, CT에서 Lt renal veni이 aorta, SMA 사이에 끼여 있어서 nutcracker syndrome으로 진단할 수 있다."
   },
   {
    "number": 30,
@@ -1428,7 +1457,8 @@
      "h": 286
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "프로락틴 분비성 뇌하수체 종양의 증례이다. 프로락틴 분비성 뇌하수체 종양의 1차 치료는 약물요법으로 도파민 작용체(카베골린, 브로모크립틴)를 우선 사용해볼 수 있다."
   },
   {
    "number": 31,
@@ -1491,7 +1521,8 @@
      "h": 360
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "unicornuate uterus 상태이다."
   },
   {
    "number": 32,
@@ -1528,7 +1559,8 @@
     24
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "조현병 사례이며, 비전형 항정신병 약물이 적절한 조치이다."
   },
   {
    "number": 33,
@@ -1579,7 +1611,8 @@
      "h": 323
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "기저질환 없고, 심부전 없는 환자의 rate control 시 1st line treatment는 beta blocker or non-dihydropyridine calcium channel antagonists (diltiazem, verapamil)이다."
   },
   {
    "number": 34,
@@ -1642,7 +1675,8 @@
      "h": 441
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "2기 매독의 소견으로 체간과 사지에 반접이나 구진의 발진이 발생하며 특히 손바닥과 발바닥에 특징적인 병변이 관찰된다. 진단을 위해 VDRL, RPR, TPHA 검사 등을 시행한다"
   },
   {
    "number": 35,
@@ -1679,7 +1713,8 @@
     26
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "천식에 해당하며 대표적인 유지치료는 흡입용 스테로이드제이다."
   },
   {
    "number": 36,
@@ -1730,7 +1765,8 @@
      "h": 274
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "비담즙성 구토, 우상복부의 덩어리, 환아의 나이를 고려할 때 비후성 유문 협착증을 생각할 수 있으며, 진단을 위하여 복부 초음파를 시행할 수 있다. 비후성 유문 협착증은 생후 20일을 전후로 호발하는 질환으로 내과적 응급 질환이며, 남아에 더 흔하고, 알칼리혈증, 전해질 장애 및 탈수 증상을 보일 수 있다. 내과적 이상 소견 교정 후 수술적 치료 (pyelomyotomy) 를 시행한다."
   },
   {
    "number": 37,
@@ -1780,7 +1816,8 @@
      "h": 345
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "흉통의 성격을 통한 흉통을 일으키는 질환에 대한 감별 문제로서, 심막염에서 허혈성 심질환의 흉통과 양상은 비슷하지만 기침, 깊은 흡기, 누운 자세에서 흉통이 악화되고 앉은 자세에서 완화되는 특징적 소견을 보입니다. 또한, 감기 등의 선행하는 바이러스 감염의 병력도 중요합니다. 심전도에서 국소 lead의 ST-T변화가 아니라 전 lead에 concave pattern의 ST elevation과 PR segment의 depression도 심막염의 특징적 소견입니다."
   },
   {
    "number": 38,
@@ -1831,7 +1868,8 @@
      "h": 416
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "CNB is preferred, although it is difficult to classify phyllodes tumors with benign or intermediate malignant potential on the basis of a limited sampling. The final diagnosis is best made by excisional biopsy followed by careful pathologic review."
   },
   {
    "number": 39,
@@ -1868,7 +1906,8 @@
     28
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "특발혈소판감소자반증의 병력, 신체진찰 소견, 말초혈검사결과를 설명하고 있다.혈소판수가 20,000/uL 일 경우 IVIG, steroid 등의 치료를 한다."
   },
   {
    "number": 40,
@@ -1919,7 +1958,8 @@
      "h": 636
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "24시간 소변검사에서 catecholamine 대사물의 증가"
   },
   {
    "number": 41,
@@ -1957,7 +1997,8 @@
     30
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "눈꺼풀 처짐의 원인중에 근무력증에서 보이는 특징적인 증상과 신경학적 소견입니다."
   },
   {
    "number": 42,
@@ -1994,7 +2035,8 @@
     30
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "부동액 중독의 치료는 혈액 투석이다."
   },
   {
    "number": 43,
@@ -2045,7 +2087,8 @@
      "h": 593
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "anal fissure with skin tag의 사진"
   },
   {
    "number": 44,
@@ -2096,7 +2139,8 @@
      "h": 480
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "호지킨림프종은 70%에서 진단시부터 국소적인 림프절 비대, 특히 경부 림프절 비대를 동반하며, 인접된 림프절을 따라 퍼지고 단단하며 무통성의 특징을 가지고 있다. 원인 불명의 발열, 야간 발한, 체중감소의 B symptom이 동반되며, 이는 호지킨림프종이 실질 장기에 퍼져있다는 증거이다. 림프절 생검 검사로 진단후 병기설정을 하며, 병리소견으로 Reed-Sternberg cell이 확인된다."
   },
   {
    "number": 45,
@@ -2133,7 +2177,8 @@
     32
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "공황장애에 대한 인지행동치료를 설명하고 있음. 일반적으로 인지행동치료는 공황에 대한 정신교육(공황 증상에 대한 오해를 교정함), 인지재구조화 (사고의 왜곡을 발견하고 교정함), 노출(환자가 두려워하는 신체증상(예, 빈맥, 호흡곤란, 어지러움 등)에 대한 내수용토출(introceptive exposure) 시키고 두려운 상황(예, 낯선 곳, 운전) 등에 직접 노출시켜 파국적 인지오류를 교정하고 불안반응을 줄임."
   },
   {
    "number": 46,
@@ -2184,7 +2229,8 @@
      "h": 596
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "서혜부 탈장의 치료는 strangulation이 아닌 경우에 일단 manual reduction을 시행한다."
   },
   {
    "number": 47,
@@ -2221,7 +2267,8 @@
     33
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "총빌리루빈 수치가 12mg/dL미만이므로 병적 황달의 가능성은 낮다. 출생 1주일 이내이며, 모유 수유 중이며, 환아의 체중은 출생당시보다 300g 감소했으므로, 조기 모유 황달의 가능성이 높다. 모유 수유가 충분하지 않아 탈수, 체중감소, 황달 등의 증상이 발생할 수 있다. 산모의 젖 생산은 수요와 공급의 원리를 따르므로 자주, 짧게 먹이는 것이 prolactin 분비를 증가시켜 엄마의 젖 공급을 더욱 효과적으로 늘릴 수 있다."
   },
   {
    "number": 48,
@@ -2272,7 +2319,8 @@
      "h": 272
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "혈압이 높기는 하나 분만의 적응증은 아니다."
   },
   {
    "number": 49,
@@ -2336,7 +2384,8 @@
      "h": 534
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "사진에서 condyloma 병변이 외음부 전반과 질 입구에서 보인다. 병변의 조직생검 없이도 특징적인 곤지름의 모양을 보일 경우 임상적으로 진단 후 치료가 가능하다. 조직 생검의 적응증은 진단이 불확실 하거나 비특이적인 모양을 보이는 경우, 면역저하자, 약물치료에도 반응하지 않는 경우에 시행한다. 약물치료로는 Imiquimod 도포가 가장 많이 사용되며 병변이 큰 경우는 병변 절제술 시행 후 약물치료를 병행하기도 한다."
   },
   {
    "number": 50,
@@ -2399,7 +2448,8 @@
      "h": 659
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "기존 내시경 이미지 상, 다수의 결장 게실이 있던 환자로, CT 영상에서는 cecum 의 다발성 게실과 함께 주위 조직의 부종과 국소적인 복막염이 관찰됩니다. 본 CT 에서는 담낭, 담도 이미지는 포함되어 있지 않으며, 대장 내시경 이미지 및 환자 과거력 상 크론병을 의심할 만한 소견이 없습니다. 요로돌을 의심할 만한 소견도 CT 상 관찰되지 않았습니다."
   },
   {
    "number": 51,
@@ -2449,7 +2499,8 @@
      "h": 790
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "구불결장 염전은 전체 대장 염전의 약 2/3를 차지한다. 구불결장 염전의 치료는 비수술적인 감압술을 포함한 적절한 소생술 시행으로부터 시작하게 된다. 대부분 Flexible sigmoidoscope를 이용하여 감압술을 주로 시행하게 되며 만약 이를 통한 감압술이 제대로 시행되지 않는다면 개복에 의한 Hartmann’s operation을 시행하여야 한다."
   },
   {
    "number": 52,
@@ -2486,7 +2537,8 @@
     38
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "일차성레이노 환자로 레이노현상 치료를 위해 칼슘통로차단제를 사용할 수 있음."
   },
   {
    "number": 53,
@@ -2523,7 +2575,8 @@
     38
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "벤조다이아제핀은 빠른 효과를 보이기 때문에 유용하며, 일반적으로 SSRI 와 병용투여하지만 의존성, 남용 및 금단 증상이 발생하므로 장기사용은 특별히 주의해야한다."
   },
   {
    "number": 54,
@@ -2564,7 +2617,8 @@
    "answers": [
     1,
     2
-   ]
+   ],
+   "explanation": "34주 이상 된 산모의 양막파수 상태로 분만을 하여야 한다. 우선 자궁경부변화 및 수축을 관찰 하면서 분만 진행을 관찰한다"
   },
   {
    "number": 55,
@@ -2627,7 +2681,8 @@
      "h": 1012
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "증상 및 검사 결과를 토대로 폐동맥색전증을 의심하고 진단계획을 수립할 수 있다."
   },
   {
    "number": 56,
@@ -2678,7 +2733,8 @@
      "h": 671
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "최근 혈압 조절 되지 않고, 가슴통증이 갑자기 시작되고, 등으로 방사되는 양상으로 대동맥 박리증이 가능성이 높습니다."
   },
   {
    "number": 57,
@@ -2715,7 +2771,8 @@
     41
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만삭에 양막이 파막되었고 내진 소견에서 태아 transverse lie가 확인되었으므로 제왕절개 수술을 시행해야 한다"
   },
   {
    "number": 58,
@@ -2753,7 +2810,8 @@
     42
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "뇌전증의 정의에 따라, 환자는 2번 이상의 비유발 발작 (24시간 이상 간격)이 확인되어 뇌전증으로 진단할 수 있다. 환자의 뇌전증 재발 확률은 40%이상으로 예측하며, 항경련제를 사용하여 약물치료를 시작해야 한다. ①경과관찰 : 뇌전증으로 진단할 수 있으며 약물치료가 필요하다. ② 항경련제인 발프로산은 증례의 연소성 근간대성뇌전증의 일차 치료제이다.(정답) ③ 츠립탄: 편두통 예방약제로 쓰이는 약으로 해당되지 않는다. ④ 베차차단제 : 뇌전증의 치료로 해당되지 않는다. ⑤ 항불안제 : 환자는 뇌전증 환자이며 가성발작이 아니므로, 항경련제를 사용해야 한다."
   },
   {
    "number": 59,
@@ -2816,7 +2874,8 @@
      "h": 627
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "배변과 관련된 복부 만성 통증, 배변 후 완화, 1년 전 직장 옮긴 후 스트레스와의 관련성, 체중감소와 혈변 없음 등이 IBS를 시사한다."
   },
   {
    "number": 60,
@@ -2854,7 +2913,8 @@
     44
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "세포외액이 감소된 상태에서 대사상 알칼리증를 해소하기 위해서 생리식염수가 필요합니다. Isotonic saline is recommended to reverse the alkalosis when ECFV contraction is present"
   },
   {
    "number": 61,
@@ -2917,7 +2977,8 @@
      "h": 687
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "실제 진료 환자 증례로 외부에서 초음파검사와 FNA를 미리 시행 후에 내원하여 결절의 진단 순서에는 맞지 않으나 기본적인 결절의 진단 과정을 이해하면 답할 수 있는 문제임. 가는바늘흡인세포검사에서 여포종양 의심으로 진단되는 경우에는 15-30%에서 악성으로 진단되나 TSH 감소되어 있고 갑상샘 스캔에서 열결절의 소견을 보이는 경우 악성의 가능성은 1-2%로 매우 낮다. 갑상선기능검사는 subclinical hyperthyroidism 소견으로 투약 없이 경과 관찰 가능하다. 따라서 갑상샘 결절과 기능에 대한 추적 관찰을 시행한다."
   },
   {
    "number": 62,
@@ -2954,7 +3015,8 @@
     45
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "아편류 금단 시 복통, 설사, 동공산대, 오한, 발열, 발한, 하품, 눈물 등의 증상이 전형적으로 나타납니다."
   },
   {
    "number": 63,
@@ -2992,7 +3054,8 @@
     46
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "과숙 임신에 해당되며 양수감소증의 소견을 보이므로 질식 유도분만을 시행하여야 한다."
   },
   {
    "number": 64,
@@ -3042,7 +3105,8 @@
      "h": 318
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "간내담석에 의한 이차성 간경변으로, 좌엽에 국한되어 있어 증상 조절 및 담도암 발생 예방을 위한 간절제술의 적응증에 해당한다."
   },
   {
    "number": 65,
@@ -3093,7 +3157,8 @@
      "h": 350
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "전벽의 급성심근경색증 후 수일내 동반된 구조적 합병증으로 급성 심실사이막결손과 급성 승모판역류증이 발생할 수 있다."
   },
   {
    "number": 66,
@@ -3130,7 +3195,8 @@
     47
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "EUS를 통해 수술 전 local staging을 가장 정확하게 시행할 수 있다. CT는 간전이 등 원격전이 진단에 유용한 검사이다."
   },
   {
    "number": 67,
@@ -3181,7 +3247,8 @@
      "h": 624
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "대장조영술을 시행하여 직장하부의 무신경절부에 해당하는 협소부로부터 상방이 확장되어 있는 것을 볼 수 있다."
   },
   {
    "number": 68,
@@ -3218,7 +3285,8 @@
     48
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "Varenicline은 니코틴을 억제하여 담배 맛을 줄이고, 부분적으로 도파민 분비를 증가시켜 금당증상을 완화시켜 금연치료의 약물로 사용된다."
   },
   {
    "number": 69,
@@ -3269,7 +3337,8 @@
      "h": 482
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "변이형 협심증으로 칼슘 채널 차단제 고려됨"
   },
   {
    "number": 70,
@@ -3307,7 +3376,8 @@
     50
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "양성돌발두위현훈은 자발안진이 없고, 다른 신경학적 증상없이 두위 변환시 발생하는 안진과 회전성 어지럼이 특징적이다. 치료는 이석치환술을 시행한다."
   },
   {
    "number": 71,
@@ -3344,7 +3414,8 @@
     50
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "분만 후 4시간 이내에 배뇨를 못했을 때 도뇨관을 삽입하여 24시간 거치 후 제거해본다."
   },
   {
    "number": 72,
@@ -3381,7 +3452,8 @@
     50
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "부분 프로트롬빈 시간 연장, 8 응고인자 감소로 혈우병 A를 진단"
   },
   {
    "number": 73,
@@ -3432,7 +3504,8 @@
      "h": 559
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "고령 환자에서 최근 항생제 투여 병력과 관련된 복통 및 설사, 대장내시경 사진에서 다양한 크기의 경계가 명확하고 약간 융기 된 노랗거나 흰색 의 판이 관찰되어 위막성대장염를 시사한다."
   },
   {
    "number": 74,
@@ -3495,7 +3568,8 @@
      "h": 250
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "자궁수축이 지속되고 임신 28주이므로 폐성숙주사를 우선 사용한다."
   },
   {
    "number": 75,
@@ -3546,7 +3620,8 @@
      "h": 526
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "고열이 수일간 지속되다가 열이 떨어지면서 전신의 홍반성 발진이 나타나는 경우는 전형적인 돌발진의 모습이다."
   },
   {
    "number": 76,
@@ -3583,7 +3658,8 @@
     53
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "신동맥협착증 진단 Contrast-enhanced computed tomography (CT) with vascular reconstruction provides excellent vascular images and functional assessment, but carries a small risk of contrast toxicity. It provides a more reliable evaluation of accessory vessels and the distal vasculature than duplex or magnetic resonance imaging (MRI)."
   },
   {
    "number": 77,
@@ -3621,7 +3697,8 @@
     54
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "가장 적절한 처치는 복강경하 난소낭종절제술이 되겠습니다."
   },
   {
    "number": 78,
@@ -3661,7 +3738,8 @@
    "answers": [
     2,
     5
-   ]
+   ],
+   "explanation": "혈당, 전해질, 삼투질 농도 및 항이뇨호르몬이 정상이나 수분이뇨 소견을 보이고 있다."
   },
   {
    "number": 79,
@@ -3712,7 +3790,8 @@
      "h": 112
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "환자는 심한 골다공증소견을 보이며 골절이 동반되어 있어 치료가 필요하다. 칼슘 및 비타민 D의 보충이 필요하나 신결석의 병력이 있어 고용량의 칼슘은 권장되지 않는다. eGFR < 30 이하에서 Bisphosphonate의 사용은 금기이다. SERM 제재의 경우 nonvertebral fracture 에 대한 효과는 증명되지 않았으며, deep vein thrombosis를 증가시킬 수 있어 immobilization 등 위험도가 높은 환자에게는 신중하게 투여하여야 한다."
   },
   {
    "number": 80,
@@ -3749,7 +3828,8 @@
     55
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "검사상 이상소견이 발견되지 않은 질출혈로 기능성 자궁출혈로 볼 수 있습니다."
   }
  ]
 }

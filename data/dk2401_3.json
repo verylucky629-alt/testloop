@@ -66,7 +66,8 @@
      "h": 221
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "증상 및 검사로 천식을 진단하고 천식 치료를 선택할수 있다."
   },
   {
    "number": 2,
@@ -117,7 +118,8 @@
      "h": 403
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "악성 종양에 따른 Tamponade소견으로 심장배액술이 요구된다."
   },
   {
    "number": 3,
@@ -167,7 +169,8 @@
      "h": 332
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "양수과소이며 진통이 적절하지 않으므로 옥시토신을 써서 유도분만을 진행한다."
   },
   {
    "number": 4,
@@ -205,7 +208,8 @@
     3
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "응급 상황과 같은 급박 하거나 적절한 시기를 놓친 후에 논의하는 것을 피하고, 회생의 가능성이 없고 치료에도 불구하고 회복되지 않는다는 판단이 설 때, 가능한 일찍 환자의 가치와 선호도를 확인하여 의사 결정을 해야 한다"
   },
   {
    "number": 5,
@@ -268,7 +272,8 @@
      "h": 547
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "임산부의 성기 헤르페스 과거력이 있으며, 수포를 동반한 신생아 발열이 있을시 헤르페스 감염에 대한 고려가 반드시 필요합니다. 감염이 의심되면 확진 이전에 정주 acyclovir 를 투여합니다."
   },
   {
    "number": 6,
@@ -305,7 +310,8 @@
     4
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "고령, 기저질환자에서 스테로이드 불응 ITP 치료. 혈소판 수용체 작용제(Thrombopoietin-Receptor Agonist)"
   },
   {
    "number": 7,
@@ -356,7 +362,8 @@
      "h": 799
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "혈액응고인자들이 모두 정상인 상태이며 장기 출혈이 없이 피부에만 발생되는 자색반증으로 노년자색반증으로 진단가능함"
   },
   {
    "number": 8,
@@ -393,7 +400,8 @@
     5
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "요오드화 조영제에 의한 급성 과민반응으로 일반적으로 IgE를 매개하지 않고 비만세포를 자극하여 발생하는 비면역학적 기전으로 설명된다. opioid계 약물이 이와 동일한 기전으로 가려움증을 일으킬 수 있다. 세파클러 아나필락시스는 1형 IgE매개 면역반응이며, 염색약에 의한 접촉성피부염은 T세포매개 면역반응, 수혈후 발생한 용혈성 빈혈은 항원항체 매개 면역반응이다. 아목시실린 항생제에 의한 설사는 약리작용과 관련된 A형 이상반응으로 과민반응으로 분류되지 않는다."
   },
   {
    "number": 9,
@@ -431,7 +439,8 @@
     6
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "진통소염제 복용 후 급성 호흡곤란을 주소로 내원한 환자로 비용종이 동반된 만성 비부비동염도 동반되어있다. 기저 천식이 있으면서 진통소염제(아스피린) 과민성 호흡기질환의 가능성이 높은 환자로 진통소염제 과민반응에 대한 검사로 경구유발시험을 계획할 수 있으며, 기저 천식여부에 대한 확인이 반드시 필요하다."
   },
   {
    "number": 10,
@@ -468,7 +477,8 @@
     6
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만성 두드러기 증례로 물리 두드러기 중 콜린성 신경 섬유에 의해 증상이 유발되는 콜린 두드러기에 대한 설명이다. 주로 운동을 하거나 더운 물 목욕 후, 땀이 났을 때 생기는 두드러기이다."
   },
   {
    "number": 11,
@@ -505,7 +515,8 @@
     6
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "급성 호흡기 증상(호흡곤란, 천명)과 피부 발진을 보이는 아나필락시스 증례로 일차적으로 에피네프린(0.01mg/kg, 최대량 12세 미만 0.3mg, 12세 이상 0.5mg)을 외측 대퇴부에 근육 주사하고 필요한 경우 5~15분마다 2~3회 반복 주사한다"
   },
   {
    "number": 12,
@@ -543,7 +554,8 @@
     7
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "스테로이드에 잘 반응하는 미세 변화형은 소아 특발성 신증후군의 85%를 차지하므로, 소아 신증후군으로 진단된 소아는 신장 조직검사를 시행 하지 않고 우선 스테로이드 치료를 시작한다. 미세변화형 신증후군 환아의 경우, 자주 재발하기는 하지만 대개 신기능의 저하는 없으며, 10대 후반이 되면 많은 예에서 재발 없이 회복된다"
   },
   {
    "number": 13,
@@ -580,7 +592,8 @@
     7
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "기립 단백뇨는 단독 단백뇨의 원인중 60% 이상을 차지하므로, 학령기에 신체검사에서 우연히 발견된 단독 단백뇨의 경우에 우선 감별해야 한다. 서서 활동할 때는 단백뇨가 비정상적으로 많이 나오고 누워 있을 때는 단백뇨가 나오지 않기 때문에 의심되면 아침 첫 소변으로 단백을 검사해서 음성을 확인해야한다. 예후는 양호하므로 추가 적인 검사는 필요하지 않다."
   },
   {
    "number": 14,
@@ -631,7 +644,8 @@
      "h": 637
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "뇌혈관외과학 p394: 지주막하출혈이 넓게 퍼져있거나 의식소실이 있는 환자에서는 CT angiography에서 동맥류가 확인되지 않더라도 뇌혈관 조영술을 하여야 한다 뇌졸중 p206: 최근에는 뇌CT 혈관조영술에 많이 쓰이고 있는데 위음성의 가능성이 있으므로 CTA에서 음성이라고 해도 뇌동맥류파열에 의한 거미막하추혈이 의심되는 경우에는 뇌혈관 조영술을 통한 확진이 반드시 필요하다 뇌동맥류를 제대로 치료하기 위해서는 표준검사로 간주되는 뇌혈관조영술을 반드시 시행하도록 권장한다"
   },
   {
    "number": 15,
@@ -668,7 +682,8 @@
     8
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "신증후군에서 부종이 있을 경우 염분 섭취를 제한한다."
   },
   {
    "number": 16,
@@ -706,7 +721,8 @@
     9
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "범혈구감소증과 젖산탈수소효소 증가, 요산 증가로 급성백혈병을 의심할 수 있으며, 압통이나 열감이 없는 목 림프절 비대는 감염보다는 급성백혈병과 관련된 동반 증상으로 생각할 수 있음."
   },
   {
    "number": 17,
@@ -756,7 +772,8 @@
      "h": 725
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "후비루에 의한 만성기침"
   },
   {
    "number": 18,
@@ -793,7 +810,8 @@
     10
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "철결핍빈혈의 치료에 대한 문제임. 경구용 철분제 투여가 필요함."
   },
   {
    "number": 19,
@@ -843,7 +861,8 @@
      "h": 414
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "2023 대한갑상선학회 갑상선결절 진료 권고안에 따르면, 병리진단 범주 3 비정형(AUS) 결과를 보이는 결절의 경우, 임상적인 위험 인자, 초음파 소견, 환자의 선호도와 실행 가능성을 고려하여, 초음파 추적경과 관찰을 하거나 진단적 수술 결정을 위한 악성도 평가에 도움을 얻기위해 반복적인 FNA, CNB, 또는 분자표지자검사를 시행해 볼 수 있다."
   },
   {
    "number": 20,
@@ -919,7 +938,8 @@
      "h": 584
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "골다공증을 동반하는 부갑상선항진증의 진단 및 수술치료 적응증에 대해 묻는 증례이다. 환자 초음파상 부갑상선 선종 의심되는 결절 발견되어 시행한 흡인 검체 PTH 측정에서 PTH 상승되어, 1차성 부갑상선항진증 진단 가능하다. 유전자검사는 부갑상선항진증 환자의 진단 항목으로 권고되지 않는다. 수술 치료 적응증 중 BMD (중심골 T-score -2.5 미만) 이 해당되는 환자로, 나머지 적응증 (50세 미만, 영상학검사상 척추 골절, 칼슘 정상상한치보다 1mg/dL 이상 증가, 크레아티닌 청소률 혹은 eGFR 60mL/min 미만, 24시간 칼슘 배출량 >400mg/day, 신장 혹은 요로결석 동반) 은 해당하지 않는다. 환자 현재 혈중 칼슘 정상 소견 이므로 고칼슘혈증 치료인 bisphosphonate나 이뇨제는 필요하지 않다. 수술치료 후 투여하거나, 수술을 원하지 않을때 bisphosphonate를 고려할 수 있다. cinacalcet은 2차성 부갑상선항진증의 치료제이며, 현재 1차성 부갑상선항진증에서는 일차적 치료약제로 고려되지 않는다."
   },
   {
    "number": 21,
@@ -970,7 +990,8 @@
      "h": 564
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "흡인성 폐렴을 의심할 수 있는 병력과 불안정한 활력 징후를 통해 빠르게 패혈증을 의심하고 진단할 수 있어야 한다."
   },
   {
    "number": 22,
@@ -1007,7 +1028,8 @@
     13
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "공황발작에 대한 감별을 묻는 문항임. 실제로 우울장애에서 공황발작이 가장 많이 병발합니다. 등교버스와 학교에서 불안이 배타적으로 올라오므로 예측하지 못하는 상황에서도 발생해야하는 공황장애는 배제됩니다. 광장공포증도 마찬가지로 배제됩니다. 또 한달에 3번만 발생한 점이 버스에 대한 특정공포증이라고 보기도 어렵습니다."
   },
   {
    "number": 23,
@@ -1070,7 +1092,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "폐색전증 환자에서 심장효소수치 상승이 없고 활력징후가 안정적이므로 항응고치료를 할 수 있다. 항응고치료의 금기가 아니므로 하대정맥필터 삽입은 제외."
   },
   {
    "number": 24,
@@ -1134,7 +1157,8 @@
      "h": 637
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "병력 및 영상학적 소견, 폐기능검사를 종합해 볼때 사이질폐렴을 진단할 수 있으며 항핵항체 음성, honeycomb change 등을 볼 때 특발성폐섬유화증으로 진단할 수 있다."
   },
   {
    "number": 25,
@@ -1185,7 +1209,8 @@
      "h": 637
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "병력과 흉부방사선검사 결과를 종합할 때 기흉을 진단할 수 있으며, 이에 대한 치료로 가슴관삽입이 필요하다."
   },
   {
    "number": 26,
@@ -1236,7 +1261,8 @@
      "h": 710
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "비가역적인 기류제한이 있으면서, 1초간 강제호기량 감소와 흉부방사선 검사에서 폐침윤이 없어 만성폐쇄성폐질환으로 진단할 수 있다."
   },
   {
    "number": 27,
@@ -1287,7 +1313,8 @@
      "h": 723
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "병력 및 흉부방사선 검사를 종합할 때 결핵을 의심할 수 있겠고, 혈액검사에서도 급성염증반응관련 인자들의 증가가 없어 폐렴보다는 결핵에 합당한 소견으로 볼 수 있음. 폐결핵을 의심하고 진단을 위해 다음으로 시행할 검사를 찾을 수 있어야 함."
   },
   {
    "number": 28,
@@ -1362,7 +1389,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "신체검사 및 흉부방사선검사에서 피하기종 및 종격동공기증이 의심되는 소견이 관찰되고, CT에서 확인이 가능함."
   },
   {
    "number": 29,
@@ -1413,7 +1441,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "병력에서 흉막질환이 의심되고, 흉부방사선 검사에서 좌측흉수가 확인되어 흉수천자를 시행하였고, 그 결과를 제시함. 흉수천사 검사 결과에서 결핵성 늑막염이 가장 합당하겠음."
   },
   {
    "number": 30,
@@ -1450,7 +1479,8 @@
     22
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "캄필로박터 장염임"
   },
   {
    "number": 31,
@@ -1501,7 +1531,8 @@
      "h": 919
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "Today, duplex imaging is the first and best modality to assess for the normal function and presence of venous insufficiency of the lower extremities."
   },
   {
    "number": 32,
@@ -1552,7 +1583,8 @@
      "h": 390
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "4배 용량의 항히스타민제에도 조절되지 않는 만성 두드러기의 경우 anti-IgE 치료가 권고됨."
   },
   {
    "number": 33,
@@ -1589,7 +1621,8 @@
     24
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "Parvovirus 에 의한 골수무형성 발중은 소아기 동안의 가장 심각한 합병증으로 심한 빈혈 (Hct <10%). 고박출성 (highoutput) 심부전 저산소증, 심혈관 허탈로 인히여 사망할 수 있다."
   },
   {
    "number": 34,
@@ -1627,7 +1660,8 @@
     25
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "복부 덩이, 간수치 증가, 알파태아단백 증가 - 간모세포종 소견"
   },
   {
    "number": 35,
@@ -1691,7 +1725,8 @@
      "h": 455
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "ITP(특발성 혈소판 감소성 자반병) 진단은 일반적으로 다른 원인에 의한 혈소판 감소가 배제되며, 본 환자의 경우 혈소판 수치의 유의미한 감소 및 자반과 멍과 같은 출혈 증상을 고려하여 이 진단이 고려될 수 있습니다."
   },
   {
    "number": 36,
@@ -1741,7 +1776,8 @@
      "h": 795
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Early and aggressive volume repletion is mandatory in patients with rhabdomyolysis, who may initially require 10 L of fluid per day. Alkaline fluids (e.g., 75 mmol/L sodium bicarbonate added to 0.45% saline) may be beneficial in preventing tubular injury and cast formation,"
   },
   {
    "number": 37,
@@ -1792,7 +1828,8 @@
      "h": 265
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "Both chronic liver failure and chronic kidney disease can cause fatigue. Over 80% of hemodialysis patients complain of fatigue, which makes it one of the most common symptoms reported by patients in chronic kidney disease"
   },
   {
    "number": 38,
@@ -1855,7 +1892,8 @@
      "h": 480
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "splenomegaly, AST/ALT 상승, VCA-IgM 양성소견 - infectious mononucleosis 시사하는 소견"
   },
   {
    "number": 39,
@@ -1892,7 +1930,8 @@
     29
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "Treatment of acute symptomatic hyponatremia should include hypertonic 3% saline (513 mM) to acutely increase plasma Na+ concentration by 1–2 mM/h to a total of 4–6 mM； this modest increase is typically sufficient to alleviate severe acute symptoms, after which corrective guidelines for chronic hyponatremia are appropriate AVP antagonists (vaptans) are highly effective in SIAD and in hypervolemic hyponatremia due to heart failure or cirrhosis, reliably increasing plasma Na+ concentration due to their “aquaretic” effects (augmentation of free water clearance). Most of these agents specifically antagonize the V2 AVP receptor； tolvaptan is currently the only oral V2 antagonist to be approved by the U.S. Food and Drug Administration."
   },
   {
    "number": 40,
@@ -1943,7 +1982,8 @@
      "h": 297
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "Hemodialysis is the most effective and reliable method to reduce plasma K+ concentration； peritoneal dialysis is considerably less effective. Patients with acute kidney injury require temporary, urgent venous access for hemodialysis, with the attendant risks； in contrast, patients with ESRD or advanced chronic kidney disease may have a preexisting venous access. The amount of K+ removed during hemodialysis depends on the relative distribution of K+ between ICF and ECF (potentially affected by prior therapy for hyperkalemia), the type and surface area of the dialyzer used, dialysate and blood flow rates, dialysate flow rate, dialysis duration, and the plasma-to-dialysate K+ gradient."
   },
   {
    "number": 41,
@@ -1993,7 +2033,8 @@
      "h": 468
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Mild pyelonephritis can present as low-grade fever with or without lower-back or costovertebral-angle pain, whereas severe pyelonephritis can manifest as high fever, rigors, nausea, vomiting, and flank and/or loin pain. Symptoms are generally acute in onset, and symptoms of cystitis may not be present. Fever is the main feature distinguishing cystitis from pyelonephritis. The fever of pyelonephritis typically exhibits a high spiking “picket-fence” pattern and resolves over 72 h of therapy. Bacteremia develops in 20–30% of cases of pyelonephritis. Patients with diabetes may present with obstructive uropathy associated with acute papillary necrosis when the sloughed papillae obstruct the ureter. Papillary necrosis may also be evident in some cases of pyelonephritis complicated by obstruction, sickle cell disease, analgesic nephropathy, or combinations of these conditions. In the rare cases of bilateral papillary necrosis, a rapid rise in the serum creatinine level may be the first indication of the condition"
   },
   {
    "number": 42,
@@ -2044,7 +2085,8 @@
      "h": 274
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "if UTO is suspected, a bladder catheter should be inserted. Abdominal ultrasonography should be performed to evaluate renal and bladder size, as well as pyelocalyceal contour."
   },
   {
    "number": 43,
@@ -2081,7 +2123,8 @@
     31
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "Classically, patients with Alport’s syndrome develop hematuria, thinning and splitting of the GBMs, and mild proteinuria (<1–2 g/24 h), which appears late in the course, followed by chronic glomerulosclerosis leading to renal failure in association with sensorineural deafness. Some patients develop lenticonus of the anterior lens capsule, “dot and fleck” retinopathy, and rarely, leiomyomatosis. Approximately 85% of patients with Alport’s syndrome have an X-linked inheritance of mutations in the α5(IV) collagen chain on chromosome Xq22–24."
   },
   {
    "number": 44,
@@ -2118,7 +2161,8 @@
     32
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "By history, it is often difficult for patients to distinguish urinary frequency (often of small volumes) from true polyuria (>3 L/d), and a quantification of volume by 24-h urine collection may be needed. Polyuria results from two potential mechanisms: (1) excretion of nonabsorbable solutes (such as glucose) or (2) excretion of water (usually from a defect in AVP production or renal responsiveness). To distinguish a solute diuresis from a water diuresis and to determine whether the diuresis is appropriate for the clinical circumstances, urine osmolality is measured. The average person excretes between 600 and 800 mosmol of solutes per day, primarily as urea and electrolytes. If the urine output is >3 L/d and the urine is dilute (<250 mosmol/L), total osmolar excretion is normal and a water diuresis is present."
   },
   {
    "number": 45,
@@ -2155,7 +2199,8 @@
     32
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Buffered crystalloid solutions (e.g., Ringer’s Lactate, Hartmann’s solution, Plasma-Lyte) are recommended for patients with AKI who are not hypochloremic； 0.9% saline is recommended for hypovolemic hypochloremic patients if the serum chloride concentration is closely monitored. Excessive chloride administration from 0.9% saline may lead to hyperchloremic metabolic acidosis and may impair GFR"
   },
   {
    "number": 46,
@@ -2193,7 +2238,8 @@
     33
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Contrast-enhanced computed tomography (CT) with vascular reconstruction provides excellent vascular images and functional assessment,"
   },
   {
    "number": 47,
@@ -2230,7 +2276,8 @@
     33
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "검사결과에서 이상소견이 없다. 탈수열을 시사하는 소견이다."
   },
   {
    "number": 48,
@@ -2267,7 +2314,8 @@
     33
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "환자의 증상은 left lateral medullary lesion에 의해 발생하며, 원인 감별을 위해서 뇌자기공명영상 검사를 우선적으로 시행합니다. 경추부 마사지 이후 발생한 증상은 dissection으로 인한 경우를 나타내며 lateral medullary infarction을 시사합니다."
   },
   {
    "number": 49,
@@ -2305,7 +2353,8 @@
     34
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "범불안장애 환자들은 계속되는 과도한 걱정과 불안이 핵심증상으로, 근육 긴장과 초조감을 흔히 동반한다. 범불안장애 환자들의 걱정은 일반적인 일에 대한 걱정으로, 미래의 사건이나 활동에 대한 걱정이 더 많다. 직장, 가족, 건강, 재정상황이나 대인 관계에 대해 사소하고 일상적이 일에 대한 지나친 걱정이 주로 나타난다. 이러한 걱정이 있는 날이 없는 날보다 더 많고, 통제하기 어려운 지나친 걱정은 개인의 다른 주요 기능을 방해한다. 본 증례의 경우는 아니나, 임상에서는 땀 흘림, 메스꺼움, 설사 등의 신체적 증상을 동반하기도 하며, 이로 인해 일반의나 내과, 가정의학과 의사를 잘 찾게 된다. 신체검사 상 특별한 이상 소견이 발견되지 않아 신경성이라는 말을 듣고는 한다."
   },
   {
    "number": 50,
@@ -2355,7 +2404,8 @@
      "h": 530
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "평소 속쓰림이 있는 것으로 보아 소화성 궤양이 있었을 가능성이 높으며, 복부 압통 및 반발 압통, 그리고 chest X ray의 free air 소견으로 소화기관의 perforation 이 의심되는 상황이다"
   },
   {
    "number": 51,
@@ -2406,7 +2456,8 @@
      "h": 613
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "우상엽의 폐렴소견. 학동기 폐렴의 가장 흔한 원인으로 나이와 증상, 잠복기, 검사 소견에서 마이코플라즈마폐렴으로 진단할 수있다."
   },
   {
    "number": 52,
@@ -2457,7 +2508,8 @@
      "h": 549
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Mallory-Weiss tear (Mallory-Weiss syndrome) Vomiting, retching, or vigorous coughing can cause a nontransmural tear at the gastroesophageal junction that is a common cause of upper gastrointestinal bleeding. Most patients present with hematemesis. Antecedent vomiting is the norm, but not always evident."
   },
   {
    "number": 53,
@@ -2508,7 +2560,8 @@
      "h": 487
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "청색증으로 보이는 활로씨 사징후로 저산소 발작을 보이는 경우 산소투여, 몰핀투여해야한다."
   },
   {
    "number": 54,
@@ -2545,7 +2598,8 @@
     37
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "체액량 저하와 전해질 교정 수액요법"
   },
   {
    "number": 55,
@@ -2582,7 +2636,8 @@
     37
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "문항 요지 : 1) 제 1형 양극성 장애와 제 2형 양극성 장애를 구분할 수 있는가, 2) 혼재성 양상을 진단하는 기준은 무엇인가? 정답 이유 : 위 사레는 조증 삽화를 동반하므로 제 1형 양극성 장애, 그리고 최근의 삽화는 조증삽화의 기준과 우울삽화 기준을 모두 충족하므로 혼재성 양상으로 진단할 수 있다."
   },
   {
    "number": 56,
@@ -2633,7 +2688,8 @@
      "h": 335
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "과거 소장 절제술을 받았던 환자에서 확인된 mechanical ileus으로 우선적으로 시행해야할 치료는 코위관 삽입을 통한 감압니다."
   },
   {
    "number": 57,
@@ -2670,7 +2726,8 @@
     38
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "문항요지 : 신체증상장애와 다른 진달을 감별할 수 있다. 1) 질병불안장애와 감별 : 질병불안장애는 질병을 가졌을 것이라는 불안과 공포에 집중한다. 신체증상장애는 다양한 신체증상에 대한 염려가 크다. 2) 인위성장애와 감별 : 증상을 가장하게 되는 인위성 장애나 꾀병과 달리 신체증상장애 환자는 실제로 증상을 경험한다는 점이 감별점이다. 3) 기능성 신경학적 증상장애와 감별 : 증상 시작이 급성적이고 일시적이며 신경학적 이상이 특징적이다."
   },
   {
    "number": 58,
@@ -2707,7 +2764,8 @@
     38
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "문항요지 : 1) 파괴적 기분조절장애와 간헐적 폭발장애를 구분할 수 있다 (분노 발작 사이에 과민한 기분이 지속됨 여부에 따라), 2) 파괴적 기분조절장애와 양극성 장애를 구분할 수 있다 (삽화 유무에 따라)"
   },
   {
    "number": 59,
@@ -2758,7 +2816,8 @@
      "h": 727
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "출생시 두혈종이 생긴 신생아에게 생후 3일-1주일 내에 황달이 발생할 수 있다. 검사결과는 용혈이나 출혈이 의심되지 않는 상황이다. 그러나 생후 72시간째 광선치료의 적용범위에 해당하는 total bilirubin 수치이다."
   },
   {
    "number": 60,
@@ -2796,7 +2855,8 @@
     40
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "반복적인 무호흡 외에는 임상상황이 안정적인 미숙아이다. 미숙아의 반복적인 무호흡은 caffeine 또는 theophylline으로 치료한다."
   },
   {
    "number": 61,
@@ -2846,7 +2906,8 @@
      "h": 262
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "급성췌장염의 초기 치료에 관한 문제."
   },
   {
    "number": 62,
@@ -2909,7 +2970,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "급성췌장염의 합병증에 대한 문제이다."
   },
   {
    "number": 63,
@@ -2947,7 +3009,8 @@
     42
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "액와부 림프절 전이, 호르몬 수용체 음성, 조직학적 분화도 3이므로 고위험군에 속하며 항암화학요법이 필요하다. 에스트로겐/프로게스테론 수용체는 음성이므로 항호르몬요법은 시행하지 않는다. 암의 크기가 5 cm 이상, 림프절 전이가 4개 이상, 유방보존술을 시행한 경우에는 방사선 치료를 시행한다. Her-2/neu 양성이므로 HER2 표적치료의 대상이다."
   },
   {
    "number": 64,
@@ -3010,7 +3073,8 @@
      "h": 531
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "봄철각결막염 환자에 대한 내용입니다."
   },
   {
    "number": 65,
@@ -3047,7 +3111,8 @@
     43
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "문항요지 : 강박장애, 망상장애, 강박성 성격장애 등을 구분할 수 있는가? 정답요지 : 공격성에 대한 강박 사고, 그리고 이를 반복적으로 확인하려는 강박 행동이 반복되고 있는 사례이다. 이를 망상으로 해석하거나, 강박성 성격장애로 해석하지 않아야 한다. 매력적오답 : 강박증상과 유사해 보이는 증상을 발현하는 질환으로는 강박장애 외에 강박관련장애, 정신병적 장애, 강박성 성격장애 등이 있다."
   },
   {
    "number": 66,
@@ -3084,7 +3149,8 @@
     43
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "문항 요지 : 월경전불쾌감장애를 진단할 수 있는가? 월경전 불쾌감장애에 가장 효과적인 약물 치료법은 무엇인가? 정답 이유 : SSRI가 월경전 불쾌감장애의 증상 조절에 매우 빠른 효과를 보인다. SSRI 중에서도 특히 fluoxetine과 sertraline은 기분 및 신체 증상을 모두 호전시키고, 사회직업기능과 삶의 질 개선에 우수한 치료효과를 가진다."
   },
   {
    "number": 67,
@@ -3122,7 +3188,8 @@
     44
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "주사 이후 통증 악화됨. ESR,CRP가 상승되었고, fever 도 있으나, X-ray 상 이상 없으나 매우 심한 관절통증 호소하며, 이로 인한 limited range of motion 관찰됨. -> 가장 의심되는 질환은 화농성 관절염임."
   },
   {
    "number": 68,
@@ -3159,7 +3226,8 @@
     44
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "자살시도는 정신과적 응급상황이다. 정신건강의학과 자문이 반드시 필요하다. 환자가 사회적 지지체계가 없거나, 과거에 충동적으로 행동한 적이 있거나, 자살하려는 계획을 하고 있는 환자라면 입원시켜야 한다. 자살할 위험성이 클 경우에는 응급입원을 시켜야 한다. 자살의 위험성이 높다고 평가되면 환자 및 보호자의 동의를 얻어 격리 및 강박을 적용하는 것을 고려한다."
   },
   {
    "number": 69,
@@ -3196,7 +3264,8 @@
     44
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "분리불안 장애는 장해 기간이 소아청소년인 경우 적어도 4주 이상으로, 다음 8가지 중 3가지 이상 증상이 나타나 사회, 학습, 기타 기능에 심각한 장애를 초래하는 것이다. - 애착대상과 분리되거나, 분리가 예상될 때 반복적으로 심한 고통을 보이고, 애착대상을 잃거나 그에게 해로운 일이 일어날 거라고 지속적으로 심하게 걱정하고, 분리불안으로 집을 떠나 그 외의 장소에 지속적으로 가기 싫어하거나 거부하고, 애착 대상없이 혼자 지냄에 지속적이고 과도하게 두려움을 느끼거나 거부하고, 분리 주체와 연관되는 반복적인 악몽을 꾸거나, 애착 대상과의 분리가 예상될 때 반복적인 신체 증상을 호소(두통, 복통, 오심, 구토 등) 치료로는 지지적 면담치료(놀이치료), 긍정적 강화요법 등의 인지행동 치료가 시행되어야하며, 약물로는 선택적 세로토닌 재흡수억제제, 이미프라민이나 벤조디아제핀 계열의 약물을 고려해볼 수 있다. 증세가 심하면 입원치료가 필요하다. 신경정신의학 3판, p. 329-331"
   },
   {
    "number": 70,
@@ -3247,7 +3316,8 @@
      "h": 546
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "복통을 동반한 혈변, atherosclerosis 등 과거력을 볼때 ischemic cause 의 허혈성 대장염을 의심해보아야한다."
   },
   {
    "number": 71,
@@ -3284,7 +3354,8 @@
     45
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "Methicillin susceptible S.aureus (MSSA)에서 1차 치료제는 1세대 cephalosporin 또는 nafcillin"
   },
   {
    "number": 72,
@@ -3322,7 +3393,8 @@
     46
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "키가 작은 여아에서 골연령이 지연되지 않았을 경우에는 염색체 검사를 하여 터너증후군을 확인 한다"
   },
   {
    "number": 73,
@@ -3372,7 +3444,8 @@
      "h": 291
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "혈관경련성협심증으로 칼슘채널차단제와 혈관확장제 투약이 요구됨"
   },
   {
    "number": 74,
@@ -3422,7 +3495,8 @@
      "h": 348
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "전벽의 급성심근경색증 후 수일내 동반된 구조적 합병증으로 급성 심실사이막결손과 급성 승모판역류증이 발생할 수 있다."
   },
   {
    "number": 75,
@@ -3459,7 +3533,8 @@
     47
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "다뇨증 환자에서 osmotic diuresis 를 감별진단하기위해 우선적으로 urine osmolality 확인이 필요함"
   },
   {
    "number": 76,
@@ -3509,7 +3584,8 @@
      "h": 407
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "말초성 성조숙증 증례입니다. 말초성 성조숙증은 중추신경-시상하부-놔하수체 기능의 활성화 없이 말초 기관에서 성호르몬을 분비하여 성발달 증상 및 징후를 보이는 질환입니다. 원인으로는 동성적 성조숙에서는 여성호르몬을 분비하는 난소 종양이 흔한 원인이고 이성적 성조숙증에서는 남성호르몬을 분비하는 난소 종양이나 선천부신과다형성증 등이 원인이 됩니다. 이 증례에서는 병력, 진찰소견, 검사 결과에서 남성호르몬 과다 소견이 없으므로 난소의 호르몬 분비 종양의 존재 여부를 확인하기 위한 골반 초음파가 필요합니다."
   },
   {
    "number": 77,
@@ -3572,7 +3648,8 @@
      "h": 480
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "임신부는 출산 후 모유가 분비되기 때문에 임신기간중이라도 모유성분이 소량 유두를 통하여 배출될 수 있다. 임신부임을 고려하지 않더라도 우유빛 색깔의 여러 개구부에서 배출되는 유두분비물은 즉각적인 검사나 치료를 요하지 않으므로 지켜볼 수 있다."
   },
   {
    "number": 78,
@@ -3635,7 +3712,8 @@
      "h": 487
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "피부함몰을 동반한 유방덩이는 유방암의 가능성이 높고, 동시에 발생한 피부발적 역시 염증성 유방암의 한 증상일 수 있다. 따라서 두 병변 모두 조직검사가 필요하다."
   },
   {
    "number": 79,
@@ -3673,7 +3751,8 @@
     50
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "LDL수치를 낮추기 위한 1차 치료제로 스타틴이 권고된다. 더불어 10-year cardiovascular risk가 7.5%이상인 경우는 LDL콜레스테롤 수치와 관계없이 스타틴 치료를 시작한다."
   },
   {
    "number": 80,
@@ -3710,7 +3789,8 @@
     50
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "졸림은 클로자핀과 같은 저역가 항정신병약물의 흔한 부작용이며, wbc 검사에서 경미한 감소가 있으나 중단 사유가 되지는 않는다. 약물 지속하는 것이 정답이 되겠다."
   }
  ]
 }

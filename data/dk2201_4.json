@@ -41,7 +41,8 @@
     1
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": ".."
   },
   {
    "number": 2,
@@ -103,7 +104,8 @@
      "h": 363
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "정답, 사진출처, 해설 없음...."
   },
   {
    "number": 3,
@@ -140,7 +142,8 @@
     3
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "공황장애 치료로 SSRI, SNRI, TCA 등을 쓴다. 트라조돈, 부프로피온은 효과가 적다. 아리피프라졸, 올라자핀과 괕은 비정형항정신약물도 사용할 수 있다. 알프라졸람은 불안 감소를 위해 사용할 수 있으나 장기간 사용에는 주의하여야 하며, 유지치료를 위한 주된 치료제는 아니다."
   },
   {
    "number": 4,
@@ -177,7 +180,8 @@
     4
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "전형적인 수면무호흡증의 증례이다. 수면다원검사 소견은 무호흡 이벤트의 비디오 증례이다."
   },
   {
    "number": 5,
@@ -214,7 +218,8 @@
     5
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "좌측흉골연 제2늑간 에서 들리는 박출성 심잡음은 심방 중격 결손이나 폐동맥 협착이 있는데 이 문제의 경우는 넓게 고정 분열된 S2 가 있는것으로 보아 심방 중격 결손의 가능성이 가장 크다."
   },
   {
    "number": 6,
@@ -264,7 +269,8 @@
      "h": 482
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "2~3도의 범수축기 심잡음과 제2심음 항진 심초음파 사진에서 좌우단락과 압력차 53mmHg 로 중등도 폐고혈압 소견"
   },
   {
    "number": 7,
@@ -314,7 +320,8 @@
      "h": 473
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "비타민 D 결핍으로 인한 골연화증이 의심됨. 비타민 D 결핍 확인을 위해 혈액 25-히드록시비타민 D [25(OH)D] 측정한다."
   },
   {
    "number": 8,
@@ -351,7 +358,8 @@
     8
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "1. 비교적 임상적 특징이 분명한 질환이지만 아직까지 명확한 진단기준이 제시되고 있지는 않다. 공통적으로 제시되고 있는 진단기준을 살펴보면, 첫째로 갑작스런 회전성 어지럼이 하루 이상 지속되고, 둘째로 청력손실이나 이명 등과 같은 와우 손상이 없어야 하고, 셋째로 양온교대 온도안진검사에서 일측 반고리관의 기능저하 또는 기능소실이 관찰되며, 넷째로 다른 신경학적 증상과 징후가 없어야 하고, 다섯째로 남녀 구별 없고 중년에 자주 발생한다는 것이다. 이 밖에도 시간이 경과하면서 자연스러운 회복을 보이고, 발병되기 전 상기도 감염력이 있는 경우 등도 진단의 기준으로 주장된다. 2. 급성일측전정장애 환자들의 평균 연령은 41.5세이고, 어지럼증은 일반적으로 갑자기 시작되며 수시간 내에 심해지고, 첫 24시간 내에 최고조에 달한다. 회전성 수평 자발안진과 주시유발안진이 관찰되고, 온도안진검사에서 반고리관 마비가 관찰된다."
   },
   {
    "number": 9,
@@ -388,7 +396,8 @@
     9
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "중추성 다뇨, 신성 다뇨를 구분하기 위한 이후 검사로 혈청 항이뇨호르몬 검사를 하는 것이 합당하다. 활력 징후 및 혈액 검사상 저혈량성 쇽 및 급성 신부전이 의심되므로 수분 제한 검사는 합당하지 않다."
   },
   {
    "number": 10,
@@ -425,7 +434,8 @@
     10
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "aripiprazole은 주요우울증에서 증강요법의 적응증을 가지고 있는 약제로 상기 환자는 1차약물로 SSRI계열의 항우울제를 충분기간, 충분 용량 사용하였고 부작용 문제는 없으나 불충분한 반응을 보이고 있어 다음단계로 증강요법이 우선시 된다. TCA 계열의 약제(이미프라민)는 더이상 일차치료제로 선택되고 있지 않다."
   },
   {
    "number": 11,
@@ -475,7 +485,8 @@
      "h": 515
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "담낭암 수술은 확대 쓸개절제술을 시행한다."
   },
   {
    "number": 12,
@@ -525,7 +536,8 @@
      "h": 637
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "간 외상 환자에서 환자 상태에 따른 적절한 치료방법을 알고 있어야 합니다. 이 환자의 경우 활력 징후가 안정적이고 혈액 검사 및 영상학적 검사상 활동성 출혈의 증거가 보이지 않으므로 우선 경과 관찰할 수 있습니다."
   },
   {
    "number": 13,
@@ -562,7 +574,8 @@
     13
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "우울장애 환자가 양극성 장애로 되는 이유에 대해서 이해하고 있으면 치료하면서 만날수 있는 이런 상황에 대처 할수 있다."
   },
   {
    "number": 14,
@@ -612,7 +625,8 @@
      "h": 532
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "횡위에서는 제왕절개가 원칙이다"
   },
   {
    "number": 15,
@@ -649,7 +663,8 @@
     15
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "불안관련증상과 과도한 걱정이 범불안장애의 특징이다."
   },
   {
    "number": 16,
@@ -686,7 +701,8 @@
     16
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "발표와 같은 수행불안일 때 propranolol이 도움된다."
   },
   {
    "number": 17,
@@ -723,7 +739,8 @@
     17
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "정상아 출산력으로 보아 처녀막막힘증, 안드로겐불감증, 횡행중격은 가능성 떨어지며, 혈액검사도 정상으로 쉬한증후군 가능성 떨어진다. 최근의 소파술 시행 병력으로 보아 이로 인해 발생한 아셔만증후군＆nbsp；가능성이 가장 높다."
   },
   {
    "number": 18,
@@ -760,7 +777,8 @@
     18
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "저칼륨혈증이 동반된 고혈압 환자로 일차성 알도스테론증이 의심된다. 따라서 혈장 알도스테론과 레닌을 검사해야한다."
   },
   {
    "number": 19,
@@ -797,7 +815,8 @@
     19
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "당뇨병성 케톤산증으로 생리식염수를 초기공급수액으로 하며 뇌부종등을 예방하기 위해 인슐린은 정맥으로 continuous infusion 을 한다."
   },
   {
    "number": 20,
@@ -834,7 +853,8 @@
     20
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "와파린 사용후에 PT 연장, 출혈소견으로 내원한 환자에서 치료 vit K supply"
   },
   {
    "number": 21,
@@ -871,7 +891,8 @@
     21
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "급성 복통을 동반한 위장관 질환에서 경구 섭취가 되지 않는 경우 정맥을 통한 수액 공급이 중요합니다."
   },
   {
    "number": 22,
@@ -921,7 +942,8 @@
      "h": 366
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "액와부 림프절 전이, 호르몬 수용체 음성, 조직학적 분화도 3이므로 고위험군에 속하며 항암치료가 필요하다. 에스트로겐/프로게스테론 수용체는 음성이므로 호르몬치료는 시행하지 않는다. 암의 크기가 5 cm 이상, 림프절 전이가 4개 이상, 유방보존술을 시행한 경우에는 방사선 치료를 시행한다. Her-2/neu 양성이므로 허셉틴 치료의 대상이다."
   },
   {
    "number": 23,
@@ -958,7 +980,8 @@
     23
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "일차성, 이차성 레이노현상을 감별하기 위해 항핵항체와 손톱주름모세혈관현미경 검사가 필요하다"
   },
   {
    "number": 24,
@@ -995,7 +1018,8 @@
     24
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "Hypogonadotrophic hypogonadism 과 체질성 성장지연을 감별해야 후각망울 형성 저하가 있어 칼만 증후군을 의심해야 한다."
   },
   {
    "number": 25,
@@ -1032,7 +1056,8 @@
     25
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "DSM-5에서는 경조증 삽화에는 미치지 못하지만 수많은 경조증 증상이 있고 동시에 주요우울 삽화에는 이르지 못하지만 수많은 우울증상이 최소 2년간(소아 청소년의 경우 최소 1년) 있는 경우 순환성장애로 진단한다. 특징적인 양상은 수많은 경조증 증상과 우울증상 사이의 변동이 많은 만성적인 상태이다. 첫 2년 동안(소아 청소년의 경우 1년)에 증상이 지속적으로 존재해야 하며 증상이 없는 기간이 2개월이 넘으면 진단할 수 없다."
   },
   {
    "number": 26,
@@ -1082,7 +1107,8 @@
      "h": 312
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "Immediate antagonism of the cardiac effects of hyperkalemia: Intra-venous calcium serves to protect the heart, whereas other measures are taken to correct hyperkalemia. Calcium raises the action potential threshold and reduces excitability, without changing the resting membrane potential. By restoring the difference between resting and threshold potentials, calcium reverses the depolarization blockade due to hyperkalemia. The recommended dose is 10 mL of 10% calcium gluconate (3–4 mL of calcium chloride), infused intravenously over 2–3 min with cardiac monitoring."
   },
   {
    "number": 27,
@@ -1169,7 +1195,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": ": 장간막 혈관의 폐색성 질환은 드물지만 치명적인 결과를 초래할 수 있는 질환이다. : 비가역성 장 허혈이 발생하기 전에 신속한 진단과 치료를 하는 것이 치료 결과를 향상시키는데 꼭 필요하다. : 급성 장간막 동맥 폐색은 가장 흔하게는 심장 기원의 색전으로부터 발생하고 상장간막 동맥이 급성 장간막 허혈에서 가장 빈번하게 침범되는 혈관이다. : 급성 색전성 폐색은 발달한 측부 순환이 없으므로 허혈 손상이 더 빨리 진행된다. : 심한 복통이 급작스럽게 나타나며 이 질환의 초기에는 특징적으로 복통은 심하지만 복부 이학적 검진상 압통이 없거나 미약한 것(abdominal pain out of proportion to physical finding)이 특징이다. 그러나 시간이 경과하여 장괴사 및 복막염이 발생하면 압통이 나타날 수 있다. 따라서 전반적인 복부 압통, 반발통, 복부 경직은 위험한 징조로 보통 장 괴사를 의미한다."
   },
   {
    "number": 28,
@@ -1232,7 +1259,8 @@
      "h": 637
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "가슴 X선과 CT상 consolidation소견을 보이나 폐렴의 증상이 없고 항생제를 사용해도 호전이 없었다. CEA가 증가하여 기관지경유폐생검을 시행하여 폐암인지 확인을 요한다."
   },
   {
    "number": 29,
@@ -1282,7 +1310,8 @@
      "h": 389
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "첫 진단된 5-ASA에 반응이 없는 궤양성대장염의 관해 유도를 위해 전신 스테로이드를 사용한다."
   },
   {
    "number": 30,
@@ -1332,7 +1361,8 @@
      "h": 511
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "장루주위 탈장의 감돈과 교액, 장폐쇄 증상으로 응급수술을 요함"
   },
   {
    "number": 31,
@@ -1395,7 +1425,8 @@
      "h": 683
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "그레이브스씨병에 의한 전형적인 갑상선기능 항진증 증상을 보임, 치료는 메티마졸"
   },
   {
    "number": 32,
@@ -1432,7 +1463,8 @@
     36
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "신증후군이 의심되는 상황으로 소변 단백질/크레아티닌 비율 검사를 시행하여 단백뇨 정량을 시행해야 한다."
   },
   {
    "number": 33,
@@ -1469,7 +1501,8 @@
     37
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "클로자핀이 자살행동, 자살시도에 효과가 좋은 것으로 알려져 있으나 이 환자의 경우 자의로 중단하였으며 투약하기를 거부하고 있고, 항우울제 복용 후 감정기복이 심해지는 부작용이 있었음. 자살시도가 반복되므로 전기충격요법을 우선 시도해볼 수 있겠음"
   },
   {
    "number": 34,
@@ -1506,7 +1539,8 @@
     38
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "급성 골반염의 증상 및 양상은 복부와 골반통증, 자궁경부 운동성 압통과 부속기 압통 및 발열을 포함하며 (Triad of symptoms ＆ sign) 다양한 증상과 징후를 보이며 아무런 증후를 보이지 않는 경우도 있습니다."
   },
   {
    "number": 35,
@@ -1556,7 +1590,8 @@
      "h": 435
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "subacute hypersensitivity pneumonitis로 원인을 제거하고 호흡곤란이 있으므로 스테로이드를 사용한다."
   },
   {
    "number": 36,
@@ -1606,7 +1641,8 @@
      "h": 309
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "thyroidectomy 시 parathyroid gland 같이 절제되면 hypocalcemia 에 의한 acquired long QT syndrome 이 생기고 이 때 polymorphic VT 가 동반된 경우임"
   },
   {
    "number": 37,
@@ -1656,7 +1692,8 @@
      "h": 463
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "CBD stone (총담관결석) 치료는 ERCP (역행성 담도내시경) 으로 결석제거술을 시행하는 것이 우선 선택되고 있다."
   },
   {
    "number": 38,
@@ -1693,7 +1730,8 @@
     42
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "말초신경병증 혹은 posterior column의 손상에 의하여 위치각 및 진동각(proprioception)이 저하되면 위치각을 잘 느끼려고 발을 강하게 바닥에 짚기 때문에 stamp gait라고도 한다. 롬버그(Romberg)검사 양성을 보인다. 즉 눈을 뜬 상태에서는 균형을 잡고 서 있지만 눈을 감으면 균형을 잃고 넘어지거나 몸이 심하게 흔들린다. 양쪽 발을 넓게 벌리고 보폭과 속도가 불규칙적이며 불안정하다. 척수로(tabes dorsalis), 프리이드라이히 운동실조(Friedreich`s ataxia), 당뇨병성 말초신경병증 등과 같은 질환에서 발생한다."
   },
   {
    "number": 39,
@@ -1730,7 +1768,8 @@
     43
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "질병불안장애의 증상과 진단을 안다"
   },
   {
    "number": 40,
@@ -1767,7 +1806,8 @@
     44
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "당뇨병 환자의 치료 목표인 LDL 100 이하보다 높기 떄문에 일차적으로 statin 을 먼저 투약하도록 한다."
   },
   {
    "number": 41,
@@ -1804,7 +1844,8 @@
     45
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "미혼여성의 자궁근종의 치료계획을 세울 수 있다"
   },
   {
    "number": 42,
@@ -1867,7 +1908,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "혈관조영술 사진에서 우측 중뇌대동맥 줄기의 급성폐색소견 관찰된다. 우측중뇌대동맥경색에 의한 의식저하라고 추정할 수 있다. 중뇌대동맥은 줄기로부터 크게 상분지와 하분지로 갈라진다. 상분지가 폐색되면 전두엽 운동중추가 손상되어 운동마비(반대쪽얼굴, 팔다리에 마비가 생기며 팔이 더 심함)가 발생한다. 두정엽 감각중추가 손상되면 감각마비가 생기고, 전두엽눈영역(frontal eye filed)이 손상되면 얼굴과 눈이 병터 쪽으로 편위(deviation)되며 우세반구 전두엽 운동언어중추가 손상되면 운동실어증(motor aphasia)이 나타난다. 하분지가 폐색되면 주로 두정엽과 측두엽이 손상되어 반대쪽 감각마비, 반대쪽 동측반맹(contralateral homonymous hemianopia)이 발생하고, 우세반구 측두엽의 감각언어 중추 손상은 감각실어증(sensory aphasia)을 초래한다. 우측 두정엽 손상은 무시(neglect), 질병실인증(anosognosia), 실행증(apraxia) 증상을 초래한다. 중뇌대동맥 줄기가 폐색되면 위의 증상들이 모두 발생할 수 있다. 환자가 오른손잡이로 좌측대뇌가 우세반구이며 좌측대뇌에 언어중추가 존재할 확률이 높다. 그러므로 오른손잡이 환자에서 우측중뇌동맥경색에서 보기의 다른증상과 비교했을 때 운동실어증이 동반되었을 확률이 가장낮다."
   },
   {
    "number": 43,
@@ -1904,7 +1946,8 @@
     48
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "불안으로 인한 두근거림은 감별하고 적절한 치료제를 알고 있는지에 대한 확인. 불안으로 인한 두근거림의 경우 clonazepam과 같은 benzodiazepine계열 항불안제를 많이 사용한다. 아빌리파이의 경우 antipsychotics, memantine의 경우 NMDA receptor antagonists, lamatrigine의 경우 항전간제, moodstabilizer, methylphenidate의 경우 stimulant계열로 불안으로 인한 두근거림을 줄이는 데에는 적절하지 않다."
   },
   {
    "number": 44,
@@ -1967,7 +2010,8 @@
      "h": 563
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "만성 음주로 인한 alcoholic hepatitis 로 진단할 수 있다. DF score ＆gt； 32.0 이므로 steroid 를 투여해볼 수 있다."
   },
   {
    "number": 45,
@@ -2004,7 +2048,8 @@
     51
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "임신중 FDA category B, beta-lactam 계열에 속하는 항생제를 선택한다."
   },
   {
    "number": 46,
@@ -2067,7 +2112,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "영상 검사에서 양측 폐 하부에 reticular infiltration이 관찰되며 환자의 임상 소견상 간질성폐질환이 의심된다. 환자는 중년의 여성으로 반복적인 구강 궤양과 뺨에 나비모양의 발진이 발생하는 병력으로 보았을때 결합조직병으로 인한 간질성폐질환 (CTD-ILD)으로 진단할 수 있다."
   },
   {
    "number": 47,
@@ -2104,7 +2150,8 @@
     54
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "임산부 트라우마 관리"
   },
   {
    "number": 48,
@@ -2141,7 +2188,8 @@
     55
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "분만 4시간 후 소변을 보지 못하는 경우에는 폴리도뇨관을 24시간 유지하여야합니다."
   },
   {
    "number": 49,
@@ -2191,7 +2239,8 @@
      "h": 435
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "비후성 유문협착증은 생후 4주 전후에 발생하는 질환으로 아직 원인 불명이다. 반복되는 비답즙성구토로 인해 저염소성 저칼륨성 대사성 염기증이 발생한다. 특징적인 발생 연령과 증상으로 임상적 진단은 쉬우며, 복부 초음파를 통해서 쉽게 확진된다. 수액치료가 우선적으로 시행되어야 하며, 전신상태가 호전된 후 수술을 시행한다. 개복 혹은 복강경적 유문근 절개술이 시행되고 있으며 수술 후 성적은 매우 양호하다. 수술 시 십이지장천공이 되지 않도록 주의를 요한다."
   },
   {
    "number": 50,
@@ -2228,7 +2277,8 @@
     57
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "대사성 알칼리증, 저칼륨혈증 Hypokalemicpatients with vomiting due to bulimia will thus typically have a urinary Cl– <10 mmol"
   },
   {
    "number": 51,
@@ -2278,7 +2328,8 @@
      "h": 847
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "골다공증을 가지고 있는 환자의 외상성 압박성 골절이다. 8주간의 보존적 치료를 시행했음에도 압박성 골절의 안정화가 이루어지지 않는 상태로 경피적 척추 성형술이 그 다음으로 해볼 수 있는 적절한 치료이다."
   },
   {
    "number": 52,
@@ -2341,7 +2392,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "여러가지 바이러스 감염에 의해 발생가능한 크룹에 대한 문제"
   },
   {
    "number": 53,
@@ -2391,7 +2443,8 @@
      "h": 554
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "위석의 치료법으로는 Coca-Cola®로 녹이거나, 내시경적 제거술, 복강경하 제거술 등이 있으며, 이 환자에서는 우선적으로 내시경적 제거술을 고려할 수 있다."
   },
   {
    "number": 54,
@@ -2441,7 +2494,8 @@
      "h": 541
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "간경화 환자에서 복수 천자시 측부 혈관들 (collateral vessels) 의 손상이 발생할 수 있다. 영상의학적 중재시술을 통하여 혈관을 막을 수 있으며 응고를 유도하기 위해 응고인자 수혈이 도움이 될 수 있다. PT prolongation 이 관찰되므로 FFP 수혈이 필요하다."
   },
   {
    "number": 55,
@@ -2491,7 +2545,8 @@
      "h": 650
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "뇌성마비의 전형적인 임상 양상이고 미숙아에서 흔히 보는 MRI는 뇌실 주변부 백질연화증 소견이다."
   },
   {
    "number": 56,
@@ -2541,7 +2596,8 @@
      "h": 506
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "컴퓨터 단층 촬영에서 보이는 소견은 지방으로 둘러쌓인 석회화를 포함한 불규칙한 경계의 고현 종괴로서 성숙 기형종에 해당하는 소견입니다."
   },
   {
    "number": 57,
@@ -2591,7 +2647,8 @@
      "h": 424
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "재발된 자궁내막증과 양측난관페쇄를 가진 난임환자로 난소기능 저하로 복강경 수술보다는 체외수정이 우선됨"
   },
   {
    "number": 58,
@@ -2628,7 +2685,8 @@
     66
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "부분 프로트롬빈 시간 연장, 8 응고인자 감소로 혈우병 A를 진단"
   },
   {
    "number": 59,
@@ -2665,7 +2723,8 @@
     67
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "항정신병약물 치료를 시작하기 전에 정신병적 증상을 유발할 수 있는 항 파킨슨 약물을 조절하는 것이 중요"
   },
   {
    "number": 60,
@@ -2702,7 +2761,8 @@
     68
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Guillain-Barre syndrome 에 대한 예시로 하지에서 진행하는 근위약감과, 심부건반사 소실, 단백 세포 해리가 진단에 중요한 소견이다. 치료는 정맥 내 면역글로불린 투여로 한다."
   },
   {
    "number": 61,
@@ -2739,7 +2799,8 @@
     69
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만성골반통의 원인으로 자궁내막증 및 자궁샘근증 다음으로 흔한 것은 골반울혈증이다. 골반울혈증에 대한 확실한 진단 기준은 없으나 골반조직정맥의 울혈에 의해 하복부통증이 나타난다고 여겨진다. 골반울혈증이 의심되는 경우 내과적 치료를 1차 치료로 권장하며 이에 반응하지 않는 경우 색전술이나 수술적 치료를 시행해 볼 수 있다."
   },
   {
    "number": 62,
@@ -2776,7 +2837,8 @@
     70
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "일상생활이나 사회생활에 문제가 없고 환자 스스로 인지 기능 저하를 걱정하고 있다. MMSE는 정상이지만 신경심리검사에서 기억력저하가 입증되었고 또한 이를 일으킬 만한 다른 기질적 원인이 발견되지 않았으므로 경도 신경인지장애로 진단할 수 있다."
   },
   {
    "number": 63,
@@ -2826,7 +2888,8 @@
      "h": 489
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "절박성뇨실금의 약물적 치료는 항콜린성 제제이다."
   },
   {
    "number": 64,
@@ -2889,7 +2952,8 @@
      "h": 616
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "흉부 방산선은 정상, 신체진찰과 폐기능 상 협착을 나타내는 소견이 관찰 됨."
   },
   {
    "number": 65,
@@ -2939,7 +3003,8 @@
      "h": 410
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "allopurinol 복용 후 3주 뒤부터 발열 및 반구진성 발진과 함께 말초혈액에서 호산구증가소견, 간기능증가소견 등이 동반되어 DRESS (Drug reaction with eosinophilia and systemic symptoms) 증후군이 가장 의심되는 소견이다."
   },
   {
    "number": 66,
@@ -2976,7 +3041,8 @@
     75
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "감염으로 인한 장기 부전이 발생한 패혈증 환자로 내원 당시 저혈압 소견이 관찰된다. Initial Resuscitation을 위해 30mL/kg 의 IV crystalloid fluid 투여가 필요하다. 노르에피네프린 정맥주사는 fluid 투여 후에도 저혈압이 지속될 경우 투여할수 있다."
   },
   {
    "number": 67,
@@ -3026,7 +3092,8 @@
      "h": 480
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "피로, 이식증, 구내염은 빈혈의 증상이며, 완전 체식은 빈혈의 원인 중 하나임. 평균 적혈구 용적, 철, 페리틴 감소, 총철결합능 증가 및 PB smear에서 microcytic anemmia를 보이고 있어 철결핍성 빈혈에 해당됨, 치료는 경구 철분제 복용임"
   },
   {
    "number": 68,
@@ -3076,7 +3143,8 @@
      "h": 312
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "약물에 의한 아나필락시스 증례로 급성기 아나필락틱쇽에서 가장 먼저 사용해야 할 약제는 에피네프린 근주이다."
   },
   {
    "number": 69,
@@ -3138,7 +3206,8 @@
      "h": 444
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "Echo free space가 보이며 임상양상은 tamponade이다. pericardiocentesis가 필요하다."
   },
   {
    "number": 70,
@@ -3200,7 +3269,8 @@
      "h": 335
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "초음파검사상 전치태반으로 진단할 수 있습니다. 현재는 출혈이 없고, 태아심박동-자궁수축감시검사 결과상 특이소견 없어, 임신 32주이므로 경과관찰하면 되겠습니다."
   },
   {
    "number": 71,
@@ -3237,7 +3307,8 @@
     80
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "6개월 이상 지속되는 신체 증상으로, 신체 증상 혹은 건강염려와 관련된 과도한 생각, 느낌, 행동이 다음 중 하나 이상으로 나타나는 경우(증상의 심각성에 대한 편중되고 지속적인 생각, 건강이나 증상에 대한 지속적으로 높은 단계의 불안, 증상 또는 건강염려에 대해 과도한 시간과 에너지 소비) 신체증상장애를 진단 가능함."
   },
   {
    "number": 72,
@@ -3287,7 +3358,8 @@
      "h": 317
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "고혈압의 소견을 보이나 혈압 측정상에서 나타나지 않는 가면성 고혈압에 해당하는 소견으로 24시간 활동 혈압을 측정하여 고혈압의 여부를 확인하여야 한다."
   },
   {
    "number": 73,
@@ -3324,7 +3396,8 @@
     82
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "두드러기의 1차 치료는 H1 항히스타민제이다."
   },
   {
    "number": 74,
@@ -3361,7 +3434,8 @@
     83
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Within Milan criteria이며 CTP 등급 C인 심한 간기능 장애를 동반한 환자로, 간이식이 일차 치료로 고려되어야 한다."
   },
   {
    "number": 75,
@@ -3411,7 +3485,8 @@
      "h": 533
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "기능성 소화불량증 중 식후고통증후군 (postprandial distress syndrome)을 시사한다."
   },
   {
    "number": 76,
@@ -3448,7 +3523,8 @@
     85
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "콩팥증후군의 임상 소견"
   },
   {
    "number": 77,
@@ -3511,7 +3587,8 @@
      "h": 1313
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "외상으로 발생한 DIC 환자입니다. lab 소견에 coagulopathy가 있으나 그 정도가 심하지 않아 처치없이 추적관찰합니다"
   },
   {
    "number": 78,
@@ -3548,7 +3625,8 @@
     88
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "비만, 당뇨병 가족력으로 75g 포도당 부하검사 시행"
   },
   {
    "number": 79,
@@ -3598,7 +3676,8 @@
      "h": 690
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "선천 거대 결장증의 증례이다. 직장 흡입 생검을 통해 확진한다."
   },
   {
    "number": 80,
@@ -3635,7 +3714,8 @@
     90
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "신동맥협착증 진단 Contrast-enhanced computed tomography (CT) with vascular reconstruction provides excellent vascular images and functional assessment, but carries a small risk of contrast toxicity."
   }
  ]
 }

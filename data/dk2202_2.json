@@ -41,7 +41,8 @@
     1
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "대마 사용시의 신체 변화로는 눈 흰자위의 충혈, 심장 박동수가 증가, 기관지 자극에 의한 기침, 공복감, 입과 목의 건조증 등이 나타날 수가 있다. 정신활성 작용에 의한 변화로는 저용량 사용시 술취한 느낌의 꿈 같은 상태에서 안락한 즐거움과 행복감, 긴장완화, 집중력의 저하 등의 감정 변화가 나타나고, 고용량 사용시에는 신체가 왜곡된 느낌과 분노, 두려움, 근심, 각별한 감정 등의 변화와 함께 자신의 신체가 분리되는 환각증상이 나타나기도 한다."
   },
   {
    "number": 2,
@@ -92,7 +93,8 @@
      "h": 638
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "흉수천자 검사에서 결핵성 흉막염 소견으로 항결핵제 복용이 필요하다."
   },
   {
    "number": 3,
@@ -129,7 +131,8 @@
     2
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "세균성 뇌수막염 치료 중 발생한 합병증으로 HypoNa 소견을 보입니다. SIADH 에 대한 내용입니다."
   },
   {
    "number": 4,
@@ -180,7 +183,8 @@
      "h": 632
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "메트포르민으로 조절 되지 않는 심부전이 동반된 당뇨병 환자에게 혈당에 관계없이 SGLT2 억제제의 추가투여가 권고되고 있다."
   },
   {
    "number": 5,
@@ -218,7 +222,8 @@
     4
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "폐쇄성 수면무호흡증에서 두통의 양상은 긴장형 두통과 유사하나 아침부터 머리가 잘 아프고 주간 졸림, 피로 등을 잘 호소함."
   },
   {
    "number": 6,
@@ -255,7 +260,8 @@
     4
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "자궁내막증 수술 후 재발방지를 위해 디에노게스트를 복용할 수 있다."
   },
   {
    "number": 7,
@@ -317,7 +323,8 @@
      "h": 228
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "이상분만에서 자궁목확장정지의 처치\n3분마다 규칙적인 진통이있고 protraction이 의심되므로 진통을 augmentation할 필요가 있음"
   },
   {
    "number": 8,
@@ -368,7 +375,8 @@
      "h": 328
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "만성 기침이 있는 환자에게서 천식 진단의 검사인 기관지유발검사를 시행 할 수 있고 양성 소견을 해석할 수 있다."
   },
   {
    "number": 9,
@@ -418,7 +426,8 @@
      "h": 363
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "본 문항에서는 IUGR의 경우 분만을 결정하기 위해 태아초음파, NST, BPP, 제대동맥도플러검사를 시행할 수 있는지를 묻는 문제이다."
   },
   {
    "number": 10,
@@ -469,7 +478,8 @@
      "h": 742
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "기관지 결핵이나 기관지내 이물질이 의심되는 상황으로 기관지내시경을 시행한다"
   },
   {
    "number": 11,
@@ -520,7 +530,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "출혈성 저혈량쇼크의 진단"
   },
   {
    "number": 12,
@@ -558,7 +569,8 @@
     8
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "사슬알균 감염 후 급성 사구체 신염 증례이다. 상기도 감염이 선행하고, ASO의 증가와 C3의 감소가 특징적이다."
   },
   {
    "number": 13,
@@ -608,7 +620,8 @@
      "h": 637
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "특발성 폐섬유화증으로 pirfenidone, nintedanib 투여가 폐기능 저하속도를 낮추는 효과가 증명되어있다."
   },
   {
    "number": 14,
@@ -672,7 +685,8 @@
      "h": 433
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "유방영상촬영소견에서 악성이 의심되나 조직검사 결과가 양성으로 두 소견이 불일치할 경우에는 절제생검을 통해 진단을 정확하게 해야 한다."
   },
   {
    "number": 15,
@@ -709,7 +723,8 @@
     10
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "예기불안에 대한 심리치료로 환자가 두려워하는 신체증상 (빈맥, 호흡곤란, 어지러움 등)에 노출 (interoceptive exposure, 신체감각 노출)하거나 두려운 외부상황에 노출시켜서 극복하는 경험을 하게 할 수 있습니다."
   },
   {
    "number": 16,
@@ -760,7 +775,8 @@
      "h": 331
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "혈액검사 및 영상검사상 악성 난소 종양이 의심되는 상황이므로, 탐색 개복술을 해야한다."
   },
   {
    "number": 17,
@@ -797,7 +813,8 @@
     11
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "피부증상, 호흡기증상 및 저혈압이 있어 아나필락시스 반응으로 진단된다. 응급처치로 에피네프린 주사가 필요하다."
   },
   {
    "number": 18,
@@ -848,7 +865,8 @@
      "h": 1170
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "강직성 척추염(Ankylosing Spondylitis)의 진단 기준은 염증성 요통과 감염에 의하지 않은 방사선학적 천장관절염에 바탕을 둔다. 대부분의 환자에서 HLA-B27 검사 없이 임상소견만으로도 강직성 척추염을 진단할 수 있으며, HLA-B27 검사는 일차적인 검사로는 의미가 없고, 요통이 있는 환자에서 강직성 척추염을 확진하기 위한 검사로도 부적합하다. 유병율 민족 간에 차이가 있으며 이것은 민족간 HLA-B27의 차이를 반영하고 있다. 북미 백인에서는 HLA-B27의 빈도는 7%이고 강직성 척추염의 유병율은 0.2%이다. 유럽은 HLA-B27의 빈도가 7-20%이며 강직성 척추염의 유병율도 북미나 아시아, 아프리카보다 높다. 강직성 척추염은 남자에서 흔하며 남녀 비는 약 3:1 이다."
   },
   {
    "number": 19,
@@ -911,7 +929,8 @@
      "h": 504
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "쯔쯔가무시병 환자로, 치료제로 doxycycline, azithromycin 투여를 고려 할 수 있다."
   },
   {
    "number": 20,
@@ -962,7 +981,8 @@
      "h": 637
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "WT is typically discovered incidentally during a physical examination or because parents palpate an abdominal mass. Other presenting symptoms include abdominal pain and hematuria, which may signify tumor invasion into the collecting system or ureter."
   },
   {
    "number": 21,
@@ -999,7 +1019,8 @@
     14
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "의인성쿠싱증후군이며 2차성 부신기능저하증이 의심되는 환자로 증상과 저나트륨혈증을 교정하기 위한 히드로코티손치료가 필요하다. 트리암시놀론은 적절하지 않음."
   },
   {
    "number": 22,
@@ -1037,7 +1058,8 @@
     15
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "광장공포증의 진단기준에 해당한다. 한 가지의 상황에서만 나타난다면 특정공포증의 상황형이라고 볼 수 있으나 지금처럼 2가지 이상의 상황에서 나타날 때는 광장공포증으로 진단한다. 공황장애로 진단할 만한 예상치 못한 공황발작의 병력은 없다고 한 바, 공황장애는 배재되어야 한다."
   },
   {
    "number": 23,
@@ -1087,7 +1109,8 @@
      "h": 648
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "특징적인 증상이 동반된 역류식도염으로 식도위내시경에서 진단할 수 있다."
   },
   {
    "number": 24,
@@ -1137,7 +1160,8 @@
      "h": 820
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "두피, 귀 뒤, 코 옆에 백황색의 비늘과 함께 홍반성 반이 관찰되었습니다. 이는 지루성 피부염의 전형적인 증상으로 충분히 진단할 수 있습니다. 지루피부염은 피지 분비가 완성한 얼굴과 두피 부위에 생기는 만성 습진성 질환입니다. 건선은 주로 무릎, 팔꿈치에 은백색의 인설은 동반한 반 형태로 대칭적으로 관찰됩니다. 주사(Rosacea)는 얼굴 중심부에 홍반과 충혈성 병변 및 홍반성 구진을 주로 호소하며 비늘은 관찰되지 않습니다. 건성습진은 열창과 비늘을 보이며 주로 다리에 발생합니다. 접촉피부염은 특정 물질에 접촉된 피부에 발생합니다."
   },
   {
    "number": 25,
@@ -1174,7 +1198,8 @@
     16
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "리튬의 부작용"
   },
   {
    "number": 26,
@@ -1211,7 +1236,8 @@
     17
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "생후 3주경에 모유 수유를 하는 건강한 애기에서 나타나는 황달은 모유 황달일 가능성이 많다. 심한 경우에는 광선치료를 하기도 하지만 이 사례의 빌리루빈 치는 16으로 경과 관찰하면 되겠다"
   },
   {
    "number": 27,
@@ -1261,7 +1287,8 @@
      "h": 431
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "MSSA 에 의한 연부조직 abscess with bacteremia 환자로 nafcillin 을 우선적으로 선택할 수 있다."
   },
   {
    "number": 28,
@@ -1324,7 +1351,8 @@
      "h": 550
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "candida esophagitis의 전형적인 내시경 소견이다"
   },
   {
    "number": 29,
@@ -1362,7 +1390,8 @@
     19
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "갑상선검사결과에서 갑상선기능저하증으로 결과를 해석하고 갑상선기능저하증의 치료를 할 수 있어야 한다."
   },
   {
    "number": 30,
@@ -1412,7 +1441,8 @@
      "h": 480
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "복통, 혈변, 설사 등 전형적인 크론병의 소견과 함께 동반되는 항문질환 및 내시경적 cobblestone appearance, ulcer 등으로 크론병을 쉽게 유추할 수 있다."
   },
   {
    "number": 31,
@@ -1450,7 +1480,8 @@
     20
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "해당 증례는 경계성 인격장애의 경우다. 경계성 인격장애 환자는 분열, 투사적 동일시와 같은 방어기제를 보이며 현저한 기분의 반응성으로 정동이 불안정하며 만성적인 공허감을 가진다. 부주의한 운전이나 과식과 같은 자신을 손상할 수 있는 충동성, 반복적 자살행동과 일시적인 해리 증상이 특징이다."
   },
   {
    "number": 32,
@@ -1513,7 +1544,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "When CBD stones are suspected prior to laparoscopic cholecystectomy, preoperative ERCP with endoscopic papillotomy and stone extraction is the preferred approach. It not only provides stone clearance but also defines the anatomy of the biliary tree in relationship to the cystic duct."
   },
   {
    "number": 33,
@@ -1564,7 +1596,8 @@
      "h": 428
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "운동부하심전도검사상 ST절 하강 소견 보이므로 양성이다. 다음으로 관상동맥조영술을 시행해야 하고 다른 부하검사는 필요하지 않다."
   },
   {
    "number": 34,
@@ -1601,7 +1634,8 @@
     22
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "레이노현상을 호소하는 환자로 일차성 또는 이차성 레이노의 감별을 위해서 항핵항체 검사를 시행함."
   },
   {
    "number": 35,
@@ -1638,7 +1672,8 @@
     22
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "돌발진의 임상경과"
   },
   {
    "number": 36,
@@ -1689,7 +1724,8 @@
      "h": 341
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "디곡신 중단에 의한 전형적인 국자모양의 심전도 이다. 현재 서맥이 있지만 증상이 없기 때문에 인공심장박동 조율기의 적응증은 아니다."
   },
   {
    "number": 37,
@@ -1739,7 +1775,8 @@
      "h": 373
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "유방덩이에 대한 중심부바늘생검 결과 비정형증식증으로 보고되면 덩이의 절제생검을 시행해서 확진을 해야한다."
   },
   {
    "number": 38,
@@ -1790,7 +1827,8 @@
      "h": 482
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "결절경화증과 동반된 영아연축에 대한 문제입니다. 치료는 Vigabatrin 입니다."
   },
   {
    "number": 39,
@@ -1841,7 +1879,8 @@
      "h": 471
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "표재성 혈전정맥염(thrombophlebitis)인 몬도씨병(mondor`s disease)으로, 대증적 치료(따뜻한 찜질이나 소염진통제)로 수주내로 저절로 호전된다."
   },
   {
    "number": 40,
@@ -1891,7 +1930,8 @@
      "h": 636
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "incarcerated hernia 는 manual reduction 1-2일 후에 수술한다"
   },
   {
    "number": 41,
@@ -1954,7 +1994,8 @@
      "h": 362
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "태반혈관종의 소견이다."
   },
   {
    "number": 42,
@@ -1991,7 +2032,8 @@
     26
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "부종과 단백뇨, 저알부민혈증, 고콜레스테롤혈증이 있는 소아신증후군 환아이다. 혈압이 정상이고, 미세 변화형이 가장 흔하므로 경구용 스테로이드를 우선적으로 투여한다."
   },
   {
    "number": 43,
@@ -2054,7 +2096,8 @@
      "h": 907
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "염증이 무릎을 침범한 상태이며 엑스레이 상에서 chondrocalcinosis가 관찰된다. 배양검사에서도 음성이므로 acute mono inflammatory arthritis중에서도 CPPD deposition disease일 가능성이 높다."
   },
   {
    "number": 44,
@@ -2091,7 +2134,8 @@
     28
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "모든 성폭력 피해자는 응급 피임법을 제공받아야 한다. 1.5mg levonorgestrel 1회 복용 혹은 복합 경구 피임제, 구리 자궁내 장치의 삽입 등의 방법이 있다."
   },
   {
    "number": 45,
@@ -2154,7 +2198,8 @@
      "h": 188
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "3개월 이상 기침, 호흡곤란이 주증상이고 기도과민성검사 결과 양성 소견 보여 기관지천식으로 진단할 수 있음. 흡입용 스테로이드가 포함된 약으로 치료가 필요함"
   },
   {
    "number": 46,
@@ -2205,7 +2250,8 @@
      "h": 826
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "자외선 노출 후 발생한 발열, pancytopenia, ANA양성, dsDNA양성, 보체 감소, 소변에서 단백뇨의 동반 등으로 SLE의 진단기준을 만족하며, 생명을 위협하는 주요 장기의 손상에 따른 증상에 대한 치료는 고용량의 전신 스테로이드의 투여가 표준 치료이다."
   },
   {
    "number": 47,
@@ -2255,7 +2301,8 @@
      "h": 232
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "early dec이다."
   },
   {
    "number": 48,
@@ -2318,7 +2365,8 @@
      "h": 480
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "젊은 여자 환자의 ITP 증례 입니다."
   },
   {
    "number": 49,
@@ -2368,7 +2416,8 @@
      "h": 480
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "신부전에서 동반된 빈혈 대개 GFR 이 30 mL/min 이하로 떨어지면 나타남 기전 : 손상된 신장에서 적절한 양의 erythropoietin 생산 저하 → 적혈구 생산 장애 기타 빈혈의 악화 요인 : 혈소판 기능 장애에 의한 출혈, 혈액 투석 시 소실되는 혈액, 철 결핍증이 동반, 적혈구 철 이용이 감소, 영양 결핍, 엽산결핍증이 동반, 요독성물질 축적→ 골수 기능 저하 - 치료 : EPO (Erythropoietin) : 용량 50~150150unit/kg을 매주 정주하거나 피하로 주사(피하 주사가 더 좋다) - EPO에 의해 erythropoiesis가 촉진되면 iron이 많이 필요하므로 EPO 투여 전에 iron status가 적절한지 반드시 확인해야됨. (serum iron, TIBC, ferritin) - EPO에 반응이 없는 경우 : EPO 용량 불충분, 철 결핍, Folate 또는 Vit. B12 결핍, 감염, 염증, 투석 불충분, 심한 영양실조 등 고려."
   },
   {
    "number": 50,
@@ -2419,7 +2468,8 @@
      "h": 541
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "급성깔때가콩팥염 진단(급성신우신염 진단)"
   },
   {
    "number": 51,
@@ -2470,7 +2520,8 @@
      "h": 523
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "당뇨병성 망막증이 동반되어 있어서 당뇨병성 콩팥병으로 인해서 단백뇨 및 부종 소견을 보이는 증례입니다. ACE inhibitors or angiotensin receptor blockers (ARB)를 치료제로 사용합니다 Controlling systemic blood pressure decreases renal and cardiovascular adverse events in this high-risk population. The vast majority of patients with diabetic nephropathy require three or more antihypertensive drugs including ACE inhibitors or angiotensin receptor blockers (ARB) to achieve this goal. Drugs that inhibit the renin-angiotensin system, independent of their effects on systemic blood pressure, have been shown in numerous large clinical trials to slow the progression of diabetic nephropathy at early (microalbuminuria) and late (proteinuria with reduced glomerular filtration) stages"
   },
   {
    "number": 52,
@@ -2521,7 +2572,8 @@
      "h": 710
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "만성콩팥병 환자에서 빈혈 치료 Adequate bone marrow iron stores should be available before treatment with ESA is initiated. Iron supplementation is usually essential to ensure an optimal response to ESA in patients with CKD because the demand for iron by the marrow frequently exceeds the amount of iron that is immediately available for erythropoiesis (measured by percent transferrin saturation), as well as the amount in iron stores (measured by serum ferritin)."
   },
   {
    "number": 53,
@@ -2572,7 +2624,8 @@
      "h": 449
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "원인으로 의심되는 식품을 일정 기간 제한한 후 증상이 호전되는 것을 확인하고, 다시 동일 식품을 섭취하여 증상이 유발되는지를 확인하는 방법이 가장 확실한 진단법이다."
   },
   {
    "number": 54,
@@ -2622,7 +2675,8 @@
      "h": 480
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만성적으로 GB stone과 관련된 증상이 있던 중, CBD stone으로 인한 cholangitis로 내원, 복부 초음파에서 CBD stone이 확인되었음. 이와 관련된 치료로 내시경 온쓸개관돌제거술을 받아야 함."
   },
   {
    "number": 55,
@@ -2673,7 +2727,8 @@
      "h": 226
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "2기 매독의 특징을 나타내고 있다."
   },
   {
    "number": 56,
@@ -2710,7 +2765,8 @@
     37
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "스트레스 요인에 대한 반응으로 나타나는 증상이 뚜렷한 고통과 장애를 유발하는 경우 적응장애로 진단한다. 범불안장애는 최소한 6개월 이상 지속되는 만성적인 불안감이다. 주요우울장애는 우울한 기분이 하루 중 대부분, 거의 매일 지속된다. 급성스트레스장애와 외상후스트레스장애는 외상성사건 후에 발생한다. 외상성 사건은 실제적이거나 위협적인 죽음, 심각한 부상, 성폭력 등을 의미한다."
   },
   {
    "number": 57,
@@ -2761,7 +2817,8 @@
      "h": 524
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "알레르기결막염은 결막에 알레르기로 인해 염증이 생긴 상태임. 여러 가지 항원은 눈의 분비물, 충혈, 결막 부종, 가려움증을 유발. 결막 부종이 심해지면 묵(Jelly) 같은 물질이 올라오기도 함, 좀 더 심한 경우에 눈꺼풀 뒷면에 크고 작은 유두가 나타날 수 있음, 이러한 상태가 오래 지속되면 시력이 감퇴하거나 소실될 수 있음."
   },
   {
    "number": 58,
@@ -2798,7 +2855,8 @@
     38
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "천식이 의심되는 환자로 폐기능 검사에서 폐쇄성 환기장애 소견있어 기관지확장제 투여 후 가역성 확인이 필요하다."
   },
   {
    "number": 59,
@@ -2861,7 +2919,8 @@
      "h": 334
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "The peak incidence of aortic dissection is in the sixth and seventh decades. Men are more affected than women by a ratio of 2:1. The presentations of aortic dissection and its variants are the consequences of intimal tear, dissecting hematoma, occlusion of involved arteries, and compression of adjacent tissues. Acute aortic dissection presents with the sudden onset of pain, which often is described as very severe and tearing and is associated with diaphoresis. The pain may be localized to the front or back of the chest, often the interscapular region, and typically migrates with propagation of the dissection. Hemopericardium and cardiac tamponade may complicate a type A lesion with retrograde dissection. Acute aortic regurgitation is an important and common (>50%) complication of proximal dissection. In dissections involving the ascending aorta, the chest x-ray often reveals a widened superior mediastinum. An electrocardiogram that shows no evidence of myocardial ischemia is helpful in distinguishing aortic dissection from myocardial infarction. Rarely, the dissection involves the right or, less commonly, left coronary ostium and causes acute myocardial infarction The diagnosis of aortic dissection can be established by noninvasive techniques such as echocardiography, CT, and MRI. 사진 1: CXR. Widened superior mediastinum and the calicium sign. The calcium sign is a finding on a chest X-ray that suggests aortic dissection. It is the separation of the intimal calcification from the outer aortic soft tissue border 사진 2: ECG. left ventricular hypertrophy with ST-T change"
   },
   {
    "number": 60,
@@ -2912,7 +2971,8 @@
      "h": 478
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "전신마취를 견딜 수 없는 환자, 혈역동학적으로 불안정하거나 장기부전이 있는 심한 패혈증 환자에서는 먼저 경피적 담낭배액술로 담낭 감압을 시행하고 환자가 안정되면 지연 담낭 절제술을 하는 것을 권한다."
   },
   {
    "number": 61,
@@ -2962,7 +3022,8 @@
      "h": 351
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "가면고혈압 (masked hypertension) 은 진료실혈압이 140/90 mmHg 미만이고 가정혈압 또는 주간활동혈압은 135/85mmHg 이상인 경우로 정의한다. 가면고혈압의 빈도는 15-30% 수준으로 관찰된다. 남성, 흡연, 알코올 섭취와 관련성이 높은 것으로 알려졌으며, 직업적 스트레스가 높은 환자에게서 더욱 흔하고, 혈압의 변동이 큰 환자들에서 그 발생 위험도가 높은 것으로 보고되었다. 위험도가 높은 대사증후군, 표적장기 손상, 당뇨병, 만성 콩팥병, 흡연자, 직업적 스트레스가 높은 환자는 가면고혈압을 진단해 치료하는 것을 고려할 수 있다. 가정혈압과 진료실혈압이 불일치할 때 활동혈압 측정을 하여 고혈압, 백의고혈압 및 가면고혈압을 진단 및 예후 측정을 할 수 있다. 사진 1: left ventricular hypertrophy with ST-T change and left atrial enlargement"
   },
   {
    "number": 62,
@@ -2999,7 +3060,8 @@
     41
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "심장 끝에서 확장기 잡음이 들리고 있다는 점에서 판막질환 중 승모판협착증(mitral stenosis)가 있는 환자임을 알 수 있습니다. 이러한 경우 증상의 유무 여부, 승모판 면적, 좌심방 혈전이나 승모판 역류 유무 여부에 따라서 치료가 달라집니다. 본 문제에 제시된 환자처럼 증상이 있으면서 승모판막 면적이 <1 cm2 이고 좌심방 혈전 및 승모판 역류가 없는 경우 피부경유 승모판 풍선판막 연결부 절개술 (PBMC, percutaneous balloon mitral commissurotomy)을 시행해야 합니다."
   },
   {
    "number": 63,
@@ -3062,7 +3124,8 @@
      "h": 575
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "대동맥판협착증은 특유의 심잡음이 들리고 운동시 흉통을 일으킬수 있는 질환입니다. 대동맥판막이 증상을 일으키면 경과 관찰보다 치환술을 시행하여야 합니다."
   },
   {
    "number": 64,
@@ -3125,7 +3188,8 @@
      "h": 701
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "myxedema로 인한 전신 부종및 복수가 가능한 경우임"
   },
   {
    "number": 65,
@@ -3188,7 +3252,8 @@
      "h": 548
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "Hemodynamic instability를 보이는 환자로 bowel preparation을 하기에는 상태가 많이 불안정하여 CT angiography나 angiography를 고려하여야 한다"
   },
   {
    "number": 66,
@@ -3251,7 +3316,8 @@
      "h": 529
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "태아발육지연의 진단 및 처치"
   },
   {
    "number": 67,
@@ -3288,7 +3354,8 @@
     45
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "범불안장애에서는 불안, 우울, 피로, 예민함 등이 동반될 수 있습니다. 공황유사 증상이나 특정공포증 증세가 있지만 전체 임상양상은 범불안장애가 더욱 적절합니다."
   },
   {
    "number": 68,
@@ -3339,7 +3406,8 @@
      "h": 551
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "증상 (간헐적인 상복부 통증, 지방변)과 CT에서 확인되는 전형적인 만성이자염으로 exocrine insufficiency로 인해 발생하는 증상이며, 치료는 이자효소제 보충이다."
   },
   {
    "number": 69,
@@ -3390,7 +3458,8 @@
      "h": 483
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "크롬친화성종양으로 인한 이차성 고혈압 환자이다. 혈압조절을 위해서는 종양절제술이 필요하다."
   },
   {
    "number": 70,
@@ -3441,7 +3510,8 @@
      "h": 696
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "의식변화, 분열적혈구, 용혈빈혈 및 혈소판감소증 등으로 TTP 의증환자, 확진위해 ADAMTS13 activity check"
   },
   {
    "number": 71,
@@ -3504,7 +3574,8 @@
      "h": 438
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "ECG에서 electrical alternans가 관찰되고 TTE에서 pericardial effusion이 보임"
   },
   {
    "number": 72,
@@ -3541,7 +3612,8 @@
     49
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "폐경기 증후군 증상이 있는 환자에서 자궁이 없는 환자에서는 에스트로겐 단독요법이 가장 효과적이 증상 치료제"
   },
   {
    "number": 73,
@@ -3592,7 +3664,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "당뇨병을 오랜 기간 앓고 있는 환자에서 발생한 slow transit constipation의 임상 양상임을 알 수 있으며 직장항문내압검사나 풍선 배출검사에서 이상이 없어 위장관운동촉진제를 투여하고 증상의 호전이 없을 경우 락툴로오스 등의 삼투성 하제를 추가하는 치료가 필요합니다. 수술적 치료가 필요한 상태는 아니라고 판단됩니다."
   },
   {
    "number": 74,
@@ -3629,7 +3702,8 @@
     50
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "항암치료 중에 발생한 발열의 치료에 pseudomonas를 cover할 수 있고 bactericidal effect 가 좋은 항생제를 선택한다."
   },
   {
    "number": 75,
@@ -3667,7 +3741,8 @@
     51
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "다뇨증환자에서 osmotic diuresis 를 감별하기위해 우선적으로 소변삼투질농도 확인이 필요함"
   },
   {
    "number": 76,
@@ -3718,7 +3793,8 @@
      "h": 615
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "아메바성 간농양 증례로, 치료는 메트로니다졸이다."
   },
   {
    "number": 77,
@@ -3768,7 +3844,8 @@
      "h": 674
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "간질성 폐질환의 진단을 위해 고해상 CT를 촬영한다"
   },
   {
    "number": 78,
@@ -3806,7 +3883,8 @@
     53
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "요로 감염의 가장 흔한 원인균은 대장균으로 치료제로는 3세대 세팔로스포린을 선택한다"
   },
   {
    "number": 79,
@@ -3856,7 +3934,8 @@
      "h": 565
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "급성 동맥 폐색증의 감별진단"
   },
   {
    "number": 80,
@@ -3907,7 +3986,8 @@
      "h": 555
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "기관지 천식 악화에 관한 증례로 일차 치료제는 속효성 흡입용 기관지확장제이다."
   }
  ]
 }

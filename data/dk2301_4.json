@@ -66,7 +66,8 @@
      "h": 230
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "하벽 심근경색증에 의한 이차적 승모판 역류증"
   },
   {
    "number": 2,
@@ -117,7 +118,8 @@
      "h": 580
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "호흡곤란의 모습이다. 영상에서 호흡횟수가 증가하고 호흡시 흉부함몰이 생기는 호흡곤란의 모습이 보인다. x-ray에서는 ground glass appearance 보인다. 미숙아에서 출생 직후에 잘 나타나는 호흡 곤란 증후군으로 진단할 수 있으며, 인공 폐표면활성제를 투여해준다."
   },
   {
    "number": 3,
@@ -154,7 +156,8 @@
     2
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "고령, 중증의 대동맥판막 협착증."
   },
   {
    "number": 4,
@@ -217,7 +220,8 @@
      "h": 283
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "폐기능이 떨어져 있으므로 기관지 확장제 반응 검사를 실시 하여야 한다."
   },
   {
    "number": 5,
@@ -254,7 +258,8 @@
     3
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "물질 사용 장애 중 자극제를 사용하게 되면 각성효과, 고양된 기분, 다행감을 주며, 식욕을 줄이는 효과가 있다. 대표적인 자극제로는 암페타민, 코카인 등이 있다."
   },
   {
    "number": 6,
@@ -371,7 +376,8 @@
      "h": 192
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "기침형 천식 환자의 치료를 묻는 문항으로 현재 지속적으로 증상이 있는 상태로 ICS 를 사용해야 한다."
   },
   {
    "number": 8,
@@ -422,7 +428,8 @@
      "h": 632
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "속옷에 변지림이나 배변 시 항문 통증 등의 증상이 있는 경우 만성 변비를 의심해보아야 한다."
   },
   {
    "number": 9,
@@ -459,7 +466,8 @@
     6
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "갑상샘 종양으로 환자가 내원했을 때, 암이 아닌 다른 결절로 확인되었을 시 필요한 치료나 조치가 무엇인지 알고 있다."
   },
   {
    "number": 10,
@@ -510,7 +518,8 @@
      "h": 698
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "활동성 궤양으로 인한 이차양상으로 생기기 도 하고 궤양의 치유과정에서 반흔에 의하여 발생하기 도 한다. 이러한 폐쇄가 악성 신생물에 의한 것이 아닌 지 확인하기 위하여 내시경적 검사가 반드시 필요하다. 진통제 복용력 있으며, 6개월전 내시경 검사에서도 날문부 궤양역이 있음. 궤양의 치유 악화를 반복하며 반흔이 생긴것으로 생각되는 케이스 이다."
   },
   {
    "number": 11,
@@ -548,7 +557,8 @@
     8
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "범불안장애는 계속되는 과도한 걱정과 불안이 색심 증상으로, 일반적인 일 혹은 미래의 사건이나 활동에 대한 걱정이 많다. 초조감, 신경이 곧두선 느낌 및 근육긴장, 이로 인한 떨림 근육통, 몸살 기운, 메스꺼움, 설사 등 신체적 증상을 잘.동반한다."
   },
   {
    "number": 12,
@@ -585,7 +595,8 @@
     8
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "황달 및 체중감소가 있으나 발열이 없으면서, 총빌리루빈 수치가 23.9로 상승되어 있는 경우는 총담관암 가능성이 가장 높다"
   },
   {
    "number": 13,
@@ -635,7 +646,8 @@
      "h": 376
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "환자의 증상과 뇌파소견은 결신발작에 대한 내용입니다. TOC는 Ethosuximide 입니다."
   },
   {
    "number": 14,
@@ -686,7 +698,8 @@
      "h": 319
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "트로포닌 (Troponin I or Troponin T)는 심장에 특이적인 효소로서 ST분절상승이 없는 급성 관동맥증후군 (Non-ST-segment elevation acute coronary syndrome)에서 비-ST분절 상승심근경색증과 불안정성 협심증을 구별하는데 있어 가장 중요한 검사이다."
   },
   {
    "number": 15,
@@ -737,7 +750,8 @@
      "h": 496
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "가족계획(출산)이 종료된 여성에서 자궁샘근육증의 치료에 대한 설명 이 경우 평소 증상이 있고 Hb수치도 낮아 수술이 적절하다."
   },
   {
    "number": 16,
@@ -787,7 +801,8 @@
      "h": 286
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "고령, 혈관질환이 있는 환자에서 발생한 허혈성 대장염이다."
   },
   {
    "number": 17,
@@ -838,7 +853,8 @@
      "h": 487
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "HCM에서 LVOT obstruction을 악화시키는 요인 중 하나는 Afterload의 감소이다. 질산염 투여 시 혈관확장으로 인해 afterload가 감소하기 때문에 obstruction을 악화 시킬 수 있다"
   },
   {
    "number": 18,
@@ -888,7 +904,8 @@
      "h": 602
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "hypokalemia 가 동반되어 있는 고혈압환자의 진단"
   },
   {
    "number": 19,
@@ -925,7 +942,8 @@
     12
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "일주기리듬 수면각성장애 중 뒤쳐진 수면위상형 (delayed sleep phase type)에 해당한다. 수면과 각성 시간이 기대되는 시간대보다 2시간 이상 늦어지는 것으로, 수면의 질과 양은 비교적 정상적이지만, 일반적인 수면 각성 시간을 지키지 못한는 것을 특징으로 한다. 치료로 정상적인 수면각성주기를 갖도록 생활을 조절하는 것이 필요하다. 광치료(light therapy)가 수면위상을 조절하여 정상적인 수면각성주기를 회복시킬 수 있다."
   },
   {
    "number": 20,
@@ -975,7 +993,8 @@
      "h": 500
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "Forrest IIa의 경우 내시경 추가 지혈술을 시행하여야한단."
   },
   {
    "number": 21,
@@ -1026,7 +1045,8 @@
      "h": 326
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "심전도상 빠른 심실반응을 보이는 심방조동 환자입니다. 맥박 조절을 위해 베타차단제, 칼슘채널차단제 (베라파밀, 딜티아젬) 등도 사용 가능합니다. 혈역학적으로 불안정하다면 syncronized cardioversion을 해야합니다. 지속된 재발의 경우 카테터 전극 도자술을 시행할 수 있습니다. 또한 심방조동에서도 심실세동과 마찬가지로 항응고 치료 대상이 됩니다."
   },
   {
    "number": 22,
@@ -1114,7 +1134,8 @@
      "h": 583
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "궤양성 대장염의 치료를 묻는 문항이다."
   },
   {
    "number": 24,
@@ -1151,7 +1172,8 @@
     14
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "저혈당에 의한 의식변화가 발생한 환자로 저혈당의 원인 인자를 교정하는 것이 필요하다. 혈액 검사 결과에서 인슐린종이나 자가면역 저혈당의 가능성은 낮다. 환자는 당화혈색소가 6.2%로 혈당 조절이 양호하므로 투약 중인 약제 중 저혈당 유발 가능성이 가장 높은 술포닐우레아를 중단하거나 용량을 조정하는 것이 가장 우선적으로 고려되어야할 치료이다."
   },
   {
    "number": 25,
@@ -1227,7 +1249,8 @@
      "h": 456
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "다낭성난소증후군에서 배란유도제로 first choice : aromatase inhibitor"
   },
   {
    "number": 26,
@@ -1264,7 +1287,8 @@
     16
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "담낭암 진단되어 T 병기는 T1b로 고령에 치매로 의사소통되지 않으며 기대 여명이 얼마 남지 않은상태로 조기 담낭암에서 경과 관찰하는것이 좋을것"
   },
   {
    "number": 27,
@@ -1302,7 +1326,8 @@
     17
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "특징적인 증상(오심, 구토, 의식저하 등)이 있으며, 혈청 포도당 250 mg/dL 초과, 동맥혈 pH 7.3 미만, 혈청 중탄산염 농도 18mEq 미만, 케톤뇨 양성 소견 등으로 당뇨병성케톤산증으로 진단할 수 있다. 당뇨병성케톤산증 치료의 핵심은 수분 결핍을 신속히 해결하는 것으로 처음 1-3시간 동안 등장성 식염수(0.9% isotonic saline)를 10-30 mL/kg/hour 의 속도로 2-3 L 정도 투여한다."
   },
   {
    "number": 28,
@@ -1339,7 +1364,8 @@
     17
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "하지불안증후군"
   },
   {
    "number": 29,
@@ -1376,7 +1402,8 @@
     17
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "질병불안장애는 심각한 질병에 걸려 있거나 걸리는 것에 대해 몰두하는 모습을 보이고, 실제로 신체 증상은 나타나지 않거나 신체 증상이 있더라도 단지 경도의 정도만 보인다. 건강에 대한 높은 수준의 불안이 있으며, 건강 상태에 대해 쉽게 경각심을 가지며, 질병에 대한 몰두는 적어도 6개월 이상 지속된다."
   },
   {
    "number": 30,
@@ -1414,7 +1441,8 @@
     18
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "알포트증후군 진단 Classically, patients with Alport’s syndrome develop hematuria, thinning and splitting of the GBMs, and mild proteinuria (<1–2 g/24 h), which appears late in the course, followed by chronic glomerulosclerosis leading to renal failure in association with sensorineural deafness. Some patients develop lenticonus of the anterior lens capsule, “dot and fleck” retinopathy, and rarely, leiomyomatosis"
   },
   {
    "number": 31,
@@ -1451,7 +1479,8 @@
     18
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "유방 종괴의 진단을 위하여 조직 생검이 필요하다"
   },
   {
    "number": 32,
@@ -1514,7 +1543,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "구불결장암 치료"
   },
   {
    "number": 33,
@@ -1551,7 +1581,8 @@
     19
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "정상애도의 사례는 다음과 같습니다. 55세 여자가 우울하다고 병원에 왔다. 17년전부터 키우던 강아지가 1주일전 하늘나라로 갔다고 한다. 강아지가 사망한뒤 강아지를 간간히 생각이 나면서 슬픔을 느꼈고, 때때로 감정이 북받쳐 올라 울기도 하였다. 생전에 잘해주지 못했던 일들에 대해 죄책감이 들기도 하였다. 낮 동안에는 친구들과 만나서 운동을 하거나, 이전처럼 간간히 아르바이트로 일을 하면서 지내기도 하였다. 2개월 이내라 하더라도 주요우울삽화가 존재한다면 정상적 애도반응으로 진단하지 않고 주요우울장애로 진단을 한다. 아래와 같은 경우다. 74세 여성이 6개월 전 뇌출혈로 입원한 남편이 두 달 전 폐렴으로 사망 후 하루 종일 누워서 외출도 하지 않고 가족들이 말을 걸어도 단답으로만 대답한다는 자녀들의 염려로 내원하였다. 하루 종일 남편이 입원 중 간병을 잘못해서 죽었다는 죄책감만 떠오르며, 영감 따라가고 싶다는 생각에 눈물만 난다고 한다. 식사를 잘 하지 않아 체중이 4kg 정도 줄었다고 하며, 누워서 자다 깨다 하느라 얼마나 잤는지도 모르겠다고 한다. 방에 있다가 남편 목소리가 들린 것 같아 거실로 나가봤으나 아무도 없던 적이 있었다고 한다."
   },
   {
    "number": 34,
@@ -1589,7 +1620,8 @@
     20
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "급성스트레스장애와 외상후스트레스장애는 적합지 않다. 적응장애의 발생에 기여하는 스트레스 사건은 외상후스트레스장애나 급성스트레스장애의 진단에 부합되는 외상성 사건에 비해 심각도나 유형의 측면에서 다양하고 일상적이다. 적응장애는 6개월까지 증상이 지속될 수 있는 반면 급성스트레스장애는 노출후 3일부터 1개월까지만 증상이 나타난다. 임상양상의 측면에서 외상성 사건 이후 나타난 증상의 양상이 외상후스트레스장에 합당한 것이 없기에 외상후스트레스장애로 진단할 수 없다. 우울감이나 의욕저하, 즐거움의 상실이 없어 주요우울장애에 해당하지 않는다. 지속성 우울장애는 우울기분이 있어야 하며 2년 이상 지속되어야 한다."
   },
   {
    "number": 35,
@@ -1639,7 +1671,8 @@
      "h": 485
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "양측 난관수종 증례입니다. 양측 난관 폐쇄 상태이므로 배란유도나 자궁강내정자주입술은 치료 가치가 없고 항생제 투여는 난관수종에 치료효과가 없습니다. 진단복강경을 하여 난관성형 또는 난관절제술을 시행하고 다음 치료 방침을 결정해야 합니다"
   },
   {
    "number": 36,
@@ -1677,7 +1710,8 @@
     21
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "N-아세틸시스테인"
   },
   {
    "number": 37,
@@ -1739,7 +1773,8 @@
      "h": 399
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "일과성 허혈발작 증상으로 내원하여 뇌경색이 진단된 증례입니다. 심전도에서 심방세동이 확인되어 심장탓 색전증에 의한 가능성이 높은 상태로 항응고제 치료를 해야합니다."
   },
   {
    "number": 38,
@@ -1776,7 +1811,8 @@
     21
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "나이지리아는 chloroquine -resistant malaria 지역 임산부에게서 말라리아 예방약으로 TOC는 mefloquine입니다."
   },
   {
    "number": 39,
@@ -1814,7 +1850,8 @@
     22
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "돌봄을 받고자 하는 광범위하고 지나친 욕구가 복종적이고 매달리는 행동과 이별 공포를 초래하며 청년기에 시작되어 여러 상황에서 나타나는 의존성 성격장애 환자의 케이스임."
   },
   {
    "number": 40,
@@ -1864,7 +1901,8 @@
      "h": 458
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "자궁선근증에 의한 월경과다, 월경통 환자분으로 peirmenopausal period에 수술적 합병증이 우려되는 경우 LNG 삽입이 일차 치료가 될 수 있다."
   },
   {
    "number": 41,
@@ -1915,7 +1953,8 @@
      "h": 365
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "난소낭종염전의 수술방법"
   },
   {
    "number": 42,
@@ -1966,7 +2005,8 @@
      "h": 768
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "만성폐쇄폐질환의 급성악화 치료로 흡입 단기작용 베타2 작용제, 전신스테로이드 치료를 할 수 있으며 의식이 명료한 환기장애를 가진 환자에서 비침습양압환기를 시도해 볼 수 있다"
   },
   {
    "number": 43,
@@ -2003,7 +2043,8 @@
     24
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "해당 환자는 피해망상 및 환청이 1개월 이상의 기간동안 상당부분 존재하고 장애의 지속적 징후가 최소 6개월 동안 계속되었기에 조현병 진단이 가능하다. 주요우울 또는 조증삽화가 동시에 일어나지 않아기에 조현정동장애는 배제 가능하다. 급성기 치료는 항정신병약물이다. 항정신병약물에 해당되는 것은 팔리페리돈이다."
   },
   {
    "number": 44,
@@ -2067,7 +2108,8 @@
      "h": 903
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "허리를 굽히다가 통증이 발생하였고 방사통이 동반되어 있다. 방상통이 동반되어 있는 임상양상으로 허리삠을 배제할 수 있고, X선에서 강직척추염과 척추전방전위증을 배제할 수 있다. 자기공명영상 사진에서 척추관 협착증보다는 허리 추간판 탈출증 소견을 관찰할 수 있다."
   },
   {
    "number": 45,
@@ -2105,7 +2147,8 @@
     27
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "흡인성 폐렴으로 치료 중 발생한 패혈성 쇼크에 대한 치료로 초기 충분한 수액투여에도 평균동맥압이 65mmHg 이상 유지되지 않는다면 노르에피네프린을 첫 번째 혈압상승제로 사용한다."
   },
   {
    "number": 46,
@@ -2155,7 +2198,8 @@
      "h": 687
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "폐경이후의 여성에서 외음부에 병변이 있을시에는 조직검사부터 시행하여 악성종양을 배제한후에 치료를 결정하는 것이 중요합니다."
   },
   {
    "number": 47,
@@ -2206,7 +2250,8 @@
      "h": 247
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "산모에서 발생한 APN 상황으로 입원하여 정맥항생제 투여의 대상이 된다."
   },
   {
    "number": 48,
@@ -2243,7 +2288,8 @@
     28
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "매독으로 치료 후에도 VDRL, TPHA 와 같은 검사에서 평생 양성 반응으로 확인될 수 있다. 매독과 관련된 증상 호소 없고, VDRL 역가가 증가하는 상황이 아니라면 추가적인 치료 없이 경과관찰 가능하다."
   },
   {
    "number": 49,
@@ -2294,7 +2340,8 @@
      "h": 173
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "급성심근경색증 환자는 아스피린, 클로피도그렐, RAS차단제, 베타차단제, 스타틴 등이 처방되어야 하고 급성이고 흉통 지속됨으로 응급관상동맥중재술이 시행되어야 한다."
   },
   {
    "number": 50,
@@ -2356,7 +2403,8 @@
      "h": 128
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "흡연, 호흡곤란의 임상 증상과 흉부x선 사진에서 과팽창 소견으로으로 만성폐쇄폐질환을 의심하고 폐활량 검사를 통해 확진 할 수 있다. 만성폐쇄성폐질환은 단기작용 베타작용제 흡입 후의 폐활량검사 결과를 통해 진단하며 기관지 확장제 반응이 있는 경우도 있다. 주어진 정보로 천식과 감별 할 수 있다."
   },
   {
    "number": 51,
@@ -2407,7 +2455,8 @@
      "h": 480
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "혈성 설사, 신손상, 혈소판감소증이 있는 용혈요독 증후군 증례입니다. 직접빌리루빈의 상승과 말초혈액도말 소견은 미세혈관병 용혈을 시사하는 소견입니다."
   },
   {
    "number": 52,
@@ -2444,7 +2493,8 @@
     30
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "해당 증례는 대마 사용자에서 발생한 무욕증후군의 증례입니다. 흡입 시 이완 및 다행감이 주증상인 점, 지속 사용 후 의욕이 떨어진 점, 과한 흥분성이나 인지장애가 없는 점, 신체적 의존과 현저한 금단증상이 없다는 점에서 대마를 사용했다고 추측할 수 있겠습니다."
   },
   {
    "number": 53,
@@ -2482,7 +2532,8 @@
     31
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "화학화상으로 응급실에서 초기에 결막낭 세척이 가장 먼저 시행해야 한다."
   },
   {
    "number": 54,
@@ -2532,7 +2583,8 @@
      "h": 419
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "갑작스러운 낭성 결절의 크기증가로 생각되며 흡인을 통한 감압이 필요하다"
   },
   {
    "number": 55,
@@ -2582,7 +2634,8 @@
      "h": 224
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "5칸으로 된 자동적 사고 기록지의 예시를 보여 주고 있음. 인지치료에서 가장 핵심적인 사고기록지이며, 제일 핵심은 자동적 사고를 찾아내고 그와 관련된 주변맥락을 살펴보고 인지수정을 해보는 작업이다."
   },
   {
    "number": 56,
@@ -2644,7 +2697,8 @@
      "h": 636
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "골관절염이 있는 환자에서 갑자기 염증성 관절염이 오고 편광현미경 검사에서 보이는 결정으로 보아 거짓통풍 환자 증례이다."
   },
   {
    "number": 57,
@@ -2682,7 +2736,8 @@
     33
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "기억력 저하를 호소하고 있으나 현재까지 일상 생활 수행에 장애가 없어 치매로 진단하기는 어렵다. 현재 환자의 MMSE 결과는 정상범위에 있으나 기억력과 관련된 부분의 점수가 떨어져 있으므로, 기억력 저하를 주증상으로 하는 경도인지장애의 가능성이 가장 높다."
   },
   {
    "number": 58,
@@ -2733,7 +2788,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "과응고의 위험인자가 있으며 흉부 CT 를 통해 폐색전증을 진단 할 수 있다. 활력징후가 불안정한 상태로 일차치료로 혈전용해제 치료를 할 수 있다."
   },
   {
    "number": 59,
@@ -2783,7 +2839,8 @@
      "h": 284
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "염증성 요통 병력과 단순 방사선 사진에서 천장관절염 소견이 있어 강직척추염에 해당한다."
   },
   {
    "number": 60,
@@ -2834,7 +2891,8 @@
      "h": 637
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "경구피임제와 관련이 있는 간 종양 중 rupture의 빈도가 높은 종양은 hepatic adenoma입니다. CT 영상에서 동맥기 조영증강을 보이는 종양이 관찰됨."
   },
   {
    "number": 61,
@@ -2871,7 +2929,8 @@
     35
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "주요우울장애 진단 기준을 충족하며, 원인이 될만한 스트레스가 없다. 우선적으로 정신병적 장애를 진단하기 위한 기준은 충족하지 못 하고 있다. 현재 조증삽화에 대한 내용은 없다."
   },
   {
    "number": 62,
@@ -2909,7 +2968,8 @@
     36
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "HAV infection is usually self-limited, and treatment consists of supportive care. Medications that might cause liver damage or are metabolized by the liver should be used with caution. Full clinical and biochemical recovery is observed within three months in 85 percent of patients, and complete recovery is observed by six months in nearly all patients. Patients with fulminant hepatic failure require aggressive supportive therapy and should be transferred to a center capable of performing liver transplantation. 급성 A형 간염의 치료는 보존적 치료가 원칙이며 전격성 간염으로 진행 시 간이식을 고려한다."
   },
   {
    "number": 63,
@@ -2946,7 +3006,8 @@
     36
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "검사결과에서 감염의 증거 없고, 아기 상태 양호하나 아기의 환경온도가 높다(적정 온도 22-26도). 원인을 제거하면 된다."
   },
   {
    "number": 64,
@@ -2997,7 +3058,8 @@
      "h": 428
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "공기증깔때기콩팥염(기종성신우신염) 진단 Emphysematous pyelonephritis is a particularly severe form of the disease that is associated with the production of gas in renal and perinephric tissues and occurs almost exclusively in diabetic patients"
   },
   {
    "number": 65,
@@ -3060,7 +3122,8 @@
      "h": 769
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "임상증상, 특징적인 청진, 곤봉지를 통해 IPF를 의심하고 진단을 위해 CT 촬영을 고려 할 수 있다."
   },
   {
    "number": 66,
@@ -3111,7 +3174,8 @@
      "h": 293
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "요실금 증상이 있는 환자에게서 감별진단과 적절한 치료를 선택한다."
   },
   {
    "number": 67,
@@ -3161,7 +3225,8 @@
      "h": 469
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "염증성 유방암의 진단. 호르몬수용체 및 her2 상태를 보고 적절한 치료를 찾아야함. 삼중음성이므로 선행항암치료를 시행하며 염증성 유방암의 표준치료는 선행항암 치료후 변형근치유방절제술임."
   },
   {
    "number": 68,
@@ -3212,7 +3277,8 @@
      "h": 634
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "24시간 소변량이 50mL/kg (혹은 3L)을 초과하고 소변 농도가 300 mOsmol/kg H2O 미만 으로 요붕증으로 진단할 수 있다. 수분제한 후 소변 삼투질농도의 증가가 없으며 T1 강조 안장 자기공명검사에서 뇌하수체후엽의 특정적인 밝은 신호가 소실되어 있어 중추성 요붕증으로 진단할 수 있다. 가장 적합한 치료법은 장시간 지속하는 합성 바소프레신 유사체인 데스모프레신을 보훙하는 것이다."
   },
   {
    "number": 69,
@@ -3250,7 +3316,8 @@
     41
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "운동발달지연에 대한 내용입니다."
   },
   {
    "number": 70,
@@ -3287,7 +3354,8 @@
     41
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "고위험 양성 병변으로 광범위 절제술이 필요하다"
   },
   {
    "number": 71,
@@ -3324,7 +3392,8 @@
     41
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "위험인자 (흡연), 전형적인 증상 (호흡곤란)이 있고 폐활량검사에서 폐쇄성 환기장애를 보여 COPD를 진단할수 있고 치료로 흡입 기관지확장제를 선택할 수 있다."
   },
   {
    "number": 72,
@@ -3375,7 +3444,8 @@
      "h": 592
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "일차성 갑상선기능저하증의 치료"
   },
   {
    "number": 73,
@@ -3426,7 +3496,8 @@
      "h": 473
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "급성폐쇄각 녹내장으로 1번이 정답이 된다. 오심, 두통을 동반하는 시력저하로 각막은 부종이 생기고 결막은 충혈되며 동공이 중등도로 산대되고 동공반사는 없어지는 것이 주특징이다. 레이저 홍채절개술을 이용하여 치료한다."
   },
   {
    "number": 74,
@@ -3476,7 +3547,8 @@
      "h": 321
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "삼출성 중이염의 경우, 초기처치로서 이환시점부터 3개월까지 경과 관찰을 할 수 있으며, 경과 관찰 요법 3개월 후에는 고막상태, 청력상태 및 언어발달상의 문제 여부를 판정하여 추가적인 치료여부를 결정한다. 그러나, 경과 관찰요법의 예외인 경우는 진단 시점의 청력역치가 40dB 이거나 언어발달의 지연이 의심되는 경우, 고막의 비가역적인 구조 변화가 발생하는 경우 등이 있을 경우에는 적즉적인 조기 치료가 필요하다."
   },
   {
    "number": 75,
@@ -3527,7 +3599,8 @@
      "h": 551
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "급성 식도정맥류 출혈이 의심되는 경우 출혈 병소의 확인 및 지혈술을 위해 빠른 시간 내 내시경을 시행한다. 내시경에서 급성 식도정맥류 출혈이 확인되면 내시경적 지혈술을 시행하여야 한다. EVL이 일차치료로 권장되며 내시경 주사 경화요법(endoscopic injection sclerotherapy, EIS)은 시술 실패, 사망, 부작용 발생 위험이 높아 더 이상 추천되지 않는다."
   },
   {
    "number": 76,
@@ -3564,7 +3637,8 @@
     44
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "LDL 콜레스테롤을 추가적으로 감량할때 약물치료 선택"
   },
   {
    "number": 77,
@@ -3627,7 +3701,8 @@
      "h": 354
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "Prinzmetal’s variant angina (PVA) is caused by focal spasm of an epicardial coronary artery with resultant transmural ischemia and abnormalities in left ventricular function that may lead to acute MI, ventricular tachycardia or fibrillation, and sudden cardiac death. Patients with PVA are generally younger and, with the exception of cigarette smoking, have fewer coronary risk factors than do patients with NSTE-ACS. The clinical diagnosis of PVA is made by the detection of transient ST-segment elevation with rest pain, although many patients may also exhibit episodes of silent ischemia. Coronary angiography demonstrates transient coronary spasm as the diagnostic hallmark of PVA. Atherosclerotic plaques in at least one proximal coronary artery occur in about half of patients. Hyperventilation or intracoronary acetylcholine has been used to provoke focal coronary stenosis on angiography or to provoke rest angina with ST-segment elevation to establish the diagnosis. 사진 1: ECG, ST segment elevation in rhythm strip 사진 2: ECG, sinus rhythm without ST segment elevation"
   },
   {
    "number": 78,
@@ -3678,7 +3753,8 @@
      "h": 847
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "뇌하수체 비기능성 우연종과 약물 유발 유즙분비호르몬 상승"
   },
   {
    "number": 79,
@@ -3728,7 +3804,8 @@
      "h": 636
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "이전 심부정맥 혈전증 병력 및 급성 호흡곤란 임상증상으로 폐혈관 색전증에 대한 감별이 필요하며, 흉부 조영제 CT를 통핸 acute PTE를 진단 할 수 있다. 심근효소 및 심초음파상 정상이며, Pulmonary embolism severity index 75 points, low risk PTE로 진단되며 항응고치료가 권고된다."
   },
   {
    "number": 80,
@@ -3779,7 +3856,8 @@
      "h": 447
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "저칼륨혈증,1형 콩팥요세관산증 진단"
   }
  ]
 }

@@ -8,6 +8,7 @@
 - 그림: `assets/<exam_id>/qNNN_figK.webp` (2,042장, WebP q90)
 - 원문 쪽: `pages/<exam_id>/pNNN.webp` (문항이 걸친 2,372쪽, 1.5배 렌더)
 - 토픽 분류: `data/topics.json` — `tools/build_topics.py`가 문항 지문·선지 키워드로 과목·단원을 매긴다(3,200문항)
+- 해설: 정답 엑셀의 해설·참고사항을 문항마다 `explanation`으로 넣었다(2,553문항). 결과 화면의 문제 카드에서 [해설 보기]로 펼친다
 - 앱: `index.html` · `styles.css` · `app.js` (빌드 도구 없는 정적 SPA)
 - PWA: `manifest.json` (홈 화면 추가 · standalone) · `sw.js` (Web Push 수신·알림 클릭 처리)
 

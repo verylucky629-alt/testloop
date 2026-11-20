@@ -54,7 +54,8 @@
      "h": 439
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "Epstein-Barr 바이러스 감염의 진단에 비정형 림프구가 도움이 되며, 특이 항체 검사로 여러 시기의 질병을 감별할 수 있습니다."
   },
   {
    "number": 2,
@@ -118,7 +119,8 @@
      "h": 480
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "치료가 단기 또는 장기 임상 결과에 어떤 영향을 끼치는지에 대해서는 자료가 없으나, 치료를 시행한 군에서 치료 하지 않은 군에 비해 이론상 안전한 혈소판 수인 20 X 103/μL 이상에 더 빨리 도달하는 것으로 보인다. 항혈소판 항체는 자가 혈소판뿐만 아니라 수혈한 혈소판에도 결합하므로 생명을 위협하는 출혈이 없는 한 혈소판 수혈은 금기 이다. Immunoglobulin 정주(IVIG)를 0.8 - lg/l<g/일의 용량으로 1 - 2 일간 투여하면 95% 환자에서 48시간 내에 혈소판 수가 대개 20 X103/μL 이상 증가된다. 그러나 가격이 비싸고 시간이 오래 걸리며. 부작용으로 무균 수막염을 일으켜 두통, 구토 등이 있을 수 있다"
   },
   {
    "number": 3,
@@ -155,7 +157,8 @@
     4
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "성조숙증의 정확한 정의를 알아야하며, 성조숙증의 감별질환중 중추성/말초성의 구별을 위한 검사에 대한 이해가 필요하다. central/peripheral 을 감별하기 위해서는 GnRH 자극 검사가 필요하다."
   },
   {
    "number": 4,
@@ -218,7 +221,8 @@
      "h": 397
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "TOF 전형적인 소견"
   },
   {
    "number": 5,
@@ -269,7 +273,8 @@
      "h": 632
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "속옷에 변지림이나 배변 시 항문 통증 등의 증상이 있는 경우 만성 변비를 의심해보아야 한다."
   },
   {
    "number": 6,
@@ -306,7 +311,8 @@
     6
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "성장호르몬 결핍증이 의심되는 환아이다. 성장호르몬 결핍의 확진 검사는 인슐린이나 Arginine 등의 약제를 사용하여 유발 검사를 하여 최고 반응치가 7~10 ng/mL 미만 인 경우에 성장호르몬 결핍증이라고 한다. 인슐린양 성장 인자는 성장호르몬 결핍증 뿐 아니라, 영양 상태나 전신 질환 상태에 따라 혈중 농도의 변화가 있다"
   },
   {
    "number": 7,
@@ -357,7 +363,8 @@
      "h": 612
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "달걀 흰자를 먹은 후 발생한 급성 일레르기 반응이며, 달걀흰자특이면역글로불린E가 증가되어 있어 감작되어 있는 것을 알 수 있다. 달걀제한을 하게된다."
   },
   {
    "number": 8,
@@ -408,7 +415,8 @@
      "h": 710
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "호흡곤란, 쉰 목소리, 개 짓는 듣한 소리, 흡입성 협착음(stridor), x-ray에서 보이는 첨탑징후(steeple sign) 등으로 크룹으로 진단 할 수 있다. 치료로 에피네프린 흡입을 해준다."
   },
   {
    "number": 9,
@@ -445,7 +453,8 @@
     8
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Guillain-Barre syndrome 에 대한 예시로 하지에서 진행하는 근위약감과, 심부건반사 소실, 단백 세포 해리가 진단에 중요한 소견이다. 치료는 정맥 내 면역글로불린 투여로 한다."
   },
   {
    "number": 10,
@@ -483,7 +492,8 @@
     9
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "모유 황달로 모유를 일시적으로 중단하고 분유를 먹인다."
   },
   {
    "number": 11,
@@ -520,7 +530,8 @@
     9
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "정상발달"
   },
   {
    "number": 12,
@@ -571,7 +582,8 @@
      "h": 482
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "2~3도의 범수축기 심잡음과 제2심음 항진 심초음파 사진에서 좌우단락과 압력차 53mmHg 로 폐고혈압이 동반된 심실중격결손의 소견"
   },
   {
    "number": 13,
@@ -608,7 +620,8 @@
     10
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "조산을 막는 것이 ROP 를 줄이는 가장 확실한 방법이다."
   },
   {
    "number": 14,
@@ -659,7 +672,8 @@
      "h": 371
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "과호흡이 유발인자로 작용하는 경우가 많고, 일시적 편마비의 증상이 반복되는 Moyamoya disease이다."
   },
   {
    "number": 15,
@@ -710,7 +724,8 @@
      "h": 707
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "창자겹침증의 특징적인 증상은 건강하던 아기가 갑자기 심한 복통과 무증상이 반복되는 것으로 단순 복부 방사선 사진에서 창자겹침이 있는 부위에 음영이 증가되거나, 복부 초음파 검사에서 원통형 종괴나 표적 또는 도넛 모양으로 관찰된다."
   },
   {
    "number": 16,
@@ -760,7 +775,8 @@
      "h": 443
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "복강내 종괴로 내원하였으며 신경성종양에서 확인되는 신경전달물질의 상승으로 신경모세포종을 의심할 수 있다."
   },
   {
    "number": 17,
@@ -798,7 +814,8 @@
     13
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "신증후군에서의 복통은 복막염, 신정맥 혈전, 급성 저혈량 위기가 원인이 될 수 있으며, 본 증례에서는 손발이 차고 ,albumin이 심하게 떨어져 있어 hypovolemic crisis로 진단하는 것이 타당하다."
   },
   {
    "number": 18,
@@ -835,7 +852,8 @@
     13
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "가와사끼병 증례입니다. 임상 증상의 소실과 관상동맥 합병증 발생의 예방을 위해 고용량면역글로블린을 투여합니다."
   },
   {
    "number": 19,
@@ -886,7 +904,8 @@
      "h": 420
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "6주 이상의 피부발진을 보이는 만성 두드러기 증례로 치료는 제2세대 H1 항히스타민제이다."
   },
   {
    "number": 20,
@@ -949,7 +968,8 @@
      "h": 589
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "fetal growth restriction 이고, 양수과소 이며, 도플러 상, fetal distress 의심되므로 응급분만이 필요하다"
   },
   {
    "number": 21,
@@ -1000,7 +1020,8 @@
      "h": 287
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "분만진행장애- 정지장애 자궁수축력이 10분당 200MVU 미만으로 자궁수축이 부족하므로 옥시토신을 사용하여 적절한 자궁수축이 일어나도록 한다."
   },
   {
    "number": 22,
@@ -1050,7 +1071,8 @@
      "h": 533
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만삭에 가까운 임신 주수이며 질 출혈이 멎지않고 산모의 활력 징후가 악화되는 상황이므로 응급 제왕절개수술이 필요하다"
   },
   {
    "number": 23,
@@ -1101,7 +1123,8 @@
      "h": 412
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "자궁경부무력증이다. 이전 임신에서 조산을 하였고 자궁경부가 2.5cm 보다 짧으므로 자궁경부봉축술(cerclage) 이 필요한 상태이나, 현재 임신 주 수가 24주를 넘었으므로 수술시기를 벗어났다. 프로게스테론 질정을 사용하면서 관찰한다. 절대침상안정을 하지는 않는다. 자궁수축이 없으므로 자궁수축억제제를 사용하지 않는다."
   },
   {
    "number": 24,
@@ -1138,7 +1161,8 @@
     17
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "전자간증의 예방을 위하여 임신 12주 이후에 ASA 투여를 권고함"
   },
   {
    "number": 25,
@@ -1201,7 +1225,8 @@
      "h": 211
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "임신 38주로 분만을 진행하여야 하며, NST에서 10분간 200몬테비디오단위 이상의 수축이 적절하게 오고 있으므로 경과관찰을 하는 것이 적절한 답니다. 30분전 양수파열되었으나 GBS가 양성인 경우를 제외하고는 암피실린의 항생제 즉시 사용은 적절하지 않다."
   },
   {
    "number": 26,
@@ -1239,7 +1264,8 @@
     19
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "배를 부딪힌 후 시작된 질출혈과 복통, 자궁수축이 빈번하게 일어나고, 자궁이 긴장되어 있으며, 태반과 자궁사이에 혈종이 의심되므로 태반조기박리를 의심할 수 있습니다. 즉시 제왕절개술로 분만하여야 하겠습니다."
   },
   {
    "number": 27,
@@ -1301,7 +1327,8 @@
      "h": 363
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "난소자궁내막종의 초음파 소견과 수술소견을 알 수 있다"
   },
   {
    "number": 28,
@@ -1377,7 +1404,8 @@
      "h": 456
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "다낭성난소증후군에서 배란유도제로 first choice : aromatase inhibitor"
   },
   {
    "number": 29,
@@ -1427,7 +1455,8 @@
      "h": 365
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "난소낭종염전의 수술방법"
   },
   {
    "number": 30,
@@ -1465,7 +1494,8 @@
     22
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "자궁출혈시 나이에 따른 치료 원칙 월경통/월경곤란(월경과다)에 대한 문항입니다."
   },
   {
    "number": 31,
@@ -1502,7 +1532,8 @@
     22
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "자궁선근증의 치료"
   },
   {
    "number": 32,
@@ -1553,7 +1584,8 @@
      "h": 382
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "Wet smear에서 budding yeast와 pseudohyphae 소견이 보이는 전형적인 candidiasis 소견이다."
   },
   {
    "number": 33,
@@ -1590,7 +1622,8 @@
     23
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "급성 골반염의 증상 및 양상은 복부와 골반통증, 자궁경부 운동성 압통과 부속기 압통 및 발열을 포함하며 (Triad of symptoms ＆ sign) 다양한 증상과 징후를 보이며 아무런 증후를 보이지 않는 경우도 있습니다."
   },
   {
    "number": 34,
@@ -1628,7 +1661,8 @@
     24
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "미혼여성의 자궁근종의 치료계획을 세울 수 있다"
   },
   {
    "number": 35,
@@ -1665,7 +1699,8 @@
     24
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "일차성 월경통에 관한 문제인다. NSAID를 먼저 사용해 볼 수 있다."
   },
   {
    "number": 36,
@@ -1702,7 +1737,8 @@
     24
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "폐경여성에서 estrogen 결핍으로 인한 위축성 질염증상이다. 치료는 topical estrogen을 주로 사용한다."
   },
   {
    "number": 37,
@@ -1740,7 +1776,8 @@
     25
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "콘돔, 질외사정법, 주기법은 실패율이 높다. 35세 이상의 흡연자로 , 복합경구피임제의 금기증에 해당한다. 자궁의 비대로 자궁선근증이 의심되는 환자로 관련 증상을 조절하는 데에 레보노게스트렐 자궁내장치가 도움이 되므로 문제의 환자에게 가장 적합한 피임 방법이다."
   },
   {
    "number": 38,
@@ -1777,7 +1814,8 @@
     25
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만성골반통의 원인으로 자궁내막증 및 자궁샘근증 다음으로 흔한 것은 골반울혈증이다. 골반울혈증에 대한 확실한 진단 기준은 없으나 골반조직정맥의 울혈에 의해 하복부통증이 나타난다고 여겨진다. 골반울혈증이 의심되는 경우 내과적 치료를 1차 치료로 권장하며 이에 반응하지 않는 경우 색전술이나 수술적 치료를 시행해 볼 수 있다."
   },
   {
    "number": 39,
@@ -1814,7 +1852,8 @@
     25
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "폐경기 증후군 증상이 있는 환자에서 자궁이 없는 환자에서는 에스트로겐 단독요법이 가장 효과적이 증상 치료제"
   },
   {
    "number": 40,
@@ -1864,7 +1903,8 @@
      "h": 458
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "Wet smear에서 bacteria로 덮혀있는 squamous cell인 특징적인 `clue cell` 의 모습을 보이고 있다. Bacterial vaginosis의 현미경 소견이다. 치료로는 경구 metronidazole 항생제를 사용한다."
   },
   {
    "number": 41,
@@ -1915,7 +1955,8 @@
      "h": 515
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "소음순 유착이 있는 소아는 에스트로겐 크림을 바르면 호전되기도 한다."
   },
   {
    "number": 42,
@@ -1952,7 +1993,8 @@
     27
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "성폭력 환자의 조치"
   },
   {
    "number": 43,
@@ -2003,7 +2045,8 @@
      "h": 619
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "불임 검사에서 뇨 LH 황체형성호르몬 양성 소견은 정상적인 배란을 의미하고 정액검사, 자궁나팔관 조 영술은 정상소견이므로 원인불명의 불임으로 진단할 수 있고 원인불명의 일차치료는 자궁강 내 인공수정 (intrauterine insemination)임. 정자농도(ml당 정자수): 25*106/mL"
   },
   {
    "number": 44,
@@ -2041,7 +2084,8 @@
     29
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "조발사춘기는 7세 이전 발달이 시작된 경우임."
   },
   {
    "number": 45,
@@ -2091,7 +2135,8 @@
      "h": 413
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "자궁내막용종 또는 근종이 의심되는 소견이다. 진단 및 치료를 동시에 시행할 수 있는 방법은 자궁경을 통한 용종절제술 또는 근종 절제술이다.소파술로는 내막하 근종을 감별하기 어렵고 이에대한 치료도 불가능하다."
   },
   {
    "number": 46,
@@ -2154,7 +2199,8 @@
      "h": 441
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "가슴CT상 우하엽에 cavitary lesion을 보이며, 가래 항산막대균펴바른표본이 세차례 음성으로 폐암의 가능성을 고려하여 조직검사가 필요합니다."
   },
   {
    "number": 47,
@@ -2205,7 +2251,8 @@
      "h": 233
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "자동차 도장작업을 하면서 호흡곤란이 발생하였고 쉴때는 좋아지는 병력이 있습니다. 폐기능검사상 FEV1/FVC 2.7/3.9 (<70%)로 폐쇄성환기장애 소견을 보이고, bronchodilator response 12% 그리고 절대치 200ml 이상으로 양성입니다."
   },
   {
    "number": 48,
@@ -2242,7 +2289,8 @@
     31
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "가슴막액에서 lymphocyte dominant하며 ADA수치가 상승되어 있다. 결핵가슴막염을 의심할 수 있다."
   },
   {
    "number": 49,
@@ -2293,7 +2341,8 @@
      "h": 478
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "침대에 누워 지내던 도중 DVT로 인해 pulmonary embolism이 발생했다. V/S이 불안정하므로 혈전을 제거해야 한다. Thrombolytic agent는 뇌출혈 과거력 때문에 금기이므로 embolectomy를 통해 혈전을 제거해야 한다."
   },
   {
    "number": 50,
@@ -2344,7 +2393,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "기침, 가래, 발열이 있으며 CXR상 우상부 경화(consolidation)이 관찰되어 지역사회획득 폐렴으로 진단할 수 있다. CURBー65 score 가 0으로 외래에서 치료할 수 있으며 국내 지역사회획득 폐렴 지침에 따라 외래에서 목시플록사신 단독 투여할 수 있다."
   },
   {
    "number": 51,
@@ -2407,7 +2457,8 @@
      "h": 769
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "임상증상, 특징적인 청진, 곤봉지를 통해 IPF를 의심하고 진단을 위해 CT 촬영을 고려 할 수 있다."
   },
   {
    "number": 52,
@@ -2458,7 +2509,8 @@
      "h": 768
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "만성폐쇄폐질환의 급성악화 치료로 흡입 단기작용 베타2 작용제, 전신스테로이드 치료를 할 수 있으며 의식이 명료한 환기장애를 가진 환자에서 비침습양압환기를 시도해 볼 수 있다"
   },
   {
    "number": 53,
@@ -2496,7 +2548,8 @@
     36
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "위험인자 (흡연), 전형적인 증상 (호흡곤란)이 있고 폐활량검사에서 폐쇄성 환기장애를 보여 COPD를 진단할수 있고 치료로 흡입 기관지확장제를 선택할 수 있다."
   },
   {
    "number": 54,
@@ -2533,7 +2586,8 @@
     36
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "흡인성 폐렴으로 치료 중 발생한 패혈성 쇼크에 대한 치료로 초기 충분한 수액투여에도 평균동맥압이 65mmHg 이상 유지되지 않는다면 노르에피네프린을 첫 번째 혈압상승제로 사용한다."
   },
   {
    "number": 55,
@@ -2597,7 +2651,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "이전 심부정맥 혈전증 병력 및 급성 호흡곤란 임상증상으로 폐혈관 색전증에 대한 감별이 필요하며, 흉부 CT상 acute PTE로 진단된 환자이며, 심전도상 S1Q3T3로 Right ventriculle strain이 확인되었다. 혈역학적 징후에서 shock으로 Massive(high risk) PTE로 진단 가능하며 이런 경우 항응고치료는 Unfractionated heparin이 권고되며, 뇌출혈 등 금기기 없으면 tPA로 thrombocytic therapy가 권고된다."
   },
   {
    "number": 56,
@@ -2660,7 +2715,8 @@
      "h": 544
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "Miliary tb 의 특징적인 임상양상과 영상소견."
   },
   {
    "number": 57,
@@ -2711,7 +2767,8 @@
      "h": 664
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "좌폐전폐허탈 소견이다. 허탈의 원인을 찾고 toileting을 위해 기관지내시경을 먼저 시행해야 한다."
   },
   {
    "number": 58,
@@ -2748,7 +2805,8 @@
     40
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "천식이 의심되는 환자로 폐기능 검사에서 폐쇄성 환기장애 소견있어 기관지확장제 투여 후 가역성 확인이 필요하다."
   },
   {
    "number": 59,
@@ -2798,7 +2856,8 @@
      "h": 708
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "결핵의 전형적인 임상양상과 흉부방사선 검사 사진으로 결핵 확진을 위한 미생물 검사가 필요함."
   },
   {
    "number": 60,
@@ -2849,7 +2908,8 @@
      "h": 328
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "만성 기침이 있는 환자에게서 천식 진단의 검사인 기관지유발검사를 시행 할 수 있고 양성 소견을 해석할 수 있다."
   },
   {
    "number": 61,
@@ -2912,7 +2972,8 @@
      "h": 638
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "탄광부진폐증환자에서 객혈이 있으면서 흉부CT상 폐종괴를 보여 PMF와 폐암의 감별진단이 필요하다. 기관지내시경검사로 조직검사를 시행해야한다."
   },
   {
    "number": 62,
@@ -2975,7 +3036,8 @@
      "h": 362
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "폐활량 검사상 대기도-가변의 흉곽외 폐쇄 (variable extrathoracic obstruction) 소견으로 기관지내시경검사를 시행해서 병변의 확인을 요합니다."
   },
   {
    "number": 63,
@@ -3026,7 +3088,8 @@
      "h": 387
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만성기침을 주소로 내원한 환자에서 흉부방사선 검사가 정상일 때 흔한 질환을 감별하는 문제로 문항줄기의 임상적 특징을 고려할 때 천식을 의심할 수 있으며 천식을 진단하기 위해 기관지유발검사를 시행할 수 있다."
   },
   {
    "number": 64,
@@ -3077,7 +3140,8 @@
      "h": 698
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "환자의 증상 및 가슴막액 검사 결과 (림프구 우세 삼출액, ADA증가) 를 고려하였을 때 결핵성흉막염으로 판단할 수 있으며, 항결핵제 치료가 필요하다."
   },
   {
    "number": 65,
@@ -3140,7 +3204,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "기침으로 내원한 환자로 이전 사레들린 후 기침이 지속되는 병력이 있으며 가슴 컴퓨터단층촬영 사진에서 오른쪽 하엽의 기관지내 병변으로 인한 폐쇄가 관찰된다. 기관지내 이물이 의심되는 상황이며, 기관지내 병변 확인을 통한 감별진단을 위하여 기관지내시경 검사가 필요하다."
   },
   {
    "number": 66,
@@ -3191,7 +3256,8 @@
      "h": 694
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "만성폐쇄성폐질환 환자에서 자연발생한 2차성 기흉"
   },
   {
    "number": 67,
@@ -3254,7 +3320,8 @@
      "h": 637
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "폐렴의 진단"
   },
   {
    "number": 68,
@@ -3304,7 +3371,8 @@
      "h": 511
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "DLBCL 전형적 증상을 보이고 있으며, B 증상도 동반된다. 림프절 생검에서 DLBCL진단가능한 미만성 거대 림프구가 관찰된다."
   },
   {
    "number": 69,
@@ -3342,7 +3410,8 @@
     51
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "혈소판 수 감소, 프로트롬빈 시간 지연, 활성부분트롬보플라스틴 시간 지연, 섬유소원 감소, 섬유소분해산물 증가 확인됨 의식이 명료하여 혈전성 혈소판감소성 자반증과 감별 가능함"
   },
   {
    "number": 70,
@@ -3393,7 +3462,8 @@
      "h": 480
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "철결핍성 빈혈을 보여주고 있으며, 소화불량 증상이 동반되어 상부 내시경 검사가 필요함"
   },
   {
    "number": 71,
@@ -3443,7 +3513,8 @@
      "h": 482
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "출혈이 지속되어 내원한 환자의 혈액 검사에서 pancytopenia와 함께 말초혈액에 blast 가 20% 이상 존재하므로 acute leukemia이다. PB smear에서 Auer rod가 많이 들어있는 faggot cell이 보이고 PML-RARA 양성이므로 APL임을 알 수 있다."
   },
   {
    "number": 72,
@@ -3494,7 +3565,8 @@
      "h": 480
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "다발골수종 진단"
   },
   {
    "number": 73,
@@ -3545,7 +3617,8 @@
      "h": 428
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "결핵약 복용 후 한달 후부터 발생한 발진, 발열, 혈액호산구 증가, 간기능 및 신기능 증가 소견 보여 약물과민증후군으로 진단 가능함"
   },
   {
    "number": 74,
@@ -3608,7 +3681,8 @@
      "h": 586
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "ABPA의 1차 치료는 경구 스테로이드이다."
   },
   {
    "number": 75,
@@ -3659,7 +3733,8 @@
      "h": 382
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "브라디키닌의 상승에 의해 증상이 발생하는 유전성혈관부종의 응급치료는 브라디키닌 수용체 차단제인 이카티반트가 국내에서 사용가능하다."
   },
   {
    "number": 76,
@@ -3710,7 +3785,8 @@
      "h": 791
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "만성특발성두드러기의 일차 치료 방법은 항히스타민제의 규칙적 사용이다."
   },
   {
    "number": 77,
@@ -3761,7 +3837,8 @@
      "h": 678
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "만성기침의 원인 중 하나인 천식의 전형적인 증상이 기술되었고, 천식이 의심되는 환자의 폐기능이 정상인 경우 확진 검사로 메타콜린 기관지유발검사를 시행할 수 있다."
   },
   {
    "number": 78,
@@ -3798,7 +3875,8 @@
     58
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "방사선 조영제 투여 후 즉시형 반응으로 두드러기, 호흡곤란, 의식저하, 혈압저하 등이 발생하여 아나필락시스로 생각할 수 있고 치료는 에피네프린 투여이다"
   },
   {
    "number": 79,
@@ -3849,7 +3927,8 @@
      "h": 302
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "5가지 답가지가 모두 고포타슘혈증의 치료이고 응급 상황에서 작용 시간이 가장 빨리 일어나는 글루콘산칼슘을 우선 투여할 수 있지만 가장 효과적인 치료는 혈액투석입니다. Hemodialysis is the most effective and reliable method to reduce plasma K+ concentration"
   },
   {
    "number": 80,
@@ -3912,7 +3991,8 @@
      "h": 208
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "만성콩팥병 환자에서 빈혈치료 과정 Adequate bone marrow iron stores should be available before treatment with ESA is initiated. Iron supplementation is usually essential to ensure an optimal response to ESA in patients with CKD because the demand for iron by the marrow frequently exceeds the amount of iron that is immediately available for erythropoiesis (measured by percent transferrin saturation), as well as the amount in iron stores (measured by serum ferritin)."
   }
  ]
 }

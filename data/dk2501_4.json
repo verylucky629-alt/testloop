@@ -79,7 +79,8 @@
      "h": 607
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "[IgA 신증 치료] There is no agreement on optimal treatment. Both large studies that include patients with multiple glomerular diseases and small studies of patients with IgA nephropathy support the use of angiotensinconverting enzyme (ACE) inhibitors in patients with proteinuria or declining renal function. In patients with persistent proteinuria after ACE inhibitor therapy, steroid treatment or other immunosuppressives have demonstrated conflicting results. Tonsillectomy and fish oil have also been suggested in small studies to benefit select patients. When presenting as RPGN, patients typically receive steroids, cytotoxic agents, and plasmapheresis."
   },
   {
    "number": 2,
@@ -116,7 +117,8 @@
     3
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "diabetes insipidus 환자로 원인에 대한 감별진단을 위해 혈청 AVP 측정이 필요함."
   },
   {
    "number": 3,
@@ -154,7 +156,8 @@
     4
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "저나트륨혈증의 감별 진단 Thiazide diuretics cause hyponatremia via a number of mechanisms, including polydipsia and diuretic-induced volume depletion. Notably, thiazides do not inhibit the renal concentrating mechanism, such that circulating AVP retains a full effect on renal water retention. In contrast, loop diuretics, which are less frequently associated with hyponatremia, inhibit Na+-Cl– and K+ absorption by the TALH, blunting the countercurrent mechanism and reducing the ability to concentrate the urine"
   },
   {
    "number": 4,
@@ -191,7 +194,8 @@
     4
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "의식 저하가 동반된 중증 저나트륨혈증 환자로 3% 식염수를 우선적으로 사용해야 합니다. 증상이 동반된 저나트륨혈증 치료 Treatment of acute symptomatic hyponatremia should include hypertonic 3% saline (513 mM) to acutely increase plasma Na+ concentration by 1–2 mM/h to a total of 4–6 mM； this modest increase is typically sufficient to alleviate severe acute symptoms, after which corrective guidelines for chronic hyponatremia are appropriate (see below). A bolus of 100 mL of hypertonic saline is more effective than an infusion, rapidly improving both serum sodium and mental status. For ongoing infusions, a number of equations have been developed to estimate the required rate of hypertonic saline, which has an Na+-Cl– concentration of 513 mM."
   },
   {
    "number": 5,
@@ -242,7 +246,8 @@
      "h": 921
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "양측 수신증"
   },
   {
    "number": 6,
@@ -293,7 +298,8 @@
      "h": 523
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "당뇨병성 망막증이 동반되어 있어서 당뇨병성 콩팥병으로 인해서 단백뇨 및 부종 소견을 보이는 증례입니다. ACE inhibitors or angiotensin receptor blockers (ARB)를 치료제로 사용합니다 Controlling systemic blood pressure decreases renal and cardiovascular adverse events in this high-risk population. The vast majority of patients with diabetic nephropathy require three or more antihypertensive drugs including ACE inhibitors or angiotensin receptor blockers (ARB) to achieve this goal. Drugs that inhibit the renin-angiotensin system, independent of their effects on systemic blood pressure, have been shown in numerous large clinical trials to slow the progression of diabetic nephropathy at early (microalbuminuria) and late (proteinuria with reduced glomerular filtration) stages"
   },
   {
    "number": 7,
@@ -331,7 +337,8 @@
     7
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "신동맥협착증 진단 Contrast-enhanced computed tomography (CT) with vascular reconstruction provides excellent vascular images and functional assessment, but carries a small risk of contrast toxicity."
   },
   {
    "number": 8,
@@ -381,7 +388,8 @@
      "h": 637
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "High anion gap metabolic acidosis이며 ethylene glycol intoxication에서 보이는 oxalate crystal이다. 치료는 Fomepizole, Ethanol, Hemodialysis이다."
   },
   {
    "number": 9,
@@ -419,7 +427,8 @@
     8
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "The classic presentation of AIN, namely, fever, rash, peripheral eosinophilia, and oliguric renal failure occurring after 7–10 days of treatment with methicillin or another β-lactam antibiotic, is the exception rather than the rule. More often, patients are found incidentally to have a rising serum creatinine or present with symptoms attributable to acute renal failure focal segmental glomerulosclerosis국소분절사구체경화증"
   },
   {
    "number": 10,
@@ -469,7 +478,8 @@
      "h": 304
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "심한 emotional stress 후 생긴 흉통과 심전도에서 ST change와 T파 역위가 있어 acute coronary syndrome을 먼저 생각해야 하나 관상동맥조영술에서 폐색이 없고 바로 다음날 wall motion의 장애가 정상으로 회복된 소견을 종합하면 Takotsubo syndrome ( or stress induced cardiomyopathy)에 합당한 소견임"
   },
   {
    "number": 11,
@@ -520,7 +530,8 @@
      "h": 602
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "hypokalemia 가 동반되어 있는 고혈압환자의 진단"
   },
   {
    "number": 12,
@@ -571,7 +582,8 @@
      "h": 409
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Sudden onset chest pain, 심전도상 precordial lead ST elevation으로 STEMI소견이다."
   },
   {
    "number": 13,
@@ -634,7 +646,8 @@
      "h": 313
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "Fixed splitting with systolic murmur 는 ASD 의 심잡음의 특징이다."
   },
   {
    "number": 14,
@@ -697,7 +710,8 @@
      "h": 203
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "하벽 심근경색증에 의한 이차적 승모판 역류증"
   },
   {
    "number": 15,
@@ -760,7 +774,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "type A 대동맥 박리는 수술적 치료가 필요"
   },
   {
    "number": 16,
@@ -823,7 +838,8 @@
      "h": 361
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "심첨부 확장기 심잡은은 승모판막협착증의 특징적인 소견이며 가슴 X 선 사진에서 LA enlargement 가 의심되고, 심전도에서 AF 이 동반되어 승모판막 협착으로 인한 LA enlargement and AF 이 발생하였다."
   },
   {
    "number": 17,
@@ -886,7 +902,8 @@
      "h": 417
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "감염성 심낭액으로 인한 저혈압이 의심된다."
   },
   {
    "number": 18,
@@ -937,7 +954,8 @@
      "h": 303
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "불안정협심증이 동반된 허혈성 심부전환자로 급성관상동맥증훈군에 해당하여 관상동맥조영술을 바로 진행하는 것이 권고됨"
   },
   {
    "number": 19,
@@ -988,7 +1006,8 @@
      "h": 684
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "전신경화증에 의한 폐동맥 고혈압"
   },
   {
    "number": 20,
@@ -1039,7 +1058,8 @@
      "h": 317
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "운동시 발생한 증상, 급사의 가족력, 이학적 소견상 LVOT obstruction을 시사하는 청진소견, 심전도상 HCMP를 시사하는 LVH 및 LV strain pattern을 종합해볼 때 HCMP가 가장 가능성 높은 질환이 되겠습니다."
   },
   {
    "number": 21,
@@ -1102,7 +1122,8 @@
      "h": 772
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "우측 갈비뼈사이공간에서 수축기 심잡음이 들리며는 것은 대동맥판 협착증의 전형적인 이학적 소견입니다. Ejection systolic murmur 가 심저부에서 크게 청진되며, 경동맥 및 액와부로 방사됩니다."
   },
   {
    "number": 22,
@@ -1152,7 +1173,8 @@
      "h": 335
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "심방의 전도가 심실로 전달되지 않아 p파와 qrs파의 연관성이 없는 심전도로 3도 방실 차단이다."
   },
   {
    "number": 23,
@@ -1203,7 +1225,8 @@
      "h": 316
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "Coved ST segment elevation >2mm in >1 of V1-V3 followed by a negative T wave 확인되어 Brugada syndrome이다."
   },
   {
    "number": 24,
@@ -1266,7 +1289,8 @@
      "h": 277
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "칼슘채널 차단제를 사용시 부작용으로 심장 및 콩팥이상이 없이 부종이 올 수 있어 주의가 필요하다."
   },
   {
    "number": 25,
@@ -1329,7 +1353,8 @@
      "h": 438
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "ECG에서 electrical alternans가 관찰되고 TTE에서 pericardial effusion이 보임"
   },
   {
    "number": 26,
@@ -1380,7 +1405,8 @@
      "h": 644
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "BNP가 높은 상황에서 숨쉬기 힘든 경우 가장 먼저 생각해 볼 수 있는 질환은 심부전의 급성 악화에 의한 급성 폐부종(acute pulmonary edema)입니다. BNP는 pulmonary edema가 생긴 환자에서 원인이 심장에 있는지 여부를 감별해주는 지표이며 BNP가 높은 경우 심장에 원인이 있다고 생각할 수 있습니다. 급성심부전에 의해 호흡곤란이 발생하는 경우 가장 먼저 필요한 치료는 고리작용이뇨제(loop diuretics, furosemide)입니다."
   },
   {
    "number": 27,
@@ -1431,7 +1457,8 @@
      "h": 331
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "제시된 심전도에서 동성 휴지가 보인다. 보기중 이를 일으킬 수 있는 약물은 non-dihydropyridine calcium channel blockers 인 딜티아젬이다."
   },
   {
    "number": 28,
@@ -1481,7 +1508,8 @@
      "h": 318
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "환자의 증상 및 심전도 소견, 심근효소수치의 상승으로 보아 ST 분절 상승 심근경색증이 의심되며, 현재 상태는 심장성 쇼크 상태이다. ST 분절 상승 심근경색증의 확진을 위한 검사롤 적절한 검사는 관상동맥조영술이다."
   },
   {
    "number": 29,
@@ -1531,7 +1559,8 @@
      "h": 464
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "빈맥-서맥 증후군을 보이는 환자로 영구형 심박동기 삽입이 필요하다. 심초음파에서 특별한 이상소견이 확인되지 않으므로 2번과 3번은 해당되지 않는다."
   },
   {
    "number": 30,
@@ -1582,7 +1611,8 @@
      "h": 643
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "BNP가 높은 상황에서 숨쉬기 힘든 경우 가장 먼저 생각해 볼 수 있는 질환은 심부전의 급성 악화에 의한 급성 폐부종(acute pulmonary edema)입니다. BNP는 pulmonary edema가 생긴 환자에서 원인이 심장에 있는지 여부를 감별해주는 지표이며 BNP가 높은 경우 심장에 원인이 있다고 생각할 수 있습니다. 급성심부전에 의해 호흡곤란이 발생하는 경우 가장 먼저 필요한 치료는 고리작용이뇨제(loop diuretics, furosemide)입니다."
   },
   {
    "number": 31,
@@ -1670,7 +1700,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "황달, 복통, 담관내 담석 소견을 보여주는 급성 담관염과 췌장염이 동시에 나타난 증례로 치료로는 내시경적 담석제거술이다."
   },
   {
    "number": 33,
@@ -1721,7 +1752,8 @@
      "h": 285
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "고령, 혈관질환이 있는 환자에서 발생한 허혈성 대장염이다."
   },
   {
    "number": 34,
@@ -1758,7 +1790,8 @@
     28
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "N-아세틸시스테인"
   },
   {
    "number": 35,
@@ -1796,7 +1829,8 @@
     29
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "HAV infection is usually self-limited, and treatment consists of supportive care. Medications that might cause liver damage or are metabolized by the liver should be used with caution. Full clinical and biochemical recovery is observed within three months in 85 percent of patients, and complete recovery is observed by six months in nearly all patients. Patients with fulminant hepatic failure require aggressive supportive therapy and should be transferred to a center capable of performing liver transplantation. 급성 A형 간염의 치료는 보존적 치료가 원칙이며 전격성 간염으로 진행 시 간이식을 고려한다."
   },
   {
    "number": 36,
@@ -1859,7 +1893,8 @@
      "h": 658
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "기존 내시경 이미지 상, 다수의 결장 게실이 있던 환자로, CT 영상에서는 cecum 의 다발성 게실과 함께 주위 조직의 부종과 국소적인 복막염이 관찰됩니다. 본 CT 에서는 담낭, 담도 이미지는 포함되어 있지 않으며, 대장 내시경 이미지 및 환자 과거력 상 크론병을 의심할 만한 소견이 없습니다. 요로돌을 의심할 만한 소견도 CT 상 관찰되지 않았습니다."
   },
   {
    "number": 37,
@@ -1910,7 +1945,8 @@
      "h": 308
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "소화성궤양 환자로 양성자펌프억제제 치료가 필요합니다."
   },
   {
    "number": 38,
@@ -1960,7 +1996,8 @@
      "h": 614
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "아메바성 간농양 증례로, 치료는 메트로니다졸이다."
   },
   {
    "number": 39,
@@ -2024,7 +2061,8 @@
      "h": 563
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "만성 음주로 인한 alcoholic hepatitis 로 진단할 수 있다. DF score ＆gt； 32.0 이므로 steroid 를 투여해볼 수 있다."
   },
   {
    "number": 40,
@@ -2087,7 +2125,8 @@
      "h": 659
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만성 음주로 인한 반복된 췌장염 및 병발한 췌장가성낭종으로 판단된다. 압통이 있으므로 적절한 치료가 필요하다. 내시경초음파로 낭종배액을 시도하는 것이 가장 적절한 치료이다."
   },
   {
    "number": 41,
@@ -2125,7 +2164,8 @@
     35
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "만성변비의 원인을 감별하기 위해 필요한 검사를 알아야 한다."
   },
   {
    "number": 42,
@@ -2176,7 +2216,8 @@
      "h": 452
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "급성췌장염 환자로 복부단층촬영상 CBD stone 이 관찰되고 있어 CBD stone으로 인한 급성췌장염으로 진단할 수 있다. CBD stone에 대한 치료를 필요로 하기 때문에 5번이 정답이다."
   },
   {
    "number": 43,
@@ -2239,7 +2280,8 @@
      "h": 701
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "myxedema로 인한 전신 부종및 복수가 가능한 경우임"
   },
   {
    "number": 44,
@@ -2290,7 +2332,8 @@
      "h": 633
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "궤양성 대장염은 혈성설사, 대변절박증 및 복통을 주증상으로 하는 대장의 만성염증질환이며, 40-60%에서 pANCA가 양성이다."
   },
   {
    "number": 45,
@@ -2341,7 +2384,8 @@
      "h": 561
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "유문부 협착을 동반한 위선암으로 확인된 증례이다. 이런 경우 전이 여부를 확인하기 위해서 복부 CT가 가장 먼저 필요하다."
   },
   {
    "number": 46,
@@ -2404,7 +2448,8 @@
      "h": 550
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "candida esophagitis의 전형적인 내시경 소견이다"
   },
   {
    "number": 47,
@@ -2467,7 +2512,8 @@
      "h": 547
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "Hemodynamic instability를 보이는 환자로 bowel preparation을 하기에는 상태가 많이 불안정하여 CT angiography나 angiography를 고려하여야 한다"
   },
   {
    "number": 48,
@@ -2518,7 +2564,8 @@
      "h": 549
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Mallory-Weiss tear (Mallory-Weiss syndrome) Vomiting, retching, or vigorous coughing can cause a nontransmural tear at the gastroesophageal junction that is a common cause of upper gastrointestinal bleeding. Most patients present with hematemesis. Antecedent vomiting is the norm, but not always evident."
   },
   {
    "number": 49,
@@ -2569,7 +2616,8 @@
      "h": 554
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "15년 전 C형 간염에 감염된 것으로 진단 받았으나 치료받지 않음. 만성 C형 간염 바이러스 감염 상태로 추측할 수 있음. 혈소판이 65K 으로 저하되어 있으므로 간경변으로 진행하였을 것으로 추정됨 내시경 소견에서 fundal area 에 gastric varix 가 확인되며 bleeding focus 로 추정되는 red plug 가 보임"
   },
   {
    "number": 50,
@@ -2620,7 +2668,8 @@
      "h": 494
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "자발성 세균 복막염에 대한 증례이다. 정답은 항생제 투여이다."
   },
   {
    "number": 51,
@@ -2671,7 +2720,8 @@
      "h": 269
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "대장내시경 정상이며 혈액 및 대변검사 결과 정상으로 다른 기질적 질환을 배제할 수 있다"
   },
   {
    "number": 52,
@@ -2721,7 +2771,8 @@
      "h": 515
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "4개월 전 심근경색으로 약물 복용 중인 환자에서 급성담낭염이 온 환자로 심근경색으로 스탠트 삽입술 후 1년이 지나지 않아 약물을 중단할 수 없는 상태로 수술적 치료는 어려운 환자입니다. 수술을 할 수 없는 급성담낭염의 경우 경피경간담낭배액술을 시행할 수 있습니다."
   },
   {
    "number": 53,
@@ -2784,7 +2835,8 @@
      "h": 529
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "4주간의 잠복기를 가지는 만성설사의 원인으로 대장내시경에서 우측 대장의 궤양과 조직검사에서 protozoa 가 관찰되어 이질아메바로 진단할수 있다. ----------------------- 대장내시경과 조직검사 사진이 해리슨 사진과 동일함."
   },
   {
    "number": 54,
@@ -2847,7 +2899,8 @@
      "h": 637
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Gastric varix에서 출혈 후 재발을 위한 치료는 TIPS를 고려할 수 있다."
   },
   {
    "number": 55,
@@ -2884,7 +2937,8 @@
     48
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "당뇨병에 의해 발생한 서행성 변비 (slow transit constipation) 환자로 대장내시경검사, 직장항문내압검사 등에서 이상이 없어 기질적 질환이나 직장항문 배출장애는 배제할 수 있다. 이러한 문제가 있는 경우 삼투성 하제와 위장관운동촉진제를 투여하여 증상을 조절할 수 있다."
   },
   {
    "number": 56,
@@ -2947,7 +3001,8 @@
      "h": 813
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "담석의 과거력과 담석에 의한 장폐쇄의 단순 복부 촬영 소견 특이적인 증상과 장폐쇄의 전형적인 복부 촬영 소견"
   },
   {
    "number": 57,
@@ -2998,7 +3053,8 @@
      "h": 847
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "짧은 조조강직 시간을 동반한 비염증성 다발관절염이 의심되며, 헤베르덴결절이 관찰되어 골관절염 가능성이 가장 높다. OA의 약물치료로 국제 골관절염 연구회 및 미국 류마티스학회에서 비스테로이드 소염진통제를 1차 선택제로 권고 하고 있다."
   },
   {
    "number": 58,
@@ -3061,7 +3117,8 @@
      "h": 637
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "골관절염이 있는 환자에서 갑자기 염증성 관절염이 오고 편광현미경 검사에서 보이는 결정으로 보아 거짓통풍 환자 증례이다."
   },
   {
    "number": 59,
@@ -3124,7 +3181,8 @@
      "h": 460
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "젊은 여성이 발열, 발가락에 vasculitic rash, 복부 CT에서 bowel wall edema, 혈액검사에스는 범혈구감소증, ESR 증가 소견을 보이고 있다. 전신홍반루푸스를 의심할 수 있고 Lupus mesenteric vasculitis가 동반된 것으로 생각된다. 현 상황에서 치료를 위해 고용량 글루코코르티코이드 치료가 요구된다."
   },
   {
    "number": 60,
@@ -3187,7 +3245,8 @@
      "h": 395
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "중년 여성에서 발생한 만성적인 소관절 침범의 염증성 관절염이므로 류마티스 관절염이 의심된다. ACR/EULAR criteria에 따라 RF 또는 anti CCP antibody의 검사가 필요하다."
   },
   {
    "number": 61,
@@ -3250,7 +3309,8 @@
      "h": 513
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "환자는 레이노 현상을 보이고 있으며 얼굴에서 모세혈관 확장증과 mouskopf가 관찰되고 있다. 레이노 현상은 크게 일차성과 이차성으로 나눌 수가 있는데 전신경화증과 관련된 변화들이 나타나고 있으므로 이차성 레이노일 가능성이 높다. 이를 감별하기 위해서는 항핵항체, 손톱주름모세혈관경 검사가 도움이 된다."
   },
   {
    "number": 62,
@@ -3313,7 +3373,8 @@
      "h": 456
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "1984년 Modified New York Criteria에서 염증 요통, 요추 운동의 제한, 흉부 확장능 감소의 임상기준 중 1개 이상을 만족하고, 2~4등급의 양측 천장관절염 또는 등급3~4의 편측 천장관절염의 방사선학적 기준을 만족하는 경우, 확정 강직성 척추염으로 진단됨."
   },
   {
    "number": 63,
@@ -3364,7 +3425,8 @@
      "h": 592
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "일차성 갑상선기능저하증의 치료"
   },
   {
    "number": 64,
@@ -3401,7 +3463,8 @@
     58
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "LDL 콜레스테롤을 추가적으로 감량할때 약물치료 선택"
   },
   {
    "number": 65,
@@ -3452,7 +3515,8 @@
      "h": 419
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "갑작스러운 낭성 결절의 크기증가로 생각되며 흡인을 통한 감압이 필요하다"
   },
   {
    "number": 66,
@@ -3503,7 +3567,8 @@
      "h": 286
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "프로락틴 분비성 뇌하수체 종양의 증례이다. 프로락틴 분비성 뇌하수체 종양의 1차 치료는 약물요법으로 도파민 작용체(카베골린, 브로모크립틴)를 우선 사용해볼 수 있다."
   },
   {
    "number": 67,
@@ -3554,7 +3619,8 @@
      "h": 524
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "환자는 고혈압 및 발작성 심계항진, 두통 등의 카테콜라민 과잉에 의한 증상을 보이며 복부 CT 검사에서 왼쪽 부신에 종양이 보인다. 24시간 소변 검사에서 메타네프린이 정상 상한의 3배 이상이므로 크롬친화세포종으로 진단할 수 있다. 크롬친화세포종은 수술로 종양을 제거하는 것이 치료 원칙이며, 수술 전 혈압 조절을 위하여 수술 전 7~10일 전부터 알파 차단제를 복용시켜야 한다."
   },
   {
    "number": 68,
@@ -3604,7 +3670,8 @@
      "h": 632
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "메트포르민으로 조절 되지 않는 심부전이 동반된 당뇨병 환자에게 혈당에 관계없이 SGLT2 억제제의 추가투여가 권고되고 있다."
   },
   {
    "number": 69,
@@ -3642,7 +3709,8 @@
     62
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "의인성쿠싱증후군이며 2차성 부신기능저하증이 의심되는 환자로 증상과 저나트륨혈증을 교정하기 위한 히드로코티손치료가 필요하다. 트리암시놀론은 적절하지 않음."
   },
   {
    "number": 70,
@@ -3693,7 +3761,8 @@
      "h": 473
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "비타민 D 결핍으로 인한 골연화증이 의심됨. 비타민 D 결핍 확인을 위해 혈액 25-히드록시비타민 D [25(OH)D] 측정한다."
   },
   {
    "number": 71,
@@ -3756,7 +3825,8 @@
      "h": 683
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "그레이브스씨병에 의한 전형적인 갑상선기능 항진증 증상을 보임, 치료는 메티마졸"
   },
   {
    "number": 72,
@@ -3807,7 +3877,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "다뇨증 증상으로 24시간 소변양이 40mL/kg을 넘고, 삼투질농도가 300mOsm/L가 안되기 때문에 요붕증 진단이 가능합니다. 혈장 AVP 농도가 1pg/mL 미만으로 신성 요붕증을 배제할 수 있으며 brain MRI상 posterior pituitary bright spot이 없으므로 원발 다음중을 배제 가능합니다. 따라서 중추성 요붕증 진단하에 DDAVP(데스모프레신)로 치료 가능합니다."
   },
   {
    "number": 73,
@@ -3845,7 +3916,8 @@
     66
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "고령의 당뇨환자가 의식이 흐려져 내원하였다. 당뇨가 잘 조절되지 않았고 최근 체중 감소, 다음, 다뇨 증상이 있었다. 혈액 포도당이 900mg/dL이상으로 매우 높고 혈액 삼투질농도가 상승하여 있다. 소변에서 케톤은 관찰되지 않고 동맥혈가스분석 상 당뇨병케톤산증의 가능성은 떨어져 고삼투압성비케톤산성혼수 진단이 가능합니다."
   },
   {
    "number": 74,
@@ -3882,7 +3954,8 @@
     66
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "패혈증 쇼크에서 crystalloid fulid (30mL/kg)를 3시간 이내에 투여했음에도 불구하고 혈압이 불안정하다면 혈관수축제로 노르에피네프린을 투여한다."
   },
   {
    "number": 75,
@@ -3933,7 +4006,8 @@
      "h": 495
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "발진 (maculopapular rash)와 가피 (eschar)를 확인할 수 있다. 쓰쓰가무시병으로 진단할 수 있고, 임산부에서 1차적 치료제로는 azithromycin다."
   },
   {
    "number": 76,
@@ -3970,7 +4044,8 @@
     67
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "무비증 (asplenia)에서 필요한 예방접종을 안다."
   },
   {
    "number": 77,
@@ -4008,7 +4083,8 @@
     68
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "호중구 감소가 있는 환자에서 발열이 동반될 경우에는 반드시 녹농균에 대한 항균력이 있는 항생제를 경험적으로 시작해야 합니다."
   },
   {
    "number": 78,
@@ -4058,7 +4134,8 @@
      "h": 616
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "캔디다 질염 -> 치료는 fluconazole"
   },
   {
    "number": 79,
@@ -4096,7 +4173,8 @@
     69
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "임신중 FDA category B, beta-lactam 계열에 속하는 항생제를 선택한다."
   },
   {
    "number": 80,
@@ -4146,7 +4224,8 @@
      "h": 432
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "MSSA 에 의한 연부조직 abscess with bacteremia 환자로 nafcillin 을 우선적으로 선택할 수 있다."
   }
  ]
 }

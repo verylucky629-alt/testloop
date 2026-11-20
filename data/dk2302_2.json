@@ -41,7 +41,8 @@
     1
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "다른 답가지는 모두 옳은 내용이고, 3번은 자궁정맥이 아니라 난소정맥(ovarian vein)이 들어있기에 오답입니다."
   },
   {
    "number": 2,
@@ -78,7 +79,8 @@
     1
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "pulmonic area에서 midsystolic murmur가 들리며, wide fixed S2 splitting 이 있어서 심방 중격 결손에 합당한 심잡음이다."
   },
   {
    "number": 3,
@@ -166,7 +168,8 @@
      "h": 348
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "Valvular AF 환자로 Vitamin-K antagonist로 항응고치료가 필요함."
   },
   {
    "number": 5,
@@ -204,7 +207,8 @@
     3
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "성장호르몬 결핍증이 의심되는 환아이다. 성장호르몬 결핍의 확진 검사는 인슐린이나 Arginine 등의 약제를 사용하여 유발 검사를 하여 최고 반응치가 7~10 ng/mL 미만 인 경우에 성장호르몬 결핍증이라고 한다. 인슐린양 성장 인자는 성장호르몬 결핍증 뿐 아니라, 영양 상태나 전신 질환 상태에 따라 혈중 농도의 변화가 있다"
   },
   {
    "number": 6,
@@ -292,7 +296,8 @@
      "h": 845
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "사진에서 보이는 증상과 5일의 발열을 동반하는 가와사키병이고, 급성기 치료는 2g 면역글로불린과 60-100mg 아스피린이다."
   },
   {
    "number": 7,
@@ -329,7 +334,8 @@
     5
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "고령의 환자에서 갑자기 변비가 발생하였고 혈변, 빈혈 등이 동반되어 있다면 기질적인 원인의 가능성 특히 대장암의 가능성을 의심하고 대장내시경검사를 시행해야 한다"
   },
   {
    "number": 8,
@@ -416,7 +422,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "진행성 위암으로 내시경점막하절제술의 적응증에 해당하지 않는다. 헬리코박터 감염에대한 언급은 없다. 원격전이소견이나 국소절제불가능한 소견이 관찰되지 않는 진행성 위암으로 쐐기절제술이나 완화적 화학요법의 대상이 아니다. 완치를 위해 우선적으로 위절제술을 고려하고 추후 조직검사 결과에 따라 보조화학요법을 고려할 수 있다. 따라서 정답은 2) 위절제술이다."
   },
   {
    "number": 9,
@@ -454,7 +461,8 @@
     8
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "쉬한증후군 증례로 우선적으로 글루코코르티코이드를 투여해야 한다."
   },
   {
    "number": 10,
@@ -505,7 +513,8 @@
      "h": 438
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "Epstein-Barr 바이러스 감염의 진단에 비정형 림프구가 도움이 되며, 특이 항체 검사로 여러 시기의 질병을 감별할 수 있습니다."
   },
   {
    "number": 11,
@@ -555,7 +564,8 @@
      "h": 414
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "연쇄상구균 감염에 의한 소견이며, 목구멍면봉채취배양으로 균을 확인 할 수 있다."
   },
   {
    "number": 12,
@@ -593,7 +603,8 @@
     10
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "요로감염에 의한 패혈증이 의심되는 환자이다. 패혈증으로 혈압이 낮은 상태로, IV crystalloid fluid 를 가장 먼저 투여한다."
   },
   {
    "number": 13,
@@ -643,7 +654,8 @@
      "h": 165
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "쌍태아수혈증후군이고 stage III로 두 쌍둥이간의 혈관문합을 레이저로 제거해야 한다."
   },
   {
    "number": 14,
@@ -694,7 +706,8 @@
      "h": 710
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "호흡곤란, 쉰 목소리, 개 짓는 듣한 소리, 흡입성 협착음(stridor), x-ray에서 보이는 첨탑징후(steeple sign) 등으로 크룹으로 진단 할 수 있다. 치료로 에피네프린 흡입을 해준다."
   },
   {
    "number": 15,
@@ -757,7 +770,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "우중엽의 무기폐와 우하엽의 결절들로 보아 폐결핵 및 기관지결핵이 의심되는 소견이나 가래 검사를 하기 어려운 상황이므로 기관지내시경을 통하여 확인 및 기관지세척검사로 항산균 도말/배양검사, 결핵 유전자 검사 접수가 필요하다."
   },
   {
    "number": 16,
@@ -808,7 +822,8 @@
      "h": 302
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "5가지 답가지가 모두 고포타슘혈증의 치료이고 응급 상황에서 작용 시간이 가장 빨리 일어나는 글루콘산칼슘을 우선 투여할 수 있지만 가장 효과적인 치료는 혈액투석입니다. Hemodialysis is the most effective and reliable method to reduce plasma K+ concentration"
   },
   {
    "number": 17,
@@ -845,7 +860,8 @@
     13
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "1. 고실내 스테로이드 주입술을 시행하는 데에는 전신 스테로이드 사용 후 호전이 없어 구제치료로서 시행하는 경우, 전신 스테로이드와 병행하여 사용하는 경우, 전신 스테로이드 사용 없이 주치료로 사용하는 경우가 있을 수 있다. 돌발성 난청 발생 후 자연 호전이 되지 않거나, 경구 스테로이드치료 후 호전이 불충분한 경우, 고실내 스테로이드 주입술은 구제요법 (salvage therapy)으로 사용될 수 있으며 많은 연구에서 추가적인 청력역치의 호전을 가져올 수 있음을 보고하였다. 2. 초기 치료로써 고실내 스테로이드 주입술은 최소 경구요법만큼의 효과를 보이며 경구 스테로이드 치료 후 호전이 불충분한 경우에 구제요법으로 사용될 수 있다. 돌발성 난청에 대한 미국의 가이드라인에서는 증상 발생 2-6주 사이에 구제요법으로써 고실내 스테로이드 주입 치료를 시행할 것을 권고하고 있다."
   },
   {
    "number": 18,
@@ -909,7 +925,8 @@
      "h": 700
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "장폐색에 의한 복부 팽만이 의심됩니다. 검사 상 복막염의 징후는 보이지 않습니다. 먼저 대증적 치료인 코위관 삽입 및 흡인을 고려할 수 있습니다."
   },
   {
    "number": 19,
@@ -960,7 +977,8 @@
      "h": 480
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "신생아 골수염/화농성 관절염 의심되면 경험적으로 Nafcillin + gentamicin을 사용한다."
   },
   {
    "number": 20,
@@ -1023,7 +1041,8 @@
      "h": 482
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "옴의 특징적인 자각증상은 밤에 심해지는 가려움증이다. 옴의 피부병변 중 굴은 손가락 사이, 손목의 굽힘부위 및 남성 성기에서 흔히 관찰된다. 홍반성 반 및 구진들은 주로 하복부, 넓적다리 내측, 겨드랑이 등에서 볼 수 있다. 퍼메트린 크림이 가장 널리 사용하는 옴치료법이다."
   },
   {
    "number": 21,
@@ -1073,7 +1092,8 @@
      "h": 412
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "floppy infant 감별질환을 묻는 문제이며, 심부건반사 소실과 상하지의 근력약화, 신경전달속도 정상 소견, 크레아틴키나제(CK) 정상 소견은 말초신경근육질환 중에서도 전각세포병을 의심할 수 있겠다."
   },
   {
    "number": 22,
@@ -1111,7 +1131,8 @@
     18
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "반복되는 예상하지 못한 공황발작과 이에 대한 지속적 걱정과 부적응적 변화가 동반된다. 공황발작이 발생하면 제대로 대처를 하지 못할 것이라는 불안이 크기 때문에 혼자 잘 있지 못하며, 가능하면 주변에 사람이 계속 있어주길 원한다. 이것도 일상에서의 큰 변화중 하나다."
   },
   {
    "number": 23,
@@ -1148,7 +1169,8 @@
     18
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "갑상선결절이 만져질 경우 혈청 TSH 수치를 확인하여 TSH가 감소된 경우 갑상선스캔 검사를, TSH가 정상 또는 증가된 경우 초음파 검사를 우선적으로 시행한다."
   },
   {
    "number": 24,
@@ -1186,7 +1208,8 @@
     19
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "5개의 소관절 침범(3점), 항CCP항체 양성(3점), CRP와 ESR의 상승(1점), 증상지속기간(1점)을 고려하여 류마티스관절염 분류기준에 따라 6점 이상이므로 혈청양성류마티스관절염으로 진단할 수 있음. 류마티스 인자 양성"
   },
   {
    "number": 25,
@@ -1249,7 +1272,8 @@
      "h": 619
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "뇌파와 경련양상읜 영아 연축을 시사한다. 결정성 경화증에서 영아 연축이 발생할 수 있으며 뇌영상 소견과 신체진찰에서 겉질 결정, 뇌실막밑 결절, 멜라진저하 반점을 보여주고 있으며 이것은 결절성 경화증을 시사하고 있다."
   },
   {
    "number": 26,
@@ -1299,7 +1323,8 @@
      "h": 577
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "환자의 가족력과 내시경 소견으로 볼 때 이 환자는 가족성용종증을 의심할 수 있다. 가족성 용종증은 100% 암으로 진행하기 때문에 치료는 예방적 전대장직장절제술 및 회장낭항문 문합술이다."
   },
   {
    "number": 27,
@@ -1350,7 +1375,8 @@
      "h": 664
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "좌폐전폐허탈 소견이다. 허탈의 원인을 찾고 toileting을 위해 기관지내시경을 먼저 시행해야 한다."
   },
   {
    "number": 28,
@@ -1401,7 +1427,8 @@
      "h": 262
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "급성췌장염의 치료에 대한 문제이다. 급성 췌장염의 가장 중요한 치료는 조기에 대량의 수분 공급 (early, aggressive intravenous fluid resuscitation)을 하는 것이다."
   },
   {
    "number": 29,
@@ -1438,7 +1465,8 @@
     22
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "증상이 동반된 저나트륨혈증 치료: Treatment of acute symptomatic hyponatremia should include hypertonic 3% saline (513 mM) to acutely increase plasma Na+ concentration by 1–2 mM/h to a total of 4–6 mM； this modest increase is typically sufficient to alleviate severe acute symptoms, after which corrective guidelines for chronic hyponatremia are appropriate (see below). A bolus of 100 mL of hypertonic saline is more effective than an infusion, rapidly improving both serum sodium and mental status. For ongoing infusions, a number of equations have been developed to estimate the required rate of hypertonic saline, which has an Na+-Cl– concentration of 513 mM."
   },
   {
    "number": 30,
@@ -1502,7 +1530,8 @@
      "h": 737
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "폐기능검사상 폐쇄성환기장애 소견을 보이나, 유량용량곡선에서 fixed large airway obstruction소견을 보입니다. 병력상 기관삽관육아종이 가능성이 높습니다."
   },
   {
    "number": 31,
@@ -1553,7 +1582,8 @@
      "h": 612
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "달걀 흰자를 먹은 후 발생한 급성 일레르기 반응이며, 달걀흰자특이면역글로불린E가 증가되어 있어 감작되어 있는 것을 알 수 있다. 달걀제한을 하게된다."
   },
   {
    "number": 32,
@@ -1616,7 +1646,8 @@
      "h": 936
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "한랭두드러기의 유발검사는 icecube test이다."
   },
   {
    "number": 33,
@@ -1667,7 +1698,8 @@
      "h": 309
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "소화성궤양 환자로 양성자펌프억제제 치료가 필요합니다."
   },
   {
    "number": 34,
@@ -1730,7 +1762,8 @@
      "h": 441
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "가슴CT상 우하엽에 cavitary lesion을 보이며, 가래 항산막대균펴바른표본이 세차례 음성으로 폐암의 가능성을 고려하여 조직검사가 필요합니다."
   },
   {
    "number": 35,
@@ -1793,7 +1826,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "subacute course로 열과 체중감소가 동반되며 CT상 random distribution을 보이는 수많은 결절이 보이며 좁쌀결핵의 소견임."
   },
   {
    "number": 36,
@@ -1843,7 +1877,8 @@
      "h": 677
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "복부X선상 유리공기가 관찰되며 혈액검사 결과에서 백혈구가 증가하고 신체검진상 압통과 반동압통이 관찰되므로 복막염이 있다. 또한 속이 쓰리고 제산제를 복용한 과거력을 고려할 때 소화성 궤양 천공에 의한 복막염 가능성이 높다. 천공이 없는 소화성궤양이라면 양성자펌프억제제를 고려할 수 있으나 천공이 있으므로 응급수술을 시행해야 한다. 복막염이 동반되지 않은 아주 작은 천공이라면 금식하고 항생제를 사용하면서 경과관찰을 시행하거나 내시경으로 결찰할 수 있겠으나 신체검진상 이미 복막염이 복강 전체에 퍼졌으므로 내시경결찰과 경과관찰은 옳지 않다. 따라서 답은 5)응급개복술이다."
   },
   {
    "number": 37,
@@ -1894,7 +1929,8 @@
      "h": 566
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "환자 dehydration이 심하고, metabolic alkalosis 동반되어 응급수술은 피하고 먼저 수액요법을 시도한다."
   },
   {
    "number": 38,
@@ -1931,7 +1967,8 @@
     32
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "양극성 장애 I 형. 사례는 경조증이 아닌 조증에 해당됨. 따라서 순환성장애로 보기 어렵다."
   },
   {
    "number": 39,
@@ -1994,7 +2031,8 @@
      "h": 637
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "정답해설: 위궤양 병력으로 수술한 병력이 있으나 신체검진상 반발압통이 없고 혈액검사상 백혈구의 상승이 관찰되지 않으므로 소화성궤양천공은 아니다. 복부 컴퓨터단층촬영에 위날문부의 비대와 협착이 관찰되며 십이지장이나 소장은 늘어나 있지 않으므로 상장간막동맥증후군이나 수술 후 소장폐색은 아니다. 위날문부의 비대가 있으나 전반적 비대로 일부에 국한된 점막하종괴는 아니다. 따라서 정답은 2)위날문부협착이다."
   },
   {
    "number": 40,
@@ -2045,7 +2083,8 @@
      "h": 489
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "총담관결석으로 인한 담도염 소견이 있다. ERCP를 통해 EST 후 CBD stone을 제거한다."
   },
   {
    "number": 41,
@@ -2082,7 +2121,8 @@
     35
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "외상후 스트레스장애의 경우 안구운동 민감소실 및 재처리가 치료로 사용될 수 있다."
   },
   {
    "number": 42,
@@ -2120,7 +2160,8 @@
     36
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "LDL수치를 낮추기 위한 1차 치료제로 스타틴이 권고된다. 더불어 10-year cardiovascular risk가 7.5%이상인 경우는 LDL콜레스테롤 수치와 관계없이 스타틴 치료를 시작한다."
   },
   {
    "number": 43,
@@ -2157,7 +2198,8 @@
     36
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "PSGN진단 Poststreptococcal glomerulonephritis due to pharyngitis develops 1–3 weeks after infection and 2–6 weeks after impetigo. The classic presentation is an acute nephritic picture with hematuria, pyuria, red blood cell casts, edema, hypertension, and oliguric renal failure, which may be severe enough to appear as RPGN. Systemic symptoms of headache, malaise, anorexia, and flank pain (due to swelling of the renal capsule) are reported in as many as 50% of cases. Five percent of children and 20% of adults have proteinuria in the nephrotic range. In the first week of symptoms, 90% of patients will have a depressed CH50 and decreased levels of C3 with normal levels of C4."
   },
   {
    "number": 44,
@@ -2194,7 +2236,8 @@
     36
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "우선 심장기능평가를 먼저 시행한 후 위험도에 따라 임신을 유지할 수 있을지 결정."
   },
   {
    "number": 45,
@@ -2244,7 +2287,8 @@
      "h": 671
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "- 우측 중대뇌동맥(middle cerebral artery, MCA) 첫 번째 분지부 (M1) 폐색을 동반한 뇌경색 환자이다. 뇌경색 발생시점으로부터 4.5시간 이후 내원하였으며, 혈액검사상 혈소판수 감소, PT INR 및 aPTT prolongation으로 정맥내 혈전용해술은 투여 적응증이 되지 않는다. - 2019 AHA/ASA guideline에 따르면 18세 이상, 뇌경색 병전 상태가 양호하고, 증상 발생 6시간 이내에 치료가 가능한 환자가 내원했을 때, 뇌경색의 원인으로 MCA M1 폐색이 있으며 증상은 심하지만 (NIHSS 점수 6점 이상) 뇌컴퓨터전산화단층촬영에서 경색의 크기가 작은 경우 (ASPECTS 6점 이상) 동맥내 혈전제거술을 시행할 수 있는데 본 증례에 해당한다. 따라서 정답은 ⓶번이다. - ⓷은 심방세동을 동반한 뇌경색 환자에서 이차예방 치료로 고려할 수 있으나, 바로 필요한 치료는 아니므로 오답이다. - ⓸도 ⓷과 비슷한 맥락으로, 심방세동을 동반한 뇌경색 환자에서 항응고제의 금기가 아니라면 항혈소판제는 우선적으로 투여를 고려하지는 않으며, 또한 바로 필요한 치료는 아니므로 오답이다. - 본 증례 환자에서 뇌부종이 심한 상태는 아니므로 ⓹는 오답이다."
   },
   {
    "number": 46,
@@ -2308,7 +2352,8 @@
      "h": 514
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "젊은 여성의 발열로, 루푸스 신염이 의심된다. 고용량 스테로이드 치료 및 MMF의 면역억제제 사용이 필요하다."
   },
   {
    "number": 47,
@@ -2359,7 +2404,8 @@
      "h": 573
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "HRCT가 ILD 의심 환자의 조기 진단과 확진에 매우 중요하며, 유용함. 병의 범위와 분포 평가에 좋으며, 특히 정상 chest X-ray 소견의 환자에서 유용함. 적절한 임상적 상황에서 HRCT의 특징적 소견이 있다면 폐생검을 하지 않아도 된다. 또한 폐생검 전, 생검 부위 결정에도 도움."
   },
   {
    "number": 48,
@@ -2410,7 +2456,8 @@
      "h": 675
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "만성기침과 가래, 열감을 보이고, 항생제 치료에도 경과가 좋아지지 않았다. Cxr상 왼쪽 폐야에 cavitary lesion 이 보인다. 병력을 종합할 때, 결핵을 의심하여 가래 항산막대균 펴바른표본검사를 해야한다."
   },
   {
    "number": 49,
@@ -2461,7 +2508,8 @@
      "h": 432
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "없음."
   },
   {
    "number": 50,
@@ -2498,7 +2546,8 @@
     42
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "터너증후군으로 조기난소부전 소견을 보입니다. 적절한 치료는 여성호르몬이 되겠습니다."
   },
   {
    "number": 51,
@@ -2561,7 +2610,8 @@
      "h": 361
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "심첨부 확장기 심잡은은 승모판막협착증의 특징적인 소견이며 가슴 X 선 사진에서 LA enlargement 가 의심되고, 심전도에서 AF 이 동반되어 승모판막 협착으로 인한 LA enlargement and AF 이 발생하였다."
   },
   {
    "number": 52,
@@ -2599,7 +2649,8 @@
     44
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "태변흡입증후군으로 인한 지속성 폐고혈압에 대한 내용으로 산화질소의 흡입이 효과적이다."
   },
   {
    "number": 53,
@@ -2636,7 +2687,8 @@
     44
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "호중구 감소가 있는 환자에서 발열이 동반될 경우에는 반드시 녹농균에 대한 항균력이 있는 항생제를 경험적으로 시작해야 합니다."
   },
   {
    "number": 54,
@@ -2673,7 +2725,8 @@
     44
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "당뇨 환자에서 적절한 첫 처치를 이해한다."
   },
   {
    "number": 55,
@@ -2711,7 +2764,8 @@
     45
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "환자의 증상은 주요우울삽화의 진단 기준을 만족하고 있으며 보호자 정보 및 면담에서는 조증의 증상이 공존하고 있습니다. 이는 주요우울장애의 혼재성 삽화로 볼 수 있습니다. 혼재성 삽화의 기준은 다음의 증상 중 최소 3가지 증상이 주요우울삽화 기간의 대부분 동안 존재하는 것이다. 1)elevated mood/inflated self-esteem 2)more talkative than usual 3)flight of ideas 4)increase in energy or goal-directed activity 5)excessive involvement in activities that have a high potential for painful consequences 6)decreased need for sleep"
   },
   {
    "number": 56,
@@ -2774,7 +2828,8 @@
      "h": 343
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "청진상 악설음이 들리고 pitting edema가 확인되는 급성 심부전 환자의 우선적인 치료는 iv diuretics 의 사용이다."
   },
   {
    "number": 57,
@@ -2812,7 +2867,8 @@
     47
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "수술 치료는 체질량지수 35kg/m2 이상(3단계 비만)이거나 체질량지수 30kg/m2 이상(2단계 비만)이면서 비만 동반질환을 가지고 있는 환자에서 비수술 치료로 체중감량에 실패한 경우에 고려한다. 1단계 비만 (BMI 25.0-29.9 kg/m2)이고 당뇨병, 고혈압, 고지혈증이 동반되어 있는 경우 약물치료를 고려해볼 수 있다. 답가지 중 당뇨 치료 뿐만 아니라 비만 치료제로 사용할 수 있는 약제는 GLP1 수용체 작용제이다."
   },
   {
    "number": 58,
@@ -2849,7 +2905,8 @@
     47
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "신증후군중 원발성 막성사구체 신염에서 70 %에서 anti-PLA2 Ab가 나온다. In 70% of cases of IMN, autoantibodies against the M-type phospholipase A2 receptor circulate and bind to a conformational epitope present in the PLA2R on human podocytes, producing characteristic in situ deposits. Three to 10% of IMN patients alternatively have autoantibodies to thrombospondin type-1 domain containing 7A (THSD7A)"
   },
   {
    "number": 59,
@@ -2912,7 +2969,8 @@
      "h": 1090
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "젊은 남성환자에서 동반된 sacroilitis와 enthesitis로 관절척추병증을 생각할수 있다. 골반과 발뒤꿈치 통증을 모두 조절하기 위해서 고려할 수 있는 약제치료의 1st line은 NSAIDs이다."
   },
   {
    "number": 60,
@@ -2962,7 +3020,8 @@
      "h": 774
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "과호흡에 의한 호흡곤란 증상으로 호흡성 알칼리증이 발생하여 전해질 이상등으로 손발저린 증상이 발생할수 있다. 안심을 시키고 증상이 심한 경우 저용량의 이산화탄소 흡입이 도움이 될수 있다."
   },
   {
    "number": 61,
@@ -3012,7 +3071,8 @@
      "h": 315
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "동정맥루 수술 이후에 radial artery 및 ulnar artery pulsation 이 약하며, 왼손 저림 및 힘 빠짐이 있다. 이는 steal syndrome 에 해당하고 사진을 보았을때 괴사도 일어나고 있어 동정맥루 결찰이 필요하다."
   },
   {
    "number": 62,
@@ -3050,7 +3110,8 @@
     51
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "자발성 복막염으로 3세대 항생제 치료를 요한다"
   },
   {
    "number": 63,
@@ -3100,7 +3161,8 @@
      "h": 366
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "대상포진 환자와 긴밀한 접촉을 한 경우 수두 발병 가능성을 고려해야 합니다. 수두 또는 대상포진 환자와 접촉한 건강한 소아의 경우 수두 예방접종 대상인 경우 접종, 대상이 아닌 경우 관찰합니다."
   },
   {
    "number": 64,
@@ -3175,7 +3237,8 @@
      "h": 867
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "급성복통 중 하나인 장허혈의 대표적 원인(심방세동등에 의한 색전)과 증상을 이해하고, 응급수술이 필요한 질병임을 인지한다."
   },
   {
    "number": 65,
@@ -3212,7 +3275,8 @@
     53
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "지적 발달 장애 환자 치료 중 언어 발달 문제에 대한 대처"
   },
   {
    "number": 66,
@@ -3263,7 +3327,8 @@
      "h": 409
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Sudden onset chest pain, 심전도상 precordial lead ST elevation으로 STEMI소견이다."
   },
   {
    "number": 67,
@@ -3301,7 +3366,8 @@
     55
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "자극이 있을때만 긁은 모양대로 발생하는 물리두드러기에 대한 설명으로 피부묘기증에 해당한다."
   },
   {
    "number": 68,
@@ -3351,7 +3417,8 @@
      "h": 660
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "알콜성 만성췌장염의 증례로 X-ray에서 보이는 췌장의 석회화를 통해 만성췌장염을 진단할 수 있다."
   },
   {
    "number": 69,
@@ -3402,7 +3469,8 @@
      "h": 688
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "복부 종괴(이 환자의 경우는 pancreatic head cancer로 진단) 로 인한 상부위장관의 기계적폐색이 의심되는 환자이다. CT를 보면 십이지장~위 의 심한 확장과 체액저류가 관찰되고 있다. 이를 치료하기 위해서는 적절한 감압 및 수액 치료가 우선적으로 시행되어야 하며, 가장 효과적인 방법은 비위관 감압술이 고려된다. 내시경적 풍선확장술은 추후 고려될 수 있으나, 증상 개선을 위한 우선적인 치료법은 아니다."
   },
   {
    "number": 70,
@@ -3453,7 +3521,8 @@
      "h": 425
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "왼쪽 되돌이후두신경 침범 소견을 보이는 국소진행성 갑상샘 유두암으로 재발 고위험군에 해당하므로 갑상샘 전절제술 후 방사성 동위원소치료가 필요함."
   },
   {
    "number": 71,
@@ -3490,7 +3559,8 @@
     57
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "무비증 (asplenia)에서 필요한 예방접종을 안다."
   },
   {
    "number": 72,
@@ -3528,7 +3598,8 @@
     58
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "성폭력 환자에서 성병을 예방하기 위한 조치"
   },
   {
    "number": 73,
@@ -3578,7 +3649,8 @@
      "h": 706
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "급성하지동맥 폐색증 환자에서 혈전의 파급을 막기 위해 우선적으로 항응고제를 사용하여야 하며, heparin 또는 low-molecular weight heparin이 사용될 수 있다"
   },
   {
    "number": 74,
@@ -3628,7 +3700,8 @@
      "h": 526
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "hb 7.5로 빈혈이 동반되어 있으며, 압박 증상을 일으킬 정도로 덩이가 제법 커져있으므로 수술의 적응증이 되겠습니다."
   },
   {
    "number": 75,
@@ -3679,7 +3752,8 @@
      "h": 581
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "혈액검사에서 감염 소견은 보이지 않는다. 멸치땅콩조림을 먹던 중 이물 흡인이 된 것으로 여겨진다. x-ray에서 이물로 인한 Rt lung의 hyperinflation이 관찰된다."
   },
   {
    "number": 76,
@@ -3743,7 +3817,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "만성 기침으로 내원한 환자이고 객담 호산구 증가, 호기산화질소 증가되어 있으나 폐기능 및 메타콜린 기관지유발시험 음성 소견 보여 호산구기관지염으로 진단 가능함"
   },
   {
    "number": 77,
@@ -3780,7 +3855,8 @@
     62
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "T 점수 -3.5 상태의 골다공증이며, 다른 특이 증상이 없어 랄록시펜을 사용할 수 있다. 유방암 과거력이 있어 다른 호르몬치료는 적응증이 되지 않는다."
   },
   {
    "number": 78,
@@ -3843,7 +3919,8 @@
      "h": 724
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "위점막하 종양의 경우 크기가 2cm 이상인 경우 위쇄기 절제수술을 시행 한다"
   },
   {
    "number": 79,
@@ -3881,7 +3958,8 @@
     64
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "급성 림프모구 백혈병 증상 중 최초에는 비특이적인 오심, 보챔, 무기력 등의 증상이 나타나며, 대부분의 환아는 창백하고 50%에서 점상 출혈이나 점막 출혈을 나타낸다. 60%에서 발열이 동반되며, 림프절 비대도 나타날 수 있으며, 60%에서 비장비대가 나타나고 이보다 더 낮은 빈도로 간비대도 나타난다. 혈액검사에서 빈혈, 백혈구증가, 혈소판감소 소견을 보이므로, 확진을 위해 골수천자검사를 시행해야 한다."
   },
   {
    "number": 80,
@@ -3931,7 +4009,8 @@
      "h": 382
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "Wet smear에서 budding yeast와 pseudohyphae 소견이 보이는 전형적인 candidiasis 소견이다."
   }
  ]
 }

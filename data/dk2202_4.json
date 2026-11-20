@@ -41,7 +41,8 @@
     1
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "복부 CT에서 확인되는 소견은 담낭암의 간 침범과 간외 담관 침범이 확인된 경우로 현재 폐쇄성 황달이 심한 상태로 이에 대한 치료로 쓸개관배액술이 필요하다."
   },
   {
    "number": 2,
@@ -78,7 +79,8 @@
     1
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "해설없음"
   },
   {
    "number": 3,
@@ -116,7 +118,8 @@
     2
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "갑자기 발생한 말초성 현훈으로 이석증에 대한 내용이다. 수초에서 1분 이내의 회전성 어지러움이 두위 또는 체위 변환에 의해 발생하는 양성 발작성 체위성 현훈으로 두위 및 체위 변환 안진검사에서 유발되는 어지러움과 특이적인 안진의 형태로 진단한다. upbeating torsional nystagmus는 후반규관 이석증에서 특징적으로 나타나며 에플리 법 등의 이석 정복술로 치료한다."
   },
   {
    "number": 4,
@@ -179,7 +182,8 @@
      "h": 635
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "심박출률 보존 심부전 (HFpEF)과 폐부종을 진단하고 치료할 수 있다."
   },
   {
    "number": 5,
@@ -216,7 +220,8 @@
     3
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "불규칙적인 myoclonic jerking movement, 즉 asterixis 이다. flapping tremor, negative myoclonus로도 일컬어지는 asterixis는 일반적으로 간성 혼수환자에서 나타나는 것으로 알려져 있으나 만성 콩팥병에서도 흔히 관찰된다. 또 가바펜틴이나 프레가발린 등의 약물에 의해서도 발생하는데 특히 만성 콩팥병 환자가 이러한 약물을 복용하는 경우 흔하게 동반될 수 있다."
   },
   {
    "number": 6,
@@ -253,7 +258,8 @@
     3
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "열성경련 (복합열성경련) 치료"
   },
   {
    "number": 7,
@@ -304,7 +310,8 @@
      "h": 331
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "Rheumatic fever is the leading cause of mitral stenosis (MS). Pure or predominant MS occurs in ~40% of all patients with rheumatic heart disease and a history of rheumatic fever. 사진 1: left atrial enlargement (The P wave in Lead is broad and substantially notched, while V1 reveals a deeply inverted P wave)"
   },
   {
    "number": 8,
@@ -341,7 +348,8 @@
     4
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "자궁무력증에 의한 질출혈이 있으나 혈역학적으로 안정적이므로 우선 약물치료하며 경과관찰할 수 있다."
   },
   {
    "number": 9,
@@ -416,7 +424,8 @@
      "h": 325
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Electrocardiography showing ST segment elevation in the V3-V6, I, AVL leads and ST segment depression in the III, AVF leads.   Left coronary angiography and right coronary angiography(B) showing no significant stenosis.Left ventricular angiography showing apical ballooning in diastole (A) and systole (B)."
   },
   {
    "number": 10,
@@ -453,7 +462,8 @@
     5
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "상기 환자는 갑작스러운 흥분, 공격성, 난폭한 행동 및 판단력 저하 등의 증상을 보이며 동공산대, 빈맥, 혈압상승 등의 신체 증상을 동반하고 있습니다. 이러한 증상은 암페타민 중독에서 나타날 수 있으며, 양쪽 팔의 다양한 주사 자국으로 암페타민의 남용을 의심할 수 있습니다."
   },
   {
    "number": 11,
@@ -494,7 +504,8 @@
    "answers": [
     4,
     5
-   ]
+   ],
+   "explanation": "면역혈소판감소증은 건강해보이는 소아 및 청소년에서 갑자기 나타나는 혈소판 감소증의 가장 흔한 원인이며, 갑자기 전신적인 점상출혈과 자번병이 아무런 외상없이 자연적으로 나타나는 것이 특징이다. 혈소판이 2만 미만이거나, 출혈경향이 심하면 치료를 시작하며, 소아는 면역글로불린치료를 우선적으로 시행한다."
   },
   {
    "number": 12,
@@ -531,7 +542,8 @@
     6
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "1차성 무월경으로 사춘기 지연 상황, 신체진찰에서 터너증후군 의심"
   },
   {
    "number": 13,
@@ -594,7 +606,8 @@
      "h": 642
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "간문부 담관암은 담관의 좌, 우 간관의 합류부에 발생하는 담관암으로 정확한 부위는 총간담관의 기시부로부터 총간담관의 1차 분지에 위치한다."
   },
   {
    "number": 14,
@@ -631,7 +644,8 @@
     7
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "본 문항은 제왕절개후 폐색전증을 진단하는 문제로, 과거력상 DVT가 있었던 환자로 제왕절개후 폐색전증 발생 위험이 증가하고 호흡곤라느 맥박수 증가, 피검사 결과로 폐색전증을 확인하기 폐컴퓨터단층촬영혈관조영술을 시행해 볼 수 있겠다."
   },
   {
    "number": 15,
@@ -694,7 +708,8 @@
      "h": 119
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "만성폐쇄성폐질환으로 지속성 기관지확장제 치료가 필요하다."
   },
   {
    "number": 16,
@@ -757,7 +772,8 @@
      "h": 362
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "조기양막파수인 경우 폐성숙을 위해 글루코코르티코이드를 투여한다."
   },
   {
    "number": 17,
@@ -794,7 +810,8 @@
     9
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "모야모야병에 대한 임상증상이고, 필요한 검사는 뇌혈관조영술입니다. 뇌자기공명영상 혈관조영술도 도움됩니다."
   },
   {
    "number": 18,
@@ -832,7 +849,8 @@
     10
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "다뇨 발생시 소변 삼투질농도를 측정하여 일차성 다음증 여부를 확인한다 By history, it is often difficult for patients to distinguish urinary frequency (often of small volumes) from true polyuria (>3 L/d), and a quantification of volume by 24-h urine collection may be needed (Fig. 48-4). Polyuria results from two potential mechanisms: (1) excretion of nonabsorbable solutes (such as glucose) or (2) excretion of water (usually from a defect in AVP production or renal responsiveness). If the urine output is >3 L/d and the urine is dilute (<250 mosmol/L), total osmolar excretion is normal and a water diuresis is present. This cir­cumstance could arise from polydipsia, inadequate secretion of vaso­pressin (central diabetes insipidus), or failure of renal tubules to respond to vasopressin (nephrogenic diabetes insipidus). If the urine volume is >3 L/d and urine osmolality is >300 mosmol/L, a solute diuresis is clearly present and a search for the responsible solute(s) is mandatory."
   },
   {
    "number": 19,
@@ -869,7 +887,8 @@
     10
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "이유식 진행이 되지 않는 환자에서 소구성 빈혈이 동반되어 있어 철결핍 빈혈이 가장 의심된다."
   },
   {
    "number": 20,
@@ -920,7 +939,8 @@
      "h": 637
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "환자 병력청취 및 이학적검사 상 급성충염에 합당한 소견이다. 혈액검사에서 염증 수치가 증가해 있고 복부컴퓨터 단층촬영 상 충수벽에 조영증가 및 충수 두께가 두꺼워진 것을 알 수 있다. 또한 뚜렷한 농양형성은 되어있지 않으므로 경피배액술은 답이 될 수 없다."
   },
   {
    "number": 21,
@@ -957,7 +977,8 @@
     11
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "벤조다이아제핀 과량 복용으로 호흡마비, 혼수상태 등의 생명에 치명적인 경우 벤조다이아제핀 길항제인 플루마제닐을 사용할 수 있다. 다만 플루마제닐 또한 경련, 발작, 호흡 마비를 일으킬 수 있어 사용에 주의해야 한다."
   },
   {
    "number": 22,
@@ -1008,7 +1029,8 @@
      "h": 502
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "급성담석성담낭염 환자로 혈소판이 5만이하로 수술이나 시술을 받을 수 없는 상황입니다. 수혈 후 시술이나 수술은 가능하나 현 상태에서는 2번 항생제 정주만 정답이 됩니다."
   },
   {
    "number": 23,
@@ -1058,7 +1080,8 @@
      "h": 216
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "MCMA twin에서 임신 34주이므로 권고분만예정일을 지났고, 분만방법은 제왕절개가 추천된다."
   },
   {
    "number": 24,
@@ -1121,7 +1144,8 @@
      "h": 497
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "정형외과 수술을 시행받은 지 3개월이 경과하였으므로 이로 인한 출혈성 경향이 치료방침을 결정하는데 문제가 되지는 않을 것이다. 그러므로 저혈압 등 혈역학적 불안정 상태에서 심초음파에서 D-shape을 보일 정도로 pulmonary thromboembolism으로 인한 우심실 기능 장애가 동반된 상태이므로 thrombolytics 치료를 우선 시행해야 한다. 물론 이후 heparin과 같은 anticoagulation 치료도 병행해야 한다."
   },
   {
    "number": 25,
@@ -1159,7 +1183,8 @@
     14
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "thrombocytopenia, male gender, eczema 동반되는 congenital syndrome with immunodeficiency"
   },
   {
    "number": 26,
@@ -1196,7 +1221,8 @@
     14
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "골,관절 감염에 있어 가장 빈도가 높은 원인균은 Staphylococcus aureus 이다."
   },
   {
    "number": 27,
@@ -1246,7 +1272,8 @@
      "h": 550
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "설사가 지속하고 최근 항생제 투약의 병력, C반응단백질의 증가 등을 볼 때 위막성 장염에 의한 설사가 임상적으로 의심되며 구불창자내시경검사에서 전형적인 위막성 장염의 소견을 보인다. 이러한 질환의 치료에 효과적인 약제는 경구 반코마이신이다."
   },
   {
    "number": 28,
@@ -1296,7 +1323,8 @@
      "h": 677
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "복부X선상 유리공기가 관찰되며 혈액검사 결과에서 백혈구가 증가하고 신체검진상 압통과 반동압통이 관찰되므로 복막염이 있다. 또한 속이 쓰리고 제산제를 복용한 과거력을 고려할 때 소화성 궤양 천공에 의한 복막염 가능성이 높다. 천공이 없는 소화성궤양이라면 양성자펌프억제제를 고려할 수 있으나 천공이 있으므로 응급수술을 시행해야 한다. 복막염이 동반되지 않은 아주 작은 천공이라면 금식하고 항생제를 사용하면서 경과관찰을 시행하거나 내시경으로 결찰할 수 있겠으나 신체검진상 이미 복막염이 복강 전체에 퍼졌으므로 내시경결찰과 경과관찰은 옳지 않다. 따라서 답은 4)응급개복술이다."
   },
   {
    "number": 29,
@@ -1334,7 +1362,8 @@
     16
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "다량의 물설사와 이로 인한 저혈압과 빈맥이 동반된 경우이다. BUN/Cr도 상승되어 있는 상태로 pre-renal ARF 가 의심된다. 현재 상황에서 가장 필요한 조치는 “정맥수액공급”이다."
   },
   {
    "number": 30,
@@ -1371,7 +1400,8 @@
     16
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "자궁경부에 화농성 분비물이 있고, 자궁경부 운동성 압통이 있으므로 우선 골반염의 가능성을 생각해야 합니다."
   },
   {
    "number": 31,
@@ -1421,7 +1451,8 @@
      "h": 398
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "환자는 전형적인 치열 증상을 호소하고 있으며 사진에서 제시된 육안 소견상 6시 방향에서 항문 상피의 열상을 확인 할 수 있다. 약 2달간의 배변완화를 중점으로 한 보존 치료를 시행하고 반응이 없을 시 수술 치료를 고려 할 수 있다."
   },
   {
    "number": 32,
@@ -1459,7 +1490,8 @@
     17
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "동맥관 개존증 환아로 증상 유무에 관계없이 수술 혹은 시술이 필요하다"
   },
   {
    "number": 33,
@@ -1509,7 +1541,8 @@
      "h": 232
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "교감신경 차단효과로 심박출량이 감소하여 저혈압발생"
   },
   {
    "number": 34,
@@ -1546,7 +1579,8 @@
     17
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Clinical trials have confirmed that with the initial diagnosis of stable IHD, it is first appropriate to initiate a medical regimen. Revascularization should be considered in the presence of unstable phases of the disease, intractable symptoms, severe ischemia or high-risk coronary anatomy, diabetes, and impaired LV function. Revascularization should be employed in conjunction with but not replace the continuing need to modify risk factors and assess medical therapy."
   },
   {
    "number": 35,
@@ -1584,7 +1618,8 @@
     18
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "변비는 음식을 섭취한 만큼 배변하지 못하는 상태를 나타내며, 증상을 의미할 뿐 자체가 원인 질환을 나타내지는 않는다. 따라서 기저 질환을 찾는 것이 중요하다. 문제의 환아는 갑상샘기능저하의 증상을 보이고 있으며, 변비를 일으키는 원인 중 하나인 갑상샘저하증을 확인하기 위해 혈청 갑상샘호르몬을 확인해야 한다.＆nbsp；"
   },
   {
    "number": 36,
@@ -1647,7 +1682,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "병력과 영상학적 소견을 볼때 기관지확장증으로 진단가능하다."
   },
   {
    "number": 37,
@@ -1684,7 +1720,8 @@
     19
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "희소정자증의 치료이다"
   },
   {
    "number": 38,
@@ -1735,7 +1772,8 @@
      "h": 640
     }
    ],
-   "answer": 1
+   "answer": 1,
+   "explanation": "왼쪽 기흉으로 흉관 삽입을 요함."
   },
   {
    "number": 39,
@@ -1786,7 +1824,8 @@
      "h": 443
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "복강내 종괴로 내원하였으며 신경성종양에서 확인되는 신경전달물질의 상승으로 신경모세포종을 의심할 수 있다."
   },
   {
    "number": 40,
@@ -1836,7 +1875,8 @@
      "h": 637
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "CT 소견은 RML, LLL lingular division의 bronchiectasis와 nodules로 비결핵항산균폐질환을 시사하며 도말검사 양성, TB-PCR 음성은 이에 합당한 결과이다."
   },
   {
    "number": 41,
@@ -1887,7 +1927,8 @@
      "h": 309
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "소화성궤양 환자로 양성자펌프억제제를 투여해야 하며, 출혈의 근거가 없으므로 내시경적 지혈술은 하지 않는다."
   },
   {
    "number": 42,
@@ -1924,7 +1965,8 @@
     22
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "임신 중 침윤암이 아닐 경우 분만 후 재검 및 치료"
   },
   {
    "number": 43,
@@ -1961,7 +2003,8 @@
     22
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "가임력 보존을 위한 수술 진행 하지만 림프절, 대망, 충수돌기 절제수를 시행 하여 병기 설정은 하여야 한다."
   },
   {
    "number": 44,
@@ -1999,7 +2042,8 @@
     23
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "방사선 조영제 투여 후 즉시형 반응으로 두드러기, 호흡곤란, 의식저하, 혈압저하 등이 발생하여 아나필락시스로 생각할 수 있고 치료는 에피네프린 투여이다"
   },
   {
    "number": 45,
@@ -2036,7 +2080,8 @@
     23
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "증상과 진찰 소견 및 검사 결과로 보아 칸디다성 질염을 생각해야 합니다. 칸디다성 질염 치료제로 가장 흔히 사용되는 약제는 fluconazole입니다."
   },
   {
    "number": 46,
@@ -2087,7 +2132,8 @@
      "h": 732
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "상장간증후군의 특징적인 증상과 상부위장관 조영술을 통해 진단을 내릴 수 있다. 성인에서 수술적 치료가 필요한 경우 십이지장공장문합술을 선택한다."
   },
   {
    "number": 47,
@@ -2137,7 +2183,8 @@
      "h": 352
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "심방세동에 완전방실차단이 동반된 심전도이다. 증상을 동반한 서맥에서는 심장박동조율기 삽입이 치료이다."
   },
   {
    "number": 48,
@@ -2174,7 +2221,8 @@
     24
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "TSH <0.1 으로 toxic adenoma 감별이 필요합니다."
   },
   {
    "number": 49,
@@ -2212,7 +2260,8 @@
     25
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "신체 증상에 대해서 과도한 걱정과 불안이 지속되고 있으며, 반복적인 검사에도 안심하지 못하고 있다. 신체증상장애의 진단에 부합하며, 다른 망상적 사고나 망상 수준의 고착은 보이지 않는다."
   },
   {
    "number": 50,
@@ -2249,7 +2298,8 @@
     25
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "임신 중 고혈압 질환의 정의에 따른 감별진단"
   },
   {
    "number": 51,
@@ -2286,7 +2336,8 @@
     25
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "외상후스트레스장애의 진단 기준에 해당한다. 문항의 예시처럼 외상성사건의 혐오스러운 세부 사항에 대한 반복적이거나 지나친 노출의 경험도 외상후스트레스장애를 유발할 수 있다. 급성스트레스 장애는 지속기간이 1달 이내일 경우 진단할 수 있다."
   },
   {
    "number": 52,
@@ -2324,7 +2375,8 @@
     26
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "분만 후 배뇨장애의 처치"
   },
   {
    "number": 53,
@@ -2361,7 +2413,8 @@
     26
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "자궁내막증의 원인 기전으로 가장 가능성이 높은 것은 월경혈의 복강 내 역류이다."
   },
   {
    "number": 54,
@@ -2398,7 +2451,8 @@
     26
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "퀴블러-로스의 심리 반응 이론에서 부정-분노-협상-우울-수용 순의 반응들이 정상적으로 나타날 수 있으며, 본문의 내용은 협상에 대한 내용이다. 해당 단계는 부정 (denial)일 가능성이 높습니다. 심한 스트레스에 직면하여 초기에 생길 수 있습니다."
   },
   {
    "number": 55,
@@ -2461,7 +2515,8 @@
      "h": 505
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "창자겹침증의 특징적인 증상은 건강하던 아기가 갑자기 심한 복통과 무증상이 반복되는 것으로 단순 복부 방사선 사진에서 창자겹침이 있는 부위에 음영이 증가되거나, 복부 초음파 검사에서 원통형 종괴나 표적 또는 도넛 모양으로 관찰된다."
   },
   {
    "number": 56,
@@ -2512,7 +2567,8 @@
      "h": 1086
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "척수근위축증에 대한 임상양상과 설명입니다."
   },
   {
    "number": 57,
@@ -2550,7 +2606,8 @@
     29
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "중앙선이 아니라 한쪽으로 치우친 목덩이가 서서히 커지는 양상 및 항생제에 반응이 없는 모습으로 악성 림프종을 의심해 보아야 한다."
   },
   {
    "number": 58,
@@ -2613,7 +2670,8 @@
      "h": 660
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "우측흉수 의심되므로 진단적 흉수천자가 필요함."
   },
   {
    "number": 59,
@@ -2650,7 +2708,8 @@
     30
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "여러 원인들 중 약제유발성 고프로락틴혈증의 가능성이 높음을 판단할수 있다"
   },
   {
    "number": 60,
@@ -2688,7 +2747,8 @@
     31
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "저나트륨혈증 원인중 SIADH와 관련된 호르몬 Hyponatremia, which is defined as a plasma Na+ concentration <135 mM, is a very common disorder, occurring in up to 22% of hospitalized patients. This disorder is almost always the result of an increase in circulating AVP and/or increased renal sensitivity to AVP, combined with an intake of free water； a notable exception is hyponatremia due to low solute intake (see below). The underlying pathophysiology for the exaggerated or “inappropriate” AVP response differs in patients with hyponatremia as a function of their ECFV"
   },
   {
    "number": 61,
@@ -2738,7 +2798,8 @@
      "h": 562
     }
    ],
-   "answer": 3
+   "answer": 3,
+   "explanation": "hypertrophic pyloric stenosis 환자의 치료: pyloromyotomy"
   },
   {
    "number": 62,
@@ -2776,7 +2837,8 @@
     32
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "주요우울장애는 개정된 DSM-5에서는 애도반응이 2개월 이내라 하더라도 주요우울삽화가 존재한다면 진단이 가능하다."
   },
   {
    "number": 63,
@@ -2851,7 +2913,8 @@
      "h": 637
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "위궤양 병력으로 수술한 병력이 있으나 신체검진상 반발압통이 없고 혈액검사상 백혈구의 상승이 관찰되지 않으므로 소화성궤양천공은 아니다. 복부 컴퓨터단층촬영에 위날문부의 비대와 협착이 관찰되며 십이지장이나 소장은 늘어나 있지 않으므로 상장간막동맥증후군이나 수술 후 소장폐색은 아니다. 위날문부의 비대가 있으나 전반적 비대로 일부에 국한된 점막하종괴인 점막하종괴는 아니다. 따라서 정답은 2)위날문부협착이다."
   },
   {
    "number": 64,
@@ -2889,7 +2952,8 @@
     34
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "양극성장애의 우울삽화로 본 증례는 판단되어야 하며 이에 대한 대표적 약물을 선택할 수 있어야 한다."
   },
   {
    "number": 65,
@@ -2926,7 +2990,8 @@
     34
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "자궁외 임신의 치료"
   },
   {
    "number": 66,
@@ -2963,7 +3028,8 @@
     34
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "기립성 저혈압의 원인이 될수 있는 약물을 우선 중단하여 증상이 호전되는지 여부를 먼저 확인하여야합니다. 동시에 생활습관교정을 통하여 호전을 기대할수 있습니다."
   },
   {
    "number": 67,
@@ -3001,7 +3067,8 @@
     35
    ],
    "figures": [],
-   "answer": 2
+   "answer": 2,
+   "explanation": "고령의 환자에서 최근 변비 증상이 갑자기 발생하고 혈변, 체중감소가 동반되었으며 혈액검사에서 빈혈이 확인되었습니다. 이러한 경우 기질적인 원인에 의한 변비, 특히 대장암의 가능성을 의심하고 대장내시경검사를 시행해 보아야 한다."
   },
   {
    "number": 68,
@@ -3038,7 +3105,8 @@
     35
    ],
    "figures": [],
-   "answer": 1
+   "answer": 1,
+   "explanation": "salicylate 중독은 직접 respiratory center를 자극하여 초기에 respiratory alkalosis를 유발"
   },
   {
    "number": 69,
@@ -3075,7 +3143,8 @@
     35
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "외음부암 <2cm 으로 광범위 국소절제술 시행"
   },
   {
    "number": 70,
@@ -3113,7 +3182,8 @@
     36
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "천식의 급성악화로 내원한 환자로, 이에 대한 치료를 묻는 문제이다. 천식의 급성악화에서는 산소투여, 속효성베타2작용제와 systemic glucocorticoid 가 중요한 치료이다."
   },
   {
    "number": 71,
@@ -3175,7 +3245,8 @@
      "h": 362
     }
    ],
-   "answer": 5
+   "answer": 5,
+   "explanation": "임신초기에 질분비물은 증가하게 되는데 산모가 질 분비물이 증가했다고 내원하는 경우 STD, 질분비물에서 균배양검사를 실시하게 된다. 이 환자의 경우 트리코모나스에 합당한 소견이다."
   },
   {
    "number": 72,
@@ -3213,7 +3284,8 @@
     37
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "혈관부종이 의심된다. 복용약 중 앤지오텐신전환효소억제제는 isolated angioedema 의 중요한 원인 중이 하나이다. 약 중단 후 호전여부 확인이 필요하다."
   },
   {
    "number": 73,
@@ -3250,7 +3322,8 @@
     37
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "이차성 무월경에서 다음으로 해야 하는 검사는 혈중 PRL과 TSH이다."
   },
   {
    "number": 74,
@@ -3313,7 +3386,8 @@
      "h": 636
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "6.2cm sized mass in LLL 가 있는 환자이고 폐암이 의심된다. 조직검사를 위해 기관지내시경을 시행할 수 있다."
   },
   {
    "number": 75,
@@ -3351,7 +3425,8 @@
     39
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Campylobacter 의 fluoroquinolone 내성 증가로 azithromycin 과 같은 macrolide 가 우선적 치료제로 권장된다. Rifaximin 의 경우 campylobacter 내성이 문제되며, 침습성 세균에 의한 감염이 의심되는 환자(혈성 설사)에는 추천되지 않는다."
   },
   {
    "number": 76,
@@ -3414,7 +3489,8 @@
      "h": 637
     }
    ],
-   "answer": 2
+   "answer": 2,
+   "explanation": "폐색전증으로 항응고제 치료가 필요하다."
   },
   {
    "number": 77,
@@ -3451,7 +3527,8 @@
     40
    ],
    "figures": [],
-   "answer": 5
+   "answer": 5,
+   "explanation": "Proteinuria가 동반된 CKD 환자에서 CKD progression을 늦추기 위해서 ACE inhibitor 혹은 ARB를 일차적으로 사용한다."
   },
   {
    "number": 78,
@@ -3514,7 +3591,8 @@
      "h": 429
     }
    ],
-   "answer": 4
+   "answer": 4,
+   "explanation": "젊은 환자에서 기침이 장기간 지속되는 경우 폐결핵 유무의 확인이 필요하다. 폐결핵의 전형적인 영상학적 소견은 상엽의 침윤과 공동이지만, 실제로는 정상소견부터 미만성 폐포 침윤까지 다양하게 관찰될 수 있다."
   },
   {
    "number": 79,
@@ -3552,7 +3630,8 @@
     42
    ],
    "figures": [],
-   "answer": 4
+   "answer": 4,
+   "explanation": "isolated glomerular hematuria의 가장 흔한 원인 The most common etiologies of isolated glomerular hematuria are IgA nephropathy, hereditary nephritis, and thin basement membrane disease. IgA nephropathy and hereditary nephritis can lead to episodic gross hematuria. A family history of renal failure is often present in hereditary nephritis, and patients with thin basement membrane disease often have family members with microscopic hematuria 단백뇨 없는 사구체 기원의 미세혈뇨의 3대 원인은 IgA 신병증, 유전성 신염, 얇은토리바닥막병 입니다. 출제한 문제에서는 가족도 혈뇨가 있다고 기술하고 있으므며 benign familial hematuria로 불리는 얇은토리바닥막병이 정답이 되겠습니다"
   },
   {
    "number": 80,
@@ -3589,7 +3668,8 @@
     42
    ],
    "figures": [],
-   "answer": 3
+   "answer": 3,
+   "explanation": "심한 저나트륨혈증으로 신경학적 증상이 나타났기에 3% 식염수 치료가 필요하다. 고혈압 약제 중 이뇨제가 포함되었는지 확인해야 한다."
   }
  ]
 }

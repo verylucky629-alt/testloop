@@ -976,6 +976,7 @@ function resultCardHTML(no, s) {
     <button class="rstem-more" data-act="expand" data-no="${no}">${open ? '접기' : '문제 전체 보기'}</button>
     ${(q.figures || []).length ? `<div class="figs">${q.figures.map((f) => `<img src="${esc(f.path)}" alt="문항 ${no} 그림" loading="lazy" decoding="async" data-fig>`).join('')}</div>` : ''}
     <div class="ropts">${opts}</div>
+    ${q.explanation ? `<details class="expl"><summary>해설 보기</summary><div class="expl-body">${esc(q.explanation)}</div></details>` : ''}
     ${memo ? `<div class="memo-box" style="margin-top:10px">${esc(memo)}</div>` : ''}
     <div class="rfoot">
       <span style="font-size:12.5px; color:var(--muted)">내 답 <b style="color:var(--text)">${a ? esc(MARKERS[a - 1]) : '없음'}</b> · 정답 <b style="color:${known ? 'var(--ok)' : 'var(--muted)'}">${known ? (kLabel || '미입력') : '미입력'}</b></span>
