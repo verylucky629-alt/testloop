@@ -190,7 +190,7 @@ let INDEX = null;
 const EXAM_CACHE = {};
 let BOOT_ERROR = null;
 
-const BUILD = '20261120b';
+const BUILD = '20261120c';
 async function fetchJSON(path) {
   const url = path + (path.includes('?') ? '&' : '?') + 'v=' + BUILD;
   const res = await fetch(url, { cache: 'default' });
@@ -1598,6 +1598,7 @@ function tabbarHTML(active) {
 
 function etcHTML() {
   const stats = (INDEX?.exams || []).length;
+  const qTotal = (INDEX?.exams || []).reduce((a, e) => a + (e.question_count || 0), 0);
   const submitted = (INDEX?.exams || []).filter((e) => store.sessions?.[e.exam_id]?.submitted).length;
   return `
   <div class="etc-head">
@@ -1620,7 +1621,7 @@ function etcHTML() {
   </button>
   <div class="etc-row static">
     <span class="ic">${ICON.page}</span>
-    <span class="tx"><b>문제은행</b><small>자체 2차 임종평 ${stats}회 · 640문항 · 제출 ${submitted}회</small></span>
+    <span class="tx"><b>문제은행</b><small>자체 2차·대경 임종평 ${stats}회 · ${qTotal.toLocaleString()}문항 · 제출 ${submitted}회</small></span>
   </div>
   <div class="etc-foot">
     문항의 과목·단원은 지문 키워드로 자동 분류한 값이에요. 분석 화면에서 문항별로 고칠 수 있고, 고친 값은 이 기기(동기화하면 다른 기기)에 저장됩니다.
