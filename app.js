@@ -190,8 +190,10 @@ let INDEX = null;
 const EXAM_CACHE = {};
 let BOOT_ERROR = null;
 
+const BUILD = '20261120b';
 async function fetchJSON(path) {
-  const res = await fetch(path, { cache: 'default' });
+  const url = path + (path.includes('?') ? '&' : '?') + 'v=' + BUILD;
+  const res = await fetch(url, { cache: 'default' });
   if (!res.ok) throw new Error(`${path} (${res.status})`);
   return res.json();
 }
